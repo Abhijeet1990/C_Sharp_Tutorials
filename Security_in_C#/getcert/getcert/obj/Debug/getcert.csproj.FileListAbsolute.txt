@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\getcert\getcert\bin\Debug\getcert.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\getcert\getcert\bin\Debug\getcert.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\getcert\getcert\bin\Debug\getcert.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\getcert\getcert\obj\Debug\getcert.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\getcert\getcert\obj\Debug\getcert.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\getcert\getcert\obj\Debug\getcert.pdb
