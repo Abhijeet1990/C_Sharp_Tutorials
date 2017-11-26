@@ -1,0 +1,701 @@
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\csc.exe
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\vbc.exe
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.DataServer.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Performance.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Cloud.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Controls.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.OData.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Edm.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\System.Spatial.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.DataServer.pdb
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Performance.pdb
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Cloud.pdb
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Controls.pdb
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.xml
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.xml
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.OData.xml
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Edm.xml
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\System.Spatial.xml
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\de\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\es\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\fr\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\it\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ja\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ko\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ru\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\de\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\es\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\it\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\de\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\es\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\fr\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\it\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ja\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ko\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\ru\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\System.Spatial.resources.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+D:\RealTimePowerRepo\TES Optimization New\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\csc.exe
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\vbc.exe
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.DataServer.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Cloud.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.OData.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Edm.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\System.Spatial.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.DataServer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.Cloud.pdb
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.OData.xml
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.Data.Edm.xml
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\System.Spatial.xml
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\de\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\es\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\fr\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\it\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ja\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ko\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\ru\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time Advisor\TES Real Time Advisor\RTP.TESWebServer\bin\zh-Hant\System.Spatial.resources.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\csc.exe
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\vbc.exe
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+E:\cokv\TES Real Time Advisor\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\csc.exe
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\vbc.exe
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+C:\Users\Admin\Desktop\amit\TES Real Time Advisor12\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\csc.exe
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\vbc.exe
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.DataServer.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.Cloud.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.OData.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Edm.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\System.Spatial.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.DataServer.pdb
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.Cloud.pdb
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.OData.xml
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Edm.xml
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\System.Spatial.xml
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\de\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\es\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\it\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+C:\Users\Rana\Desktop\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\csc.exe
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\vbc.exe
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.Cloud.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.OData.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Edm.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\System.Spatial.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.DataServer.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\RTP.Cloud.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.OData.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Microsoft.Data.Edm.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\System.Spatial.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\de\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\es\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\it\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\de\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\es\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\it\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\de\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\es\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\it\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\de\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\es\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\fr\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\it\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ja\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ko\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\ru\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hans\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\bin\zh-Hant\System.Spatial.resources.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time Advisor12\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\csc.exe
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\vbc.exe
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+E:\cokv\TES Real Time AdvisorUp\TES Real Time AdvisorMay27\TES Real Time AdvisorMay27\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\csc.exe
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\vbc.exe
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.DataServer.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.Cloud.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.Data.OData.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.Data.Edm.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\System.Spatial.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.DataServer.pdb
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.Cloud.pdb
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.Data.OData.xml
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.Data.Edm.xml
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\System.Spatial.xml
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\de\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\es\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\fr\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\it\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ja\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ko\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\ru\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+C:\Users\Rana\Documents\amit\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\csc.exe
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\vbc.exe
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+E:\cokv\TES Real Time AdvisorMay31\TES Real Time AdvisorMay31\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\csc.exe
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\vbc.exe
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+E:\cokv\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\csc.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\vbc.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\bin\RTP.TESAnalysis.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune03\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\csc.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\vbc.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESAnalysis.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\csc.exe
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\vbc.exe
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESAnalysis.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESAnalysis.pdb
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+C:\Users\Webmind-28\Desktop\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\csc.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\vbc.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESAnalysis.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\bin\RTP.TESAnalysis.pdb
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+D:\TES Real Time AdvisorJune\BackUp\TES Real Time AdvisorJune16\TES Real Time AdvisorJune16\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\csc.exe
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\vbc.exe
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\RTP.TESAnalysis.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\RTP.TESOptimizer.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\RTP.TESOptimizer.pdb
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\bin\RTP.TESAnalysis.pdb
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+C:\Users\Abhijeet\Desktop\TES_Version\TES Real Time Advisor_06_23_2017\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\csc.exe
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\vbc.exe
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.TESWebServer.dll.config
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.TESWebServer.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.TESWebServer.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Newtonsoft.Json.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Newtonsoft.Json.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Forecast.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Charts.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Weather.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Controls.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Forecast.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Charts.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Weather.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Controls.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.DataServer.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Cloud.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.Data.OData.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.Data.Edm.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\System.Spatial.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.DataServer.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Cloud.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.Data.Services.Client.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.Data.OData.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\Microsoft.Data.Edm.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\System.Spatial.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\de\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\es\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\fr\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\it\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ja\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ko\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\ru\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Analysis.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\bin\RTP.Analysis.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TES Web Application\RTP.TESWebServer\obj\Debug\RTP.TESWebServer.csprojResolveAssemblyReference.cache

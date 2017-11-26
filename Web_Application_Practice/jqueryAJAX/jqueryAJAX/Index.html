@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script type="text/javascript">
+        $(document).ready(function(){
+        var textBoxes = $('input[type="text"]'); // where type is text
+        textBoxes.focus(function () { //whenever the text box get focus
+            var helpDiv = $(this).attr('id');
+            //$('#' + helpDiv).load('Help.html #'+helpDiv);
+            $('#' + helpDiv + 'HelpDiv').load('GetHelpText.aspx', { HelpTextKey: helpDiv }, function (response, status, xhr) {
+                if (status == 'error') {
+                    var statusMessage = 'status:' + xhr.status + '<br/>';
+                    statusMessage += 'status Text:' + xhr.statusText + '<br/>';
+                    statusMessage += 'status Response:' + response;
+                    $('#divStatus').html(statusMessage);
+                }
+            });
+        });
+        textBoxes.blur(function () { //whenever the text box get focus
+            var helpDiv = $(this).attr('id') + 'HelpDiv';
+            $('#' + helpDiv).html('');
+        });
+        });
+    </script>-->
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+        var textBoxes = $('input[type="text"]'); // where type is text
+        textBoxes.focus(function () { //whenever the text box get focus
+            var helpDiv = $(this).attr('id');
+            $.get('GetHelpText.aspx', { HelpTextKey: helpDiv }, function (response) {
+                var jqueryXML = $(response);
+                var textElement = jqueryXML.find('Text');
+                $("#" + helpDiv + 'HelpDiv').html(textElement.text());
+                //$("#"+helpDiv+'HelpDiv').html(response);
+            },'xml');
+           
+        });
+        textBoxes.blur(function () { //whenever the text box get focus
+            var helpDiv = $(this).attr('id') + 'HelpDiv';
+            $('#' + helpDiv).html('');
+        });
+        });
+    </script>
+        <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <table style="width:100%;">
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" id="firstName" /></td>
+            <td><div id="firstNameHelpDiv"></div></td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" id="lastName" /></td>
+            <td><div id="lastNameHelpDiv"></div></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" id="email" /></td>
+            <td><div id="emailHelpDiv"></div></td>
+        </tr>
+        <tr>
+            <td>Income</td>
+            <td><input type="text" id="income" /></td>
+            <td><div id="incomeHelpDiv"></div></td>
+        </tr>
+
+    </table>
+    <br />
+    <!--<div id="divStatus"></div>-->
+</body>
+</html>

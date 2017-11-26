@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="WebTutorial.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>My ASP.NET website</title>
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleSheet1.css" />
+     <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id ="wrapper">
+            <div id ="banner"></div>
+            <ul id =" navigation">
+
+            <div id="sidebar">
+            </div>
+
+            </ul>
+            <div id ="content_area">
+
+            </div>
+             <div id="footer"> <p>All rights reserved.</p></div>
+               
+
+            
+        </div>
+       
+
+
+    </form>
+</body>
+</html>

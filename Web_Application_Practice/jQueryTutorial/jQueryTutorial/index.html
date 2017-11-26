@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--<script src="~/Scripts/"></script>-->
+    <!--script for controls-->
+    <script>
+        $(document).ready(function () {
+            $("p").on("click", function () {
+                $(this).hide();
+            });
+        });</script>
+    <script>
+        $(document).ready(function () {
+            $("but7").click(function () {
+                $("p").toggle();
+                $(".test").hide();
+                $("#par").hide();
+            });
+        });
+        //Other examples
+        //$("*")	Selects all elements	Try it
+        //$(this)	Selects the current HTML element	Try it
+        //$("p.intro")	Selects all <p> elements with class="intro"	Try it
+        //$("p:first")	Selects the first <p> element	Try it
+        //$("ul li:first")	Selects the first <li> element of the first <ul>	Try it
+        //$("ul li:first-child")	Selects the first <li> element of every <ul>	Try it
+        //$("[href]")	Selects all elements with an href attribute	Try it
+        //$("a[target='_blank']")	Selects all <a> elements with a target attribute value equal to "_blank"	Try it
+        //$("a[target!='_blank']")	Selects all <a> elements with a target attribute value NOT equal to "_blank"	Try it
+        //$(":button")	Selects all <button> elements and <input> elements of type="button"	Try it
+        //$("tr:even")	Selects all even <tr> elements	Try it
+        //$("tr:odd")	Selects all odd <tr> elements
+
+    </script>
+    <!--the click event-->
+    <script>
+        $(document).ready(function () {
+            $("h2").click(function () {
+                $(this).hide();
+            });
+        });
+    </script>
+    <!--The hover event-->
+    <!--<script>
+        $(document).ready(function () {
+            $("#alert").hover(function () {
+                alert("You entered button!");
+            },
+            function () {
+                alert("Bye! You now leave button!");
+            });
+        });
+    </script>-->
+    <!--multiple event handling-->
+    <script>
+        $(document).ready(function () {
+            $("#multipleAction").on({
+                mouseenter: function () {
+                    $(this).css("background-color", "lightgray");
+                },
+                mouseleave: function () {
+                    $(this).css("background-color", "lightblue");
+                },
+                click: function () {
+                    $(this).css("background-color", "yellow");
+                }
+            });
+        });
+    </script>
+    <!--fadeOut(),fadeToggle(),fadeTo()-->
+    <script>
+        $(document).ready(function () {
+            $("#but2").click(function () {
+                $("#div2").fadeTo("slow", 0.3);
+                $("#div3").fadeIn(10000);
+            });
+        });
+    </script>
+    <script>
+        //there can be slideUp(),slideDown(),
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $("#animButton").click(function () {
+                $("#animate").animate({ left: '250px' }, "slow");
+                $("#animate2").animate({
+                    left: '250px',
+                    height: '+=150px',
+                    width: '+=150px'
+                });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("but3").click(function () {
+                $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+            });
+        });
+    </script>
+
+    <script>
+        function appendText() {
+            var txt1 = "<p>Text.</p>";              // Create text with HTML
+            var txt2 = $("<p></p>").text("Text.");  // Create text with jQuery
+            var txt3 = document.createElement("p");
+            txt3.innerHTML = "Text.";               // Create text with DOM
+            // similarly we have after(),before()
+            $("body").append(txt1, txt2, txt3);     // Append new elements
+        }
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#addCSS").click(function () {
+                $("h1, h2, p").addClass("blue");
+                $("div").addClass("important");
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#but7").click(function () {
+                $("p").css({ "background-color": "yellow", "font-size": "200%" });
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#dimButton").click(function () {
+                var txt = "";
+                txt += "Width of div: " + $("#div1").width() + "</br>";
+                txt += "Height of div: " + $("#div1").height();
+                $("#div1").html(txt);
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("span").parentsUntil("div").css({ "color": "red", "border": "2px solid red" });
+            //$("span").parents().css({ "color": "red", "border": "2px solid red" });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#child").children().css({ "color": "green", "border": "3px solid red" });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#child").find("#uniqueSpan").css({ "color": "black", "border": "10px solid red" });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("div").first().css("background-color", "yellow");
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("p").filter(".intro").css("background-color", "yellow");
+        });
+    </script>
+
+    <style>
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        #div1 {
+            height: 100px;
+            width: 300px;
+            padding: 10px;
+            margin: 3px;
+            border: 1px solid blue;
+            background-color: lightblue;
+        }
+
+        .ancestors * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: lightgrey;
+            padding: 5px;
+            margin: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2 class="test">This is a heading</h2>
+
+    <p id="par">This is a paragraph.</p>
+    <p id="alert">This is another paragraph.</p>
+
+    <button id="but">Click me to hide paragraphs</button>
+    <p id="multipleAction">Multiple Action Test</p>
+    <button id="but2">Click to fade in boxes</button><br><br>
+    <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+    <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+    <button id="animButton">Animate</button><br><br>
+    <div id="animate" style="background:#98bf21;height:100px;width:100px;"></div>
+    <div id="animate2" style="background:#08b000;height:100px;width:100px;"></div>
+    <button id="but3">chain events</button><br><br>
+    <p id="p1">This is chain testing paragraph.</p>
+    <button onclick="appendText()">Append text</button>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <button id="addCSS">Add CSS style</button>
+    <button id="but7">Set multiple styles for p</button>
+    <button id="dimButton">Display dimensions of div</button>
+
+    <div id="div1"></div>
+    <div id="child" class="ancestors" style="width:500px;">
+        div (great-grandparent)
+        <ul>
+            ul (grandparent)
+            <li>
+                li (direct parent)
+                <span>span</span>
+                <span id="uniqueSpan">Unique span</span>
+            </li>
+        </ul>
+    </div>
+
+    <p>My name is Donald.</p>
+    <p class="intro">I live in Duckburg.</p>
+    <p class="intro">I love Duckburg.</p>
+    <p>My best friend is Mickey.</p>
+</body>
+</html>

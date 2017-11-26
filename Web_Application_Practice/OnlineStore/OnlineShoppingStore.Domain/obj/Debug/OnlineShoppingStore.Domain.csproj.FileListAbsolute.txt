@@ -1,0 +1,10 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\bin\Debug\OnlineShoppingStore.Domain.dll.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\bin\Debug\OnlineShoppingStore.Domain.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\bin\Debug\OnlineShoppingStore.Domain.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.xml
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\obj\Debug\OnlineShoppingStore.Domain.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\obj\Debug\OnlineShoppingStore.Domain.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\OnlineStore\OnlineShoppingStore.Domain\obj\Debug\OnlineShoppingStore.Domain.pdb

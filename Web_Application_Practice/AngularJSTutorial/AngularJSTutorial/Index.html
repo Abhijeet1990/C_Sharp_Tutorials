@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<!--jQuery was built to abstract away the various browser idiosyncracies, and work with the DOM without having to add IE6 checks and so on. Over time, it developed a nice, robust API which allowed us to do a lot of things, but at its core, it is meant for dealing with the DOM, finding elements, changing UI, and so on. Think of it as working directly with nuts and bolts.
+
+AngularJS was built as a layer on top of jQuery, to add MVC concepts to front end engineering. Instead of giving you APIs to work with DOM, AngularJS gives you data-binding, templating, custom components (similar to jQuery UI, but declarative instead of triggering through JS) and a whole lot more. Think of it as working at a higher level, with components that you can hook together, instead of directly at the nuts and bolts level.
+
+ Additionally, AngularJS gives you structures and concepts that apply across various projects, like Controllers, Services and Directives. jQuery itself can be used in multiple (gazillion) ways to do the same thing. Thankfully, that is way less with AngularJS, which makes it easier to get into and out of projects. It offers a sane way for multiple people to contribute to the same project, without having to relearn a system from scratch.
+
+AngularJS is built on top of jQuery, so if you include jQuery, AngularJS will use it for its own DOM manipulations. But jQuery is optional, and AngularJS has its own jQueryLite implementation which has some of the behavior of jQuery implemented as an API interface.-->
+<html >
+<head>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/CustomJS/Script.js"></script>
+    <script src="Scripts/CustomJS/Filter.js"></script>
+    <style>
+        .arrow-up{
+            width:0;
+            height:0;
+            border-left: 5px solid transparent;
+            border-right:5px solid transparent;
+            border-bottom:10px solid black;
+        }
+        .arrow-down{
+            width:0;
+            height:0;
+            border-left: 5px solid transparent;
+            border-right:5px solid transparent;
+            border-top:10px solid black;
+        }
+    </style>
+</head>
+
+<body ng-app ="myModule" >
+    <!--<div ng-controller="techController">
+        <table style="width:100%;">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Tech</th>
+                    <th>Like</th>
+                    <th>Dislike</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="technology in technologies">
+                    <td>{{technology.name}}</td>
+                    <td>{{technology.likes}}</td>
+                    <td>{{technology.dislikes}}</td>
+                    <td>
+                        <input id="likeButton" type="button" value="Like" ng-click="incrementLikes(technology)" />
+                        <input id="dislikeButton" type="button" value="Dislike" ng-click="incrementDislikes(technology)" />
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>-->
+    <div ng-controller="empController">
+        <!--<div ng-include="'EventHandling.html'"></div>-->fi
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>FirstName</th>
+                    <th>SecondName</th>
+                    <th>Gender</th>
+                    <th>Salary</th>
+                </tr>
+                </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees">
+                    <td>{{employee.ID}}</td>
+                    <td>{{employee.firstName}}</td>
+                    <td>{{employee.lastName}}</td>
+                    <td>{{employee.gender}}</td>
+                    <td>{{employee.salary}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

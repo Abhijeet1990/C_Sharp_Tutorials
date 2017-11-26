@@ -1,0 +1,8 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\bin\Debug\NDFDWebService.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\bin\Debug\NDFDWebService.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\bin\Debug\NDFDWebService.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\obj\Debug\NDFDWebService.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\obj\Debug\NDFDWebService.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\obj\Debug\NDFDWebService.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\obj\Debug\NDFDWebService.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\NDFDWebService\NDFDWebService\obj\Debug\NDFDWebService.pdb

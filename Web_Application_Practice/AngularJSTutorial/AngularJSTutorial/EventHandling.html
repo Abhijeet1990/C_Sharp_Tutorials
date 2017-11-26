@@ -1,0 +1,34 @@
+﻿<!--Rows to Display: <input type="number" step="1" min="0" max="5" ng-model="rowLimit"/>-->
+<!--Order By: <select ng-model="sortColumn">
+              <option value="firstName">FirstName ASC</option>
+              <option value="gender">Gender ASC</option>
+              <option value="dateOfBirth">Date of Birth ASC</option>
+              <option value="-salary">Salary DESC</option>
+</select>-->
+<input type="text" placeholder="Search Name and gender" ng-model="searchText" />
+<input type="checkbox" ng-model="hideSalary" />Hide Salary
+<!--<input type="text" placeholder="Search Gender" ng-model="searchText.gender" />-->
+<!--<input type="checkbox" ng-model="exactMatch"> Exact Match-->
+
+<br /><br />
+<table>
+    <thead>
+        <tr>
+            <th ng-click="sortData('firstName')">Name<div ng-class="getSortClass('firstName')"></div></th>
+            <th ng-click="sortData('dateOfBirth')">DOB<div ng-class="getSortClass('dateOfBirth')"></div></th>
+            <th ng-click="sortData('gender')">Gender<div ng-class="getSortClass('gender')"></div></th>
+            <th ng-hide="hideSalary" ng-click="sortData('salary')">Salary<div ng-class="getSortClass('salary')"></div></th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="employee in employees | orderBy: sortColumn : reverseSort| filter:searchText">
+            <td>{{employee.firstName| uppercase}}</td>
+            <td>{{employee.dateOfBirth|date:"dd/MM/yyyy"}}</td>
+            <td>{{employee.gender|lowercase|gender}}</td>
+            <td ng-hide="hideSalary">{{employee.salary|number:2}}</td>
+            <td>{{employee.salary|currency:"Rs"}}</td>
+        </tr>
+
+    </tbody>
+</table>
