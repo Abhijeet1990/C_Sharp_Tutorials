@@ -1,0 +1,5 @@
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\UsePerformanceDLLforAzureTable\UsePerformanceDLLforAzureTable\obj\Debug\UsePerformanceDLLforAzureTable.Form1.resources
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\UsePerformanceDLLforAzureTable\UsePerformanceDLLforAzureTable\obj\Debug\UsePerformanceDLLforAzureTable.Properties.Resources.resources
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\UsePerformanceDLLforAzureTable\UsePerformanceDLLforAzureTable\obj\Debug\AzureTable.csproj.GenerateResource.Cache
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\UsePerformanceDLLforAzureTable\UsePerformanceDLLforAzureTable\obj\Debug\UsePerformanceDLLforAzureTable.exe
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\UsePerformanceDLLforAzureTable\UsePerformanceDLLforAzureTable\obj\Debug\UsePerformanceDLLforAzureTable.pdb

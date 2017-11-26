@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWA", "FWA\FWA.csproj", "{47A55296-8462-4CEE-B492-CD94589202F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWD", "FWD\FWD.csproj", "{5C207D38-BFBC-4412-83DB-1FDD0733B8C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWS", "FWS\FWS.csproj", "{1A797863-D334-4DB2-A772-B3A2E5285178}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47A55296-8462-4CEE-B492-CD94589202F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A55296-8462-4CEE-B492-CD94589202F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A55296-8462-4CEE-B492-CD94589202F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A55296-8462-4CEE-B492-CD94589202F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C207D38-BFBC-4412-83DB-1FDD0733B8C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C207D38-BFBC-4412-83DB-1FDD0733B8C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C207D38-BFBC-4412-83DB-1FDD0733B8C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C207D38-BFBC-4412-83DB-1FDD0733B8C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A797863-D334-4DB2-A772-B3A2E5285178}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A797863-D334-4DB2-A772-B3A2E5285178}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A797863-D334-4DB2-A772-B3A2E5285178}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A797863-D334-4DB2-A772-B3A2E5285178}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

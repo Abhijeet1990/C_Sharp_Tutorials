@@ -1,0 +1,12 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\RTP.Analysis.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\RTP.Performance.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\RTP.Controls.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\RTP.Analysis.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\RTP.Performance.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\RTP.Controls.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ConsoleApplication4\ConsoleApplication4\obj\Debug\ConsoleApplication4.csprojResolveAssemblyReference.cache

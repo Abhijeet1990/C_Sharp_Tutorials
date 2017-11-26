@@ -1,0 +1,1 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\BasicThreadSafety\BasicThreadSafety\bin\Debug\BasicThreadSafety.exe.config

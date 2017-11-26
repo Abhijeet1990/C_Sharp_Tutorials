@@ -1,0 +1,649 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="RTP_ForecastDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Block">
+          <Key>
+            <PropertyRef Name="BlockID" />
+          </Key>
+          <Property Name="BlockID" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="nchar" MaxLength="10" />
+          <Property Name="Description" Type="nchar" MaxLength="20" />
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="BlockTypeID" Type="int" />
+          <Property Name="PlantObjectID" Type="int" />
+        </EntityType>
+        <EntityType Name="Forecast">
+          <Key>
+            <PropertyRef Name="ForecastID" />
+          </Key>
+          <Property Name="ForecastID" Type="int" Nullable="false" />
+          <Property Name="SiteID" Type="int" />
+          <Property Name="BlockID" Type="int" />
+          <Property Name="ActualVariableID" Type="int" />
+          <Property Name="PredictedVariableID" Type="int" />
+          <Property Name="ForecastTypeID" Type="int" />
+          <Property Name="Alias" Type="nchar" MaxLength="20" />
+          <Property Name="Description" Type="nchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ForecastType">
+          <Key>
+            <PropertyRef Name="ForecastTypeID" />
+          </Key>
+          <Property Name="ForecastTypeID" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="nchar" MaxLength="20" />
+          <Property Name="Description" Type="nchar" MaxLength="100" />
+          <Property Name="EngUnits" Type="int" />
+        </EntityType>
+        <EntityType Name="ForecastValue">
+          <Key>
+            <PropertyRef Name="ForecastID" />
+          </Key>
+          <Property Name="ForecastID" Type="int" Nullable="false" />
+          <Property Name="Timestamp" Type="datetimeoffset" Precision="7" />
+          <Property Name="Value" Type="real" />
+          <Property Name="Good" Type="bit" />
+        </EntityType>
+        <EntityType Name="GasTurbine">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="int" Nullable="false" />
+          <Property Name="GasTurbineTypeID" Type="int" />
+          <Property Name="BaseLoadIGV" Type="float" />
+          <Property Name="PeakFireMWGain" Type="float" />
+          <Property Name="SteamInjectionMWGain" Type="float" />
+          <Property Name="NormalizedLoadMax" Type="float" />
+          <Property Name="NormalizedLoadMin" Type="float" />
+          <Property Name="FiringCurveLUTID" Type="int" />
+          <Property Name="MaxLoadLUTID" Type="int" />
+        </EntityType>
+        <EntityType Name="Generator">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="int" Nullable="false" />
+          <Property Name="MaxPower" Type="real" />
+          <Property Name="MinPower" Type="real" />
+        </EntityType>
+        <EntityType Name="HRSG">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="int" Nullable="false" />
+          <Property Name="DuctBurnFuelMaxRate" Type="real" />
+          <Property Name="DuctBurnMaxMWGain" Type="real" />
+          <Property Name="COEmissionsLimit" Type="real" />
+          <Property Name="NormalizedLoadMax" Type="real" />
+          <Property Name="NormalizedLoadMin" Type="real" />
+          <Property Name="NOXEmissionsLimit" Type="real" />
+        </EntityType>
+        <EntityType Name="InletAirCooling">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="int" Nullable="false" />
+          <Property Name="MinTempOn" Type="real" />
+          <Property Name="MinHumidityOn" Type="real" />
+          <Property Name="CoolingTypeID" Type="int" />
+        </EntityType>
+        <EntityType Name="Mapping">
+          <Key>
+            <PropertyRef Name="BlockID" />
+          </Key>
+          <Property Name="BlockID" Type="int" Nullable="false" />
+          <Property Name="PlantObjectID" Type="int" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="TrainID" Type="int" />
+          <Property Name="Alias" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Site">
+          <Key>
+            <PropertyRef Name="SiteID" />
+          </Key>
+          <Property Name="SiteID" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="nchar" MaxLength="10" />
+          <Property Name="Description" Type="nchar" MaxLength="100" />
+          <Property Name="Latitude" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Longitude" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="Elevation" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="DataDirectory" Type="nchar" MaxLength="500" />
+          <Property Name="UseMetricUnits" Type="bit" />
+        </EntityType>
+        <EntityType Name="SteamTurbine">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="int" Nullable="false" />
+          <Property Name="MaxPower" Type="real" />
+          <Property Name="MinPower" Type="real" />
+        </EntityType>
+        <EntityType Name="VariableList">
+          <Key>
+            <PropertyRef Name="VariableID" />
+          </Key>
+          <Property Name="VariableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tag" Type="nchar" MaxLength="100" />
+          <Property Name="Alias" Type="nchar" MaxLength="80" />
+          <Property Name="Description" Type="nchar" MaxLength="200" />
+          <Property Name="EngUnits" Type="nchar" MaxLength="20" />
+          <Property Name="StandardVariableID" Type="int" />
+          <Property Name="SiteID" Type="int" />
+          <Property Name="BlockID" Type="int" />
+          <Property Name="PlantObjectID" Type="int" />
+          <Property Name="DataSourceID" Type="int" />
+          <Property Name="MinValue" Type="real" />
+          <Property Name="MaxValue" Type="real" />
+          <Property Name="DefaultValue" Type="real" />
+          <Property Name="ForecastID" Type="int" />
+          <Property Name="Archived" Type="bit" />
+        </EntityType>
+        <EntityType Name="VariableSnapShot">
+          <Key>
+            <PropertyRef Name="VariableID" />
+          </Key>
+          <Property Name="VariableID" Type="int" Nullable="false" />
+          <Property Name="Timestamp" Type="datetimeoffset" Precision="7" />
+          <Property Name="Value" Type="real" />
+          <Property Name="Good" Type="bit" />
+        </EntityType>
+        <EntityType Name="VariableStandard">
+          <Key>
+            <PropertyRef Name="StandardVariableID" />
+          </Key>
+          <Property Name="StandardVariableID" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="nchar" MaxLength="20" />
+          <Property Name="Description" Type="nchar" MaxLength="100" />
+          <Property Name="VariableTypeID" Type="int" />
+          <Property Name="Mandatory" Type="bit" />
+          <Property Name="PlantObjectID" Type="int" />
+        </EntityType>
+        <EntityType Name="VariableType">
+          <Key>
+            <PropertyRef Name="VariableTypeID" />
+          </Key>
+          <Property Name="VariableTypeID" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="nchar" MaxLength="20" />
+          <Property Name="Description" Type="nchar" MaxLength="100" />
+          <Property Name="MetricUnits" Type="nchar" MaxLength="20" />
+          <Property Name="EnglishUnits" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="XYLUT">
+          <Key>
+            <PropertyRef Name="XYLUTID" />
+          </Key>
+          <Property Name="XYLUTID" Type="int" Nullable="false" />
+          <Property Name="Alias" Type="nchar" MaxLength="20" />
+          <Property Name="Description" Type="nchar" MaxLength="100" />
+          <Property Name="XAxisVariableID" Type="int" />
+          <Property Name="YAxisVariableID" Type="int" />
+        </EntityType>
+        <EntityType Name="XYLUTValue">
+          <Key>
+            <PropertyRef Name="XYLUTID" />
+          </Key>
+          <Property Name="XYLUTID" Type="int" Nullable="false" />
+          <Property Name="Xvalue" Type="real" />
+          <Property Name="Yvalue" Type="real" />
+        </EntityType>
+        <EntityContainer Name="RTP_ForecastDatabaseModelStoreContainer">
+          <EntitySet Name="Block" EntityType="Self.Block" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Forecast" EntityType="Self.Forecast" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ForecastType" EntityType="Self.ForecastType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ForecastValue" EntityType="Self.ForecastValue" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GasTurbine" EntityType="Self.GasTurbine" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Generator" EntityType="Self.Generator" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HRSG" EntityType="Self.HRSG" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="InletAirCooling" EntityType="Self.InletAirCooling" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Mapping" EntityType="Self.Mapping" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Site" EntityType="Self.Site" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SteamTurbine" EntityType="Self.SteamTurbine" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VariableList" EntityType="Self.VariableList" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VariableSnapShot" EntityType="Self.VariableSnapShot" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VariableStandard" EntityType="Self.VariableStandard" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="VariableType" EntityType="Self.VariableType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="XYLUT" EntityType="Self.XYLUT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="XYLUTValue" EntityType="Self.XYLUTValue" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RTP_ForecastDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Block">
+          <Key>
+            <PropertyRef Name="BlockID" />
+          </Key>
+          <Property Name="BlockID" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="BlockTypeID" Type="Int32" />
+          <Property Name="PlantObjectID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Forecast">
+          <Key>
+            <PropertyRef Name="ForecastID" />
+          </Key>
+          <Property Name="ForecastID" Type="Int32" Nullable="false" />
+          <Property Name="SiteID" Type="Int32" />
+          <Property Name="BlockID" Type="Int32" />
+          <Property Name="ActualVariableID" Type="Int32" />
+          <Property Name="PredictedVariableID" Type="Int32" />
+          <Property Name="ForecastTypeID" Type="Int32" />
+          <Property Name="Alias" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ForecastType">
+          <Key>
+            <PropertyRef Name="ForecastTypeID" />
+          </Key>
+          <Property Name="ForecastTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="EngUnits" Type="Int32" />
+        </EntityType>
+        <EntityType Name="ForecastValue">
+          <Key>
+            <PropertyRef Name="ForecastID" />
+          </Key>
+          <Property Name="ForecastID" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTimeOffset" Precision="7" />
+          <Property Name="Value" Type="Single" />
+          <Property Name="Good" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="GasTurbine">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="Int32" Nullable="false" />
+          <Property Name="GasTurbineTypeID" Type="Int32" />
+          <Property Name="BaseLoadIGV" Type="Double" />
+          <Property Name="PeakFireMWGain" Type="Double" />
+          <Property Name="SteamInjectionMWGain" Type="Double" />
+          <Property Name="NormalizedLoadMax" Type="Double" />
+          <Property Name="NormalizedLoadMin" Type="Double" />
+          <Property Name="FiringCurveLUTID" Type="Int32" />
+          <Property Name="MaxLoadLUTID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Generator">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="Int32" Nullable="false" />
+          <Property Name="MaxPower" Type="Single" />
+          <Property Name="MinPower" Type="Single" />
+        </EntityType>
+        <EntityType Name="HRSG">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="Int32" Nullable="false" />
+          <Property Name="DuctBurnFuelMaxRate" Type="Single" />
+          <Property Name="DuctBurnMaxMWGain" Type="Single" />
+          <Property Name="COEmissionsLimit" Type="Single" />
+          <Property Name="NormalizedLoadMax" Type="Single" />
+          <Property Name="NormalizedLoadMin" Type="Single" />
+          <Property Name="NOXEmissionsLimit" Type="Single" />
+        </EntityType>
+        <EntityType Name="InletAirCooling">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="Int32" Nullable="false" />
+          <Property Name="MinTempOn" Type="Single" />
+          <Property Name="MinHumidityOn" Type="Single" />
+          <Property Name="CoolingTypeID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Mapping">
+          <Key>
+            <PropertyRef Name="BlockID" />
+          </Key>
+          <Property Name="BlockID" Type="Int32" Nullable="false" />
+          <Property Name="PlantObjectID" Type="Int32" />
+          <Property Name="ObjectID" Type="Int32" />
+          <Property Name="TrainID" Type="Int32" />
+          <Property Name="Alias" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Site">
+          <Key>
+            <PropertyRef Name="SiteID" />
+          </Key>
+          <Property Name="SiteID" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Latitude" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Longitude" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="Elevation" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="DataDirectory" Type="String" MaxLength="500" FixedLength="true" Unicode="true" />
+          <Property Name="UseMetricUnits" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="SteamTurbine">
+          <Key>
+            <PropertyRef Name="ObjectID" />
+          </Key>
+          <Property Name="ObjectID" Type="Int32" Nullable="false" />
+          <Property Name="MaxPower" Type="Single" />
+          <Property Name="MinPower" Type="Single" />
+        </EntityType>
+        <EntityType Name="VariableList">
+          <Key>
+            <PropertyRef Name="VariableID" />
+          </Key>
+          <Property Name="VariableID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tag" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="Alias" Type="String" MaxLength="80" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="EngUnits" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="StandardVariableID" Type="Int32" />
+          <Property Name="SiteID" Type="Int32" />
+          <Property Name="BlockID" Type="Int32" />
+          <Property Name="PlantObjectID" Type="Int32" />
+          <Property Name="DataSourceID" Type="Int32" />
+          <Property Name="MinValue" Type="Single" />
+          <Property Name="MaxValue" Type="Single" />
+          <Property Name="DefaultValue" Type="Single" />
+          <Property Name="ForecastID" Type="Int32" />
+          <Property Name="Archived" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="VariableSnapShot">
+          <Key>
+            <PropertyRef Name="VariableID" />
+          </Key>
+          <Property Name="VariableID" Type="Int32" Nullable="false" />
+          <Property Name="Timestamp" Type="DateTimeOffset" Precision="7" />
+          <Property Name="Value" Type="Single" />
+          <Property Name="Good" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="VariableStandard">
+          <Key>
+            <PropertyRef Name="StandardVariableID" />
+          </Key>
+          <Property Name="StandardVariableID" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="VariableTypeID" Type="Int32" />
+          <Property Name="Mandatory" Type="Boolean" />
+          <Property Name="PlantObjectID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="VariableType">
+          <Key>
+            <PropertyRef Name="VariableTypeID" />
+          </Key>
+          <Property Name="VariableTypeID" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="MetricUnits" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="EnglishUnits" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="XYLUT">
+          <Key>
+            <PropertyRef Name="XYLUTID" />
+          </Key>
+          <Property Name="XYLUTID" Type="Int32" Nullable="false" />
+          <Property Name="Alias" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="XAxisVariableID" Type="Int32" />
+          <Property Name="YAxisVariableID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="XYLUTValue">
+          <Key>
+            <PropertyRef Name="XYLUTID" />
+          </Key>
+          <Property Name="XYLUTID" Type="Int32" Nullable="false" />
+          <Property Name="Xvalue" Type="Single" />
+          <Property Name="Yvalue" Type="Single" />
+        </EntityType>
+        <EntityContainer Name="RTP_ForecastDatabaseEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Blocks" EntityType="Self.Block" />
+          <EntitySet Name="Forecasts" EntityType="Self.Forecast" />
+          <EntitySet Name="ForecastTypes" EntityType="Self.ForecastType" />
+          <EntitySet Name="ForecastValues" EntityType="Self.ForecastValue" />
+          <EntitySet Name="GasTurbines" EntityType="Self.GasTurbine" />
+          <EntitySet Name="Generators" EntityType="Self.Generator" />
+          <EntitySet Name="HRSGs" EntityType="Self.HRSG" />
+          <EntitySet Name="InletAirCoolings" EntityType="Self.InletAirCooling" />
+          <EntitySet Name="Mappings" EntityType="Self.Mapping" />
+          <EntitySet Name="Sites" EntityType="Self.Site" />
+          <EntitySet Name="SteamTurbines" EntityType="Self.SteamTurbine" />
+          <EntitySet Name="VariableLists" EntityType="Self.VariableList" />
+          <EntitySet Name="VariableSnapShots" EntityType="Self.VariableSnapShot" />
+          <EntitySet Name="VariableStandards" EntityType="Self.VariableStandard" />
+          <EntitySet Name="VariableTypes" EntityType="Self.VariableType" />
+          <EntitySet Name="XYLUTs" EntityType="Self.XYLUT" />
+          <EntitySet Name="XYLUTValues" EntityType="Self.XYLUTValue" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RTP_ForecastDatabaseModelStoreContainer" CdmEntityContainer="RTP_ForecastDatabaseEntities">
+          <EntitySetMapping Name="Blocks">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.Block">
+              <MappingFragment StoreEntitySet="Block">
+                <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="BlockTypeID" ColumnName="BlockTypeID" />
+                <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Forecasts">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.Forecast">
+              <MappingFragment StoreEntitySet="Forecast">
+                <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+                <ScalarProperty Name="ActualVariableID" ColumnName="ActualVariableID" />
+                <ScalarProperty Name="PredictedVariableID" ColumnName="PredictedVariableID" />
+                <ScalarProperty Name="ForecastTypeID" ColumnName="ForecastTypeID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ForecastTypes">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.ForecastType">
+              <MappingFragment StoreEntitySet="ForecastType">
+                <ScalarProperty Name="ForecastTypeID" ColumnName="ForecastTypeID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ForecastValues">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.ForecastValue">
+              <MappingFragment StoreEntitySet="ForecastValue">
+                <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Good" ColumnName="Good" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GasTurbines">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.GasTurbine">
+              <MappingFragment StoreEntitySet="GasTurbine">
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="GasTurbineTypeID" ColumnName="GasTurbineTypeID" />
+                <ScalarProperty Name="BaseLoadIGV" ColumnName="BaseLoadIGV" />
+                <ScalarProperty Name="PeakFireMWGain" ColumnName="PeakFireMWGain" />
+                <ScalarProperty Name="SteamInjectionMWGain" ColumnName="SteamInjectionMWGain" />
+                <ScalarProperty Name="NormalizedLoadMax" ColumnName="NormalizedLoadMax" />
+                <ScalarProperty Name="NormalizedLoadMin" ColumnName="NormalizedLoadMin" />
+                <ScalarProperty Name="FiringCurveLUTID" ColumnName="FiringCurveLUTID" />
+                <ScalarProperty Name="MaxLoadLUTID" ColumnName="MaxLoadLUTID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Generators">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.Generator">
+              <MappingFragment StoreEntitySet="Generator">
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="MaxPower" ColumnName="MaxPower" />
+                <ScalarProperty Name="MinPower" ColumnName="MinPower" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HRSGs">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.HRSG">
+              <MappingFragment StoreEntitySet="HRSG">
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="DuctBurnFuelMaxRate" ColumnName="DuctBurnFuelMaxRate" />
+                <ScalarProperty Name="DuctBurnMaxMWGain" ColumnName="DuctBurnMaxMWGain" />
+                <ScalarProperty Name="COEmissionsLimit" ColumnName="COEmissionsLimit" />
+                <ScalarProperty Name="NormalizedLoadMax" ColumnName="NormalizedLoadMax" />
+                <ScalarProperty Name="NormalizedLoadMin" ColumnName="NormalizedLoadMin" />
+                <ScalarProperty Name="NOXEmissionsLimit" ColumnName="NOXEmissionsLimit" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="InletAirCoolings">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.InletAirCooling">
+              <MappingFragment StoreEntitySet="InletAirCooling">
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="MinTempOn" ColumnName="MinTempOn" />
+                <ScalarProperty Name="MinHumidityOn" ColumnName="MinHumidityOn" />
+                <ScalarProperty Name="CoolingTypeID" ColumnName="CoolingTypeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Mappings">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.Mapping">
+              <MappingFragment StoreEntitySet="Mapping">
+                <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+                <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="TrainID" ColumnName="TrainID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sites">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.Site">
+              <MappingFragment StoreEntitySet="Site">
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+                <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+                <ScalarProperty Name="Elevation" ColumnName="Elevation" />
+                <ScalarProperty Name="DataDirectory" ColumnName="DataDirectory" />
+                <ScalarProperty Name="UseMetricUnits" ColumnName="UseMetricUnits" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SteamTurbines">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.SteamTurbine">
+              <MappingFragment StoreEntitySet="SteamTurbine">
+                <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+                <ScalarProperty Name="MaxPower" ColumnName="MaxPower" />
+                <ScalarProperty Name="MinPower" ColumnName="MinPower" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VariableLists">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.VariableList">
+              <MappingFragment StoreEntitySet="VariableList">
+                <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+                <ScalarProperty Name="Tag" ColumnName="Tag" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+                <ScalarProperty Name="StandardVariableID" ColumnName="StandardVariableID" />
+                <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+                <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+                <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+                <ScalarProperty Name="DataSourceID" ColumnName="DataSourceID" />
+                <ScalarProperty Name="MinValue" ColumnName="MinValue" />
+                <ScalarProperty Name="MaxValue" ColumnName="MaxValue" />
+                <ScalarProperty Name="DefaultValue" ColumnName="DefaultValue" />
+                <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+                <ScalarProperty Name="Archived" ColumnName="Archived" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VariableSnapShots">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.VariableSnapShot">
+              <MappingFragment StoreEntitySet="VariableSnapShot">
+                <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+                <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+                <ScalarProperty Name="Good" ColumnName="Good" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VariableStandards">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.VariableStandard">
+              <MappingFragment StoreEntitySet="VariableStandard">
+                <ScalarProperty Name="StandardVariableID" ColumnName="StandardVariableID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+                <ScalarProperty Name="Mandatory" ColumnName="Mandatory" />
+                <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VariableTypes">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.VariableType">
+              <MappingFragment StoreEntitySet="VariableType">
+                <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="MetricUnits" ColumnName="MetricUnits" />
+                <ScalarProperty Name="EnglishUnits" ColumnName="EnglishUnits" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="XYLUTs">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.XYLUT">
+              <MappingFragment StoreEntitySet="XYLUT">
+                <ScalarProperty Name="XYLUTID" ColumnName="XYLUTID" />
+                <ScalarProperty Name="Alias" ColumnName="Alias" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="XAxisVariableID" ColumnName="XAxisVariableID" />
+                <ScalarProperty Name="YAxisVariableID" ColumnName="YAxisVariableID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="XYLUTValues">
+            <EntityTypeMapping TypeName="RTP_ForecastDatabaseModel.XYLUTValue">
+              <MappingFragment StoreEntitySet="XYLUTValue">
+                <ScalarProperty Name="XYLUTID" ColumnName="XYLUTID" />
+                <ScalarProperty Name="Xvalue" ColumnName="Xvalue" />
+                <ScalarProperty Name="Yvalue" ColumnName="Yvalue" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

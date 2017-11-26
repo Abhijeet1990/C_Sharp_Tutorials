@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\Training2\Training2\bin\Debug\Training2.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\Training2\Training2\bin\Debug\Training2.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\Training2\Training2\bin\Debug\Training2.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\Training2\Training2\obj\Debug\Training2.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\Training2\Training2\obj\Debug\Training2.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\Training2\Training2\obj\Debug\Training2.pdb

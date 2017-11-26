@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\AccessStoredProcedure\AccessStoredProcedure\bin\Debug\AccessStoredProcedure.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\AccessStoredProcedure\AccessStoredProcedure\bin\Debug\AccessStoredProcedure.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\AccessStoredProcedure\AccessStoredProcedure\bin\Debug\AccessStoredProcedure.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\AccessStoredProcedure\AccessStoredProcedure\obj\Debug\AccessStoredProcedure.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\AccessStoredProcedure\AccessStoredProcedure\obj\Debug\AccessStoredProcedure.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\AccessStoredProcedure\AccessStoredProcedure\obj\Debug\AccessStoredProcedure.pdb

@@ -1,0 +1,8 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\bin\Debug\ftpClient.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\bin\Debug\ftpClient.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\bin\Debug\ftpClient.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\bin\Debug\RTP.FTP.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\bin\Debug\RTP.FTP.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\obj\Debug\ftpClient.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\obj\Debug\ftpClient.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ftpClient\ftpClient\obj\Debug\ftpClient.pdb

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47A55296-8462-4CEE-B492-CD94589202F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FWA</RootNamespace>
+    <AssemblyName>FWA</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\FWD\bin\Debug\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\FWD\bin\Debug\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FWD">
+      <HintPath>..\FWD\bin\Debug\FWD.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlockUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlockUC.Designer.cs">
+      <DependentUpon>BlockUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CondenserUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CondenserUC.Designer.cs">
+      <DependentUpon>CondenserUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastTypeUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ForecastTypeUC.Designer.cs">
+      <DependentUpon>ForecastTypeUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GasTurbineUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GasTurbineUC.Designer.cs">
+      <DependentUpon>GasTurbineUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GeneratorUC.Designer.cs">
+      <DependentUpon>GeneratorUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HRSGUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HRSGUC.Designer.cs">
+      <DependentUpon>HRSGUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SiteUC.Designer.cs">
+      <DependentUpon>SiteUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SteamTurbineUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SteamTurbineUC.Designer.cs">
+      <DependentUpon>SteamTurbineUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagCollectorUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TagCollectorUC.Designer.cs">
+      <DependentUpon>TagCollectorUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TagSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TagSelectionForm.Designer.cs">
+      <DependentUpon>TagSelectionForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BlockUC.resx">
+      <DependentUpon>BlockUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CondenserUC.resx">
+      <DependentUpon>CondenserUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForecastTypeUC.resx">
+      <DependentUpon>ForecastTypeUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GasTurbineUC.resx">
+      <DependentUpon>GasTurbineUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneratorUC.resx">
+      <DependentUpon>GeneratorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HRSGUC.resx">
+      <DependentUpon>HRSGUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SiteUC.resx">
+      <DependentUpon>SiteUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteamTurbineUC.resx">
+      <DependentUpon>SteamTurbineUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagCollectorUC.resx">
+      <DependentUpon>TagCollectorUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TagSelectionForm.resx">
+      <DependentUpon>TagSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

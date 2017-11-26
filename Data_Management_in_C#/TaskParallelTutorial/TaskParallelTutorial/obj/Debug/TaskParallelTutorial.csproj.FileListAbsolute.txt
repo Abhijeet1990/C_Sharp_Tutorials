@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\TaskParallelTutorial\TaskParallelTutorial\bin\Debug\TaskParallelTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\TaskParallelTutorial\TaskParallelTutorial\bin\Debug\TaskParallelTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TaskParallelTutorial\TaskParallelTutorial\bin\Debug\TaskParallelTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\TaskParallelTutorial\TaskParallelTutorial\obj\Debug\TaskParallelTutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\TaskParallelTutorial\TaskParallelTutorial\obj\Debug\TaskParallelTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TaskParallelTutorial\TaskParallelTutorial\obj\Debug\TaskParallelTutorial.pdb

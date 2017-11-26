@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\stringoperation\stringoperation\bin\Debug\stringoperation.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\stringoperation\stringoperation\bin\Debug\stringoperation.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\stringoperation\stringoperation\bin\Debug\stringoperation.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\stringoperation\stringoperation\obj\Debug\stringoperation.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\stringoperation\stringoperation\obj\Debug\stringoperation.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\stringoperation\stringoperation\obj\Debug\stringoperation.pdb

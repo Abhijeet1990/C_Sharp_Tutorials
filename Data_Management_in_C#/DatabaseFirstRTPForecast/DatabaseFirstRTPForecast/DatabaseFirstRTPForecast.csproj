@@ -1,0 +1,712 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E894F8F8-01A7-4150-AFED-FF46C4F12138}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DatabaseFirstRTPForecast</RootNamespace>
+    <AssemblyName>DatabaseFirstRTPForecast</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuxBoiler.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Block.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Book.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BookDisplay.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Category.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Chart.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChartCategory.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChartFormat.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChartVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cogeneration.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Condenser.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CondenserAlia.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CondenserVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="database_firewall_rules.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Display.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayObject.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayObjectType.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EngUnitsConversion.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Filter.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FilterCategory.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FilterTimeRange.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FilterValueRange.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Forecast.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastArchive.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForecastModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ForecastModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastSnapShot.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastType.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastTypeAlia.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ForecastValue.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GasTurbine.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GasTurbineAlia.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GasTurbineType.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GasTurbineVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Generator.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratorAlia.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratorVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetPlantVariableListByUnit_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Grid.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GridCategory.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GridHealthCheck.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GridVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCheck.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCheckCategory.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCheckCompare.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCheckFilter.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HealthCheckReading.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRSG.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRSGAlia.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HRSGVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="InletCoolingTypeAlia.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutPanel.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutPanelCategory.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutPanelObject.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutPanelObjectVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MessageLog.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelCategory.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelInput.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelInputCoeff.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTemplate.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTemplateCategory.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ModelTemplateInput.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PanelSetting.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlantObjectType.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlantObjectTypeAlia.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PlantVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SentinelUser.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SentinelUserActivity.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Site.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Source.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SteamTurbine.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SteamTurbineVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Summary.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryType.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SummaryValue.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TE.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TESVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UnitVariable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateService.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_DataGridViewMasterVariable_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_DataGridviewModifyPlantVariable_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_DataGridViewPlantVariableList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_DataGridViewVariableType_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetActiveHealthChecks_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetBookDisplayList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetBookList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetCategoryList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartAndChartVariables_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartDetails_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartInfowithFilter_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartInfo_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartListQuick_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartRealTimeValues_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartVariableList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartVariable_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetChartWithFilter_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDisplayDetails_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDisplayObjectDetails_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDisplayObjectListsByUserID_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDisplayObject_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDisplay_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetFilterDetailsToView_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetFilterDetails_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetFilterList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetFilterTimeRange_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetFilterValueandTime_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetFilterValueRange_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetForecastValuesByDateTime_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetForecastValuesByVariableID_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetFullModelComparisonTables_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridHealthCheckData_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridHealthCheckInfo_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridHealthChecksForDisplay_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridListForModifyForm_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridTableForGridControl_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridVariableInfo_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetGridVariablesForDisplay_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckFilter_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckHistoryForChart_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckHistoryForGrid_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckListandModel_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckModelAndFilterName_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckRealTimeInfo_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckRealTimeValues_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthChecksActive_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthChecksByEquipmentType_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthChecksInAlert_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthChecksLastHours_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthChecksVisibleForUser_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckTable_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckToModify_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHealthCheckVariation_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetLayoutPanelDetails_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetLayoutPanelList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetMessageLog_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelAndCoeffs_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelAndFilterDetails_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelComparisonTables_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelDashBoard_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelDataForModelTemplate_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelInfoToPlot_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelInputCurrentValues_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelInputsForCreateModelFromTemplateForm_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelInputsFromModeledVariableTemplate_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelInput_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelsAllowedOnChart_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelsByModeledVariableID_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelTemplateFormData_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModelWhatIfFormTables_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetModifyFilterFormTables_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetNewVariableForGridList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetObjectCategoryByUserID_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetObjectListsByUserID_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetObjectSelectionFormData_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetOpenConnectionTypes_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetPanelSettings_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetPlantObjects_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetPlantObjectType_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetPlantObjectVariables_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetReadingTableDataByHealthCheckID_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetRecentHealthChecks_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSimilarVariableFromVariablePoint_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSimilarVariablesFromVariableMaster_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSimilarVariable_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetTableList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetTop5Alerts_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetUnitList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetUserActivityHistory_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetUserInfo_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetUserList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableBuilder_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableDetail_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableForModifyFilterForm_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableListByBlock_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableMasterList_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableSummaryDetail_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariableType_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetVariable_Result.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Variable.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariableArchive.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariableMaster.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariablePoint.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariablePointBackup.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariablePointTemp.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariableSnapshot.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VariableType.cs">
+      <DependentUpon>ForecastModel.tt</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="ForecastModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ForecastModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ForecastModel.edmx.diagram">
+      <DependentUpon>ForecastModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ForecastModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ForecastModel.edmx</DependentUpon>
+      <LastGenOutput>ForecastModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ForecastModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ForecastModel.edmx</DependentUpon>
+      <LastGenOutput>ForecastModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

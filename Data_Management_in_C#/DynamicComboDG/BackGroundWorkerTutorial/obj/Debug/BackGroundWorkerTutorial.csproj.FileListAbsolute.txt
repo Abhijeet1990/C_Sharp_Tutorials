@@ -1,0 +1,9 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\bin\Debug\BackGroundWorkerTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\bin\Debug\BackGroundWorkerTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\bin\Debug\BackGroundWorkerTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\obj\Debug\BackGroundWorkerTutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\obj\Debug\BackGroundWorkerTutorial.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\obj\Debug\BackGroundWorkerTutorial.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\obj\Debug\BackGroundWorkerTutorial.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\obj\Debug\BackGroundWorkerTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\DynamicComboDG\BackGroundWorkerTutorial\obj\Debug\BackGroundWorkerTutorial.pdb

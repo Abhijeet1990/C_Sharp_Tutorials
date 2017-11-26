@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WizardDatabaseModelStoreContainer" CdmEntityContainer="WizardDatabaseEntities">
+    <EntitySetMapping Name="Blocks">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.Block">
+        <MappingFragment StoreEntitySet="Block">
+          <ScalarProperty Name="GasTurbineType" ColumnName="GasTurbineType" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BlockType" ColumnName="BlockType" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Condensers">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.Condenser">
+        <MappingFragment StoreEntitySet="Condenser">
+          <ScalarProperty Name="CondenserID" ColumnName="CondenserID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CoolingType" ColumnName="CoolingType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Forecasts">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.Forecast">
+        <MappingFragment StoreEntitySet="Forecast">
+          <ScalarProperty Name="Criteria" ColumnName="Criteria" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="LoadIndex" ColumnName="LoadIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastMappings">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.ForecastMapping">
+        <MappingFragment StoreEntitySet="ForecastMapping">
+          <ScalarProperty Name="ForecastMappingID" ColumnName="ForecastMappingID" />
+          <ScalarProperty Name="ForecastTypeID" ColumnName="ForecastTypeID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Mandatory" ColumnName="Mandatory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastTypes">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.ForecastType">
+        <MappingFragment StoreEntitySet="ForecastType">
+          <ScalarProperty Name="ForecastTypeID" ColumnName="ForecastTypeID" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GasTurbines">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.GasTurbine">
+        <MappingFragment StoreEntitySet="GasTurbine">
+          <ScalarProperty Name="GasTurbineID" ColumnName="GasTurbineID" />
+          <ScalarProperty Name="GasTurbineType" ColumnName="GasTurbineType" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Generators">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.Generator">
+        <MappingFragment StoreEntitySet="Generator">
+          <ScalarProperty Name="SteamTurbineID" ColumnName="SteamTurbineID" />
+          <ScalarProperty Name="GasTurbineID" ColumnName="GasTurbineID" />
+          <ScalarProperty Name="GeneratorID" ColumnName="GeneratorID" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HRSGs">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.HRSG">
+        <MappingFragment StoreEntitySet="HRSG">
+          <ScalarProperty Name="GasTurbineID" ColumnName="GasTurbineID" />
+          <ScalarProperty Name="HRSGID" ColumnName="HRSGID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DuctBurners" ColumnName="DuctBurners" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObjectGroups">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.ObjectGroup">
+        <MappingFragment StoreEntitySet="ObjectGroups">
+          <ScalarProperty Name="ObjectGroupID" ColumnName="ObjectGroupID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlantObjectTypes">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.PlantObjectType">
+        <MappingFragment StoreEntitySet="PlantObjectType">
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sites">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.Site">
+        <MappingFragment StoreEntitySet="Site">
+          <ScalarProperty Name="Heat_Rate_Calculation" ColumnName="Heat_Rate_Calculation" />
+          <ScalarProperty Name="Heat_Rate_Units" ColumnName="Heat_Rate_Units" />
+          <ScalarProperty Name="Grid_Frequency" ColumnName="Grid_Frequency" />
+          <ScalarProperty Name="Archive_Duration" ColumnName="Archive_Duration" />
+          <ScalarProperty Name="ArchiveInterval" ColumnName="ArchiveInterval" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Elevation" ColumnName="Elevation" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Timezone" ColumnName="Timezone" />
+          <ScalarProperty Name="UseMetricUnits" ColumnName="UseMetricUnits" />
+          <ScalarProperty Name="DataDirectory" ColumnName="DataDirectory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SteamTurbines">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.SteamTurbine">
+        <MappingFragment StoreEntitySet="SteamTurbine">
+          <ScalarProperty Name="SteamTurbineID" ColumnName="SteamTurbineID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TrainMappings">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.TrainMapping">
+        <MappingFragment StoreEntitySet="TrainMapping">
+          <ScalarProperty Name="MappingID" ColumnName="MappingID" />
+          <ScalarProperty Name="BlockTypeID" ColumnName="BlockTypeID" />
+          <ScalarProperty Name="TrainID" ColumnName="TrainID" />
+          <ScalarProperty Name="GasTurbineID" ColumnName="GasTurbineID" />
+          <ScalarProperty Name="HRSGID" ColumnName="HRSGID" />
+          <ScalarProperty Name="SteamTurbineID" ColumnName="SteamTurbineID" />
+          <ScalarProperty Name="CondenserID" ColumnName="CondenserID" />
+          <ScalarProperty Name="GeneratorID" ColumnName="GeneratorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariableMasters">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.VariableMaster">
+        <MappingFragment StoreEntitySet="VariableMaster">
+          <ScalarProperty Name="ObjectGroupID" ColumnName="ObjectGroupID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="CharSearch" ColumnName="CharSearch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariableMasterMappings">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.VariableMasterMapping">
+        <MappingFragment StoreEntitySet="VariableMasterMapping">
+          <ScalarProperty Name="VariableMasterMappingID" ColumnName="VariableMasterMappingID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="EquipmentTypeID" ColumnName="EquipmentTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariablePoints">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.VariablePoint">
+        <MappingFragment StoreEntitySet="VariablePoint">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PiSnapshots">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.PiSnapshot">
+        <MappingFragment StoreEntitySet="PiSnapshot">
+          <ScalarProperty Name="PointType" ColumnName="PointType" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Descriptor" ColumnName="Descriptor" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttributeMasters">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.AttributeMaster">
+        <MappingFragment StoreEntitySet="AttributeMaster">
+          <ScalarProperty Name="ComboBoxContent" ColumnName="ComboBoxContent" />
+          <ScalarProperty Name="ObjectGroupID" ColumnName="ObjectGroupID" />
+          <ScalarProperty Name="ShortName" ColumnName="ShortName" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="Mandatory" ColumnName="Mandatory" />
+          <ScalarProperty Name="LookUpTable" ColumnName="LookUpTable" />
+          <ScalarProperty Name="ComboBoxControl" ColumnName="ComboBoxControl" />
+          <ScalarProperty Name="TextBoxControl" ColumnName="TextBoxControl" />
+          <ScalarProperty Name="BlockEnhancementID" ColumnName="BlockEnhancementID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="LongName" ColumnName="LongName" />
+          <ScalarProperty Name="Attribute_Master_ID" ColumnName="Attribute Master ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastSelections">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.ForecastSelection">
+        <MappingFragment StoreEntitySet="ForecastSelection">
+          <ScalarProperty Name="Criteria" ColumnName="Criteria" />
+          <ScalarProperty Name="TrainID" ColumnName="TrainID" />
+          <ScalarProperty Name="BlockEnhancements" ColumnName="BlockEnhancements" />
+          <ScalarProperty Name="ForecastMasterByBlockType" ColumnName="ForecastMasterByBlockType" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SelectionID" ColumnName="SelectionID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GTTypeUniquePlantMasterVariables">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.GTTypeUniquePlantMasterVariable">
+        <MappingFragment StoreEntitySet="GTTypeUniquePlantMasterVariable">
+          <ScalarProperty Name="Mandatory" ColumnName="Mandatory" />
+          <ScalarProperty Name="PlantMasterVariableID" ColumnName="PlantMasterVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="GasTurbineTypeID" ColumnName="GasTurbineTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlantMasterVariables">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.PlantMasterVariable">
+        <MappingFragment StoreEntitySet="PlantMasterVariable">
+          <ScalarProperty Name="Mandatory" ColumnName="Mandatory" />
+          <ScalarProperty Name="UniqueID" ColumnName="UniqueID" />
+          <ScalarProperty Name="ObjectGroupID" ColumnName="ObjectGroupID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PlantMasterVariableID" ColumnName="PlantMasterVariableID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PossiblePlantMasterVariables">
+      <EntityTypeMapping TypeName="WizardDatabaseModel.PossiblePlantMasterVariable">
+        <MappingFragment StoreEntitySet="PossiblePlantMasterVariable">
+          <ScalarProperty Name="Mandatory" ColumnName="Mandatory" />
+          <ScalarProperty Name="ObjectGroupID" ColumnName="ObjectGroupID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="TrainID" ColumnName="TrainID" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Alias" ColumnName="Alias" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="PlantMasterVariableID" ColumnName="PlantMasterVariableID" />
+          <ScalarProperty Name="PlantVariableID" ColumnName="PlantVariableID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

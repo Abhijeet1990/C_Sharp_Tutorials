@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FWDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Block">
+    <Key>
+      <PropertyRef Name="BlockID" />
+    </Key>
+    <Property Name="BlockID" Type="Int32" Nullable="false" />
+    <Property Name="Acronym" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BlockType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Condenser">
+    <Key>
+      <PropertyRef Name="CondenserID" />
+    </Key>
+    <Property Name="CondenserID" Type="Int32" Nullable="false" />
+    <Property Name="SiteID" Type="Int32" />
+    <Property Name="BlockID" Type="Int32" />
+    <Property Name="Alias" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CoolingType" Type="Byte" />
+  </EntityType>
+  <EntityType Name="Forecast">
+    <Key>
+      <PropertyRef Name="ForecastID" />
+    </Key>
+    <Property Name="ForecastID" Type="Int32" Nullable="false" />
+    <Property Name="BlockID" Type="Int32" Nullable="false" />
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Alias" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="LoadIndex" Type="Byte" />
+  </EntityType>
+  <EntityType Name="ForecastMapping">
+    <Key>
+      <PropertyRef Name="ForecastMappingID" />
+    </Key>
+    <Property Name="ForecastMappingID" Type="Int32" Nullable="false" />
+    <Property Name="ForecastTypeID" Type="Int32" />
+    <Property Name="VariableMasterID" Type="Int32" />
+    <Property Name="Mandatory" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ForecastType">
+    <Key>
+      <PropertyRef Name="ForecastTypeID" />
+    </Key>
+    <Property Name="ForecastTypeID" Type="Int32" Nullable="false" />
+    <Property Name="EngUnits" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GasTurbine">
+    <Key>
+      <PropertyRef Name="GasTurbineID" />
+    </Key>
+    <Property Name="GasTurbineID" Type="Int32" Nullable="false" />
+    <Property Name="GasTurbineType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BlockID" Type="Int32" Nullable="false" />
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+    <Property Name="Acronym" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Generator">
+    <Key>
+      <PropertyRef Name="GeneratorID" />
+    </Key>
+    <Property Name="GeneratorID" Type="Int32" Nullable="false" />
+    <Property Name="Alias" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+    <Property Name="BlockID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HRSG">
+    <Key>
+      <PropertyRef Name="HRSGID" />
+    </Key>
+    <Property Name="HRSGID" Type="Int32" Nullable="false" />
+    <Property Name="Acronym" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DuctBurners" Type="Byte" />
+    <Property Name="BlockID" Type="Int32" Nullable="false" />
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ObjectGroup">
+    <Key>
+      <PropertyRef Name="ObjectGroupID" />
+    </Key>
+    <Property Name="ObjectGroupID" Type="Int32" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="Int32" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Alias" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PlantObjectType">
+    <Key>
+      <PropertyRef Name="PlantObjectTypeID" />
+    </Key>
+    <Property Name="PlantObjectTypeID" Type="Int32" Nullable="false" />
+    <Property Name="Acronym" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+    <Property Name="Acronym" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Elevation" Type="Single" />
+    <Property Name="Latitude" Type="Single" />
+    <Property Name="Longitude" Type="Single" />
+    <Property Name="Location" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Timezone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UseMetricUnits" Type="Boolean" />
+    <Property Name="DataDirectory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="SteamTurbine">
+    <Key>
+      <PropertyRef Name="SteamTurbineID" />
+    </Key>
+    <Property Name="SteamTurbineID" Type="Int32" Nullable="false" />
+    <Property Name="BlockID" Type="Int32" Nullable="false" />
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+    <Property Name="Acronym" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TrainMapping">
+    <Key>
+      <PropertyRef Name="MappingID" />
+    </Key>
+    <Property Name="MappingID" Type="Int32" Nullable="false" />
+    <Property Name="BlockTypeID" Type="Int32" Nullable="false" />
+    <Property Name="TrainID" Type="Int32" Nullable="false" />
+    <Property Name="GasTurbineID" Type="Int32" Nullable="false" />
+    <Property Name="HRSGID" Type="Int32" Nullable="false" />
+    <Property Name="SteamTurbineID" Type="Int32" Nullable="false" />
+    <Property Name="CondenserID" Type="Int32" Nullable="false" />
+    <Property Name="GeneratorID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VariableMaster">
+    <Key>
+      <PropertyRef Name="VariableMasterID" />
+    </Key>
+    <Property Name="VariableMasterID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="20" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PlantObjectTypeID" Type="Int32" Nullable="false" />
+    <Property Name="ObjectGroupID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="CharSearch" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VariableMasterMapping">
+    <Key>
+      <PropertyRef Name="VariableMasterMappingID" />
+    </Key>
+    <Property Name="VariableMasterMappingID" Type="Int32" Nullable="false" />
+    <Property Name="VariableMasterID" Type="Int32" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="Int32" Nullable="false" />
+    <Property Name="EquipmentTypeID" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VariablePoint">
+    <Key>
+      <PropertyRef Name="VariableID" />
+    </Key>
+    <Property Name="VariableID" Type="Int32" Nullable="false" />
+    <Property Name="BlockID" Type="Int32" />
+    <Property Name="EngUnits" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ForecastID" Type="Int16" />
+    <Property Name="Good" Type="Boolean" />
+    <Property Name="Max" Type="Double" />
+    <Property Name="Min" Type="Double" />
+    <Property Name="Timestamp" Type="DateTime" Precision="3" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Value" Type="Single" />
+    <Property Name="Status" Type="Byte" />
+    <Property Name="VariableMasterID" Type="Int32" />
+    <Property Name="VariableTypeID" Type="Int32" />
+    <Property Name="Tag" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="FWDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Blocks" EntityType="Self.Block" />
+    <EntitySet Name="Condensers" EntityType="Self.Condenser" />
+    <EntitySet Name="Forecasts" EntityType="Self.Forecast" />
+    <EntitySet Name="ForecastMappings" EntityType="Self.ForecastMapping" />
+    <EntitySet Name="ForecastTypes" EntityType="Self.ForecastType" />
+    <EntitySet Name="GasTurbines" EntityType="Self.GasTurbine" />
+    <EntitySet Name="Generators" EntityType="Self.Generator" />
+    <EntitySet Name="HRSGs" EntityType="Self.HRSG" />
+    <EntitySet Name="ObjectGroups" EntityType="Self.ObjectGroup" />
+    <EntitySet Name="PlantObjectTypes" EntityType="Self.PlantObjectType" />
+    <EntitySet Name="Sites" EntityType="Self.Site" />
+    <EntitySet Name="SteamTurbines" EntityType="Self.SteamTurbine" />
+    <EntitySet Name="TrainMappings" EntityType="Self.TrainMapping" />
+    <EntitySet Name="VariableMasters" EntityType="Self.VariableMaster" />
+    <EntitySet Name="VariableMasterMappings" EntityType="Self.VariableMasterMapping" />
+    <EntitySet Name="VariablePoints" EntityType="Self.VariablePoint" />
+  </EntityContainer>
+</Schema>

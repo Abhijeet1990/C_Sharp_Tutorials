@@ -1,0 +1,2880 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="RealTimePowerModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AuxBoiler">
+    <Key>
+      <PropertyRef Name="AuxBoilerID" />
+    </Key>
+    <Property Name="AuxBoilerID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Block">
+    <Key>
+      <PropertyRef Name="BlockID" />
+    </Key>
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="DataServer" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Port" Type="smallint" Nullable="false" />
+    <Property Name="FileLocation" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.BookDisplay' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="BookDisplay">
+    <Key>
+      <PropertyRef Name="BookID" />
+      <PropertyRef Name="DisplayID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="BookID" Type="int" Nullable="false" />
+    <Property Name="DisplayID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+  </EntityType>
+  <EntityType Name="Chart">
+    <Key>
+      <PropertyRef Name="ChartID" />
+    </Key>
+    <Property Name="ChartID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Type" Type="tinyint" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="LHAxis" Type="bit" Nullable="false" />
+    <Property Name="LHAxisDP" Type="tinyint" Nullable="false" />
+    <Property Name="LHAxisEngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="LHAxisMax" Type="real" Nullable="false" />
+    <Property Name="LHAxisMin" Type="real" Nullable="false" />
+    <Property Name="LHAxisMajor" Type="real" Nullable="false" />
+    <Property Name="LHAxisMinor" Type="real" Nullable="false" />
+    <Property Name="LHAxisTitle" Type="nvarchar" MaxLength="80" />
+    <Property Name="LHAxisVariableTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="RHAxis" Type="bit" Nullable="false" />
+    <Property Name="RHAxisDP" Type="tinyint" />
+    <Property Name="RHAxisEngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="RHAxisMax" Type="real" />
+    <Property Name="RHAxisMin" Type="real" />
+    <Property Name="RHAxisMajor" Type="real" />
+    <Property Name="RHAxisMinor" Type="real" />
+    <Property Name="RHAxisTitle" Type="nvarchar" MaxLength="80" />
+    <Property Name="RHAxisVariableTypeID" Type="tinyint" />
+    <Property Name="TAxis" Type="bit" Nullable="false" />
+    <Property Name="TAxisMode" Type="tinyint" />
+    <Property Name="TAxisMax" Type="datetimeoffset" Precision="0" />
+    <Property Name="TAxisMin" Type="datetimeoffset" Precision="0" />
+    <Property Name="TAxisPlus" Type="int" />
+    <Property Name="TAxisMinus" Type="int" />
+    <Property Name="TAxisTitle" Type="nvarchar" MaxLength="80" />
+    <Property Name="XAxis" Type="bit" Nullable="false" />
+    <Property Name="XAxisDP" Type="tinyint" />
+    <Property Name="XAxisEngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="XAxisMax" Type="real" />
+    <Property Name="XAxisMin" Type="real" />
+    <Property Name="XAxisMajor" Type="real" />
+    <Property Name="XAxisMinor" Type="real" />
+    <Property Name="XAxisTitle" Type="nvarchar" MaxLength="80" />
+    <Property Name="XAxisVariableTypeID" Type="tinyint" />
+    <Property Name="FilterID" Type="int" Nullable="false" />
+    <Property Name="TGroupMode" Type="bit" />
+    <Property Name="TAxisMinor" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="TAxisMajor" Type="decimal" Precision="8" Scale="0" />
+    <Property Name="TAxisMinorType" Type="varchar" MaxLength="64" />
+    <Property Name="TAxisMajorType" Type="varchar" MaxLength="64" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ChartCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ChartCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="ChartID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ChartID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ChartFormat">
+    <Key>
+      <PropertyRef Name="ChartID" />
+    </Key>
+    <Property Name="ChartID" Type="int" Nullable="false" />
+    <Property Name="BackgroundColor" Type="int" />
+    <Property Name="MajorGrid" Type="bit" />
+    <Property Name="MinorGrid" Type="bit" />
+    <Property Name="Interval" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ChartVariable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ChartVariable">
+    <Key>
+      <PropertyRef Name="ChartID" />
+      <PropertyRef Name="Axis" />
+      <PropertyRef Name="Position" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="VariableIDType" />
+      <PropertyRef Name="LineType" />
+      <PropertyRef Name="Alpha" />
+      <PropertyRef Name="Red" />
+      <PropertyRef Name="Green" />
+      <PropertyRef Name="Blue" />
+      <PropertyRef Name="Dashed" />
+      <PropertyRef Name="Size" />
+    </Key>
+    <Property Name="ChartID" Type="int" Nullable="false" />
+    <Property Name="Axis" Type="tinyint" Nullable="false" />
+    <Property Name="Position" Type="tinyint" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="VariableIDType" Type="tinyint" Nullable="false" />
+    <Property Name="LineType" Type="tinyint" Nullable="false" />
+    <Property Name="Alpha" Type="tinyint" Nullable="false" />
+    <Property Name="Red" Type="tinyint" Nullable="false" />
+    <Property Name="Green" Type="tinyint" Nullable="false" />
+    <Property Name="Blue" Type="tinyint" Nullable="false" />
+    <Property Name="Dashed" Type="bit" Nullable="false" />
+    <Property Name="Size" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cogeneration">
+    <Key>
+      <PropertyRef Name="CogenerationID" />
+    </Key>
+    <Property Name="CogenerationID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Condenser">
+    <Key>
+      <PropertyRef Name="CondenserID" />
+    </Key>
+    <Property Name="CondenserID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="SteamTurbineID" Type="tinyint" Nullable="false" />
+    <Property Name="CoolingType" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.CondenserAlias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="CondenserAlias">
+    <Key>
+      <PropertyRef Name="CondenserID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Acronym" />
+    </Key>
+    <Property Name="CondenserID" Type="tinyint" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CondenserVariable">
+    <Key>
+      <PropertyRef Name="CondenserVariableID" />
+    </Key>
+    <Property Name="CondenserVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Display">
+    <Key>
+      <PropertyRef Name="DisplayID" />
+    </Key>
+    <Property Name="DisplayID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Rows" Type="tinyint" Nullable="false" />
+    <Property Name="Columns" Type="tinyint" Nullable="false" />
+    <Property Name="MinRowHeight" Type="int" Nullable="false" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+    <Property Name="FilterID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.DisplayObject' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DisplayObject">
+    <Key>
+      <PropertyRef Name="DisplayID" />
+      <PropertyRef Name="Row" />
+      <PropertyRef Name="Column" />
+      <PropertyRef Name="DisplayObjectID" />
+      <PropertyRef Name="DisplayObjectTypeID" />
+    </Key>
+    <Property Name="DisplayID" Type="int" Nullable="false" />
+    <Property Name="Row" Type="tinyint" Nullable="false" />
+    <Property Name="Column" Type="tinyint" Nullable="false" />
+    <Property Name="RowSpan" Type="tinyint" />
+    <Property Name="ColumnSpan" Type="tinyint" />
+    <Property Name="DisplayObjectID" Type="int" Nullable="false" />
+    <Property Name="DisplayObjectTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.DisplayObjectType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="DisplayObjectType">
+    <Key>
+      <PropertyRef Name="DisplayObjectTypeID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Table" />
+    </Key>
+    <Property Name="DisplayObjectTypeID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Table" Type="nvarchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.EngUnitsConversion' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="EngUnitsConversion">
+    <Key>
+      <PropertyRef Name="VariableType" />
+      <PropertyRef Name="VariableTypeID" />
+      <PropertyRef Name="From" />
+      <PropertyRef Name="To" />
+      <PropertyRef Name="Scaling" />
+      <PropertyRef Name="Operation" />
+    </Key>
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="From" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="To" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Offset" Type="float" />
+    <Property Name="Scaling" Type="float" Nullable="false" />
+    <Property Name="Operation" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Filter">
+    <Key>
+      <PropertyRef Name="FilterID" />
+    </Key>
+    <Property Name="FilterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="MaxRows" Type="int" Nullable="false" />
+    <Property Name="Relative" Type="bit" />
+    <Property Name="Start" Type="int" />
+    <Property Name="Finish" Type="int" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.FilterCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FilterCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="FilterID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="FilterID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.FilterTimeRange' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FilterTimeRange">
+    <Key>
+      <PropertyRef Name="FilterID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="FilterID" Type="int" Nullable="false" />
+    <Property Name="Start" Type="datetimeoffset" Precision="0" />
+    <Property Name="Finish" Type="datetimeoffset" Precision="0" />
+    <Property Name="Position" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.FilterValueRange' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="FilterValueRange">
+    <Key>
+      <PropertyRef Name="FilterID" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="FilterID" Type="int" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Lower" Type="real" />
+    <Property Name="LowerEqual" Type="bit" />
+    <Property Name="Upper" Type="real" />
+    <Property Name="UpperEqual" Type="bit" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="Position" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.Forecast' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Forecast">
+    <Key>
+      <PropertyRef Name="ForecastID" />
+      <PropertyRef Name="SiteID" />
+      <PropertyRef Name="BlockID" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="ForecastTypeID" />
+      <PropertyRef Name="Acronym" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="ForecastID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="ForecastTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="LoadIndex" Type="tinyint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ForecastArchive' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ForecastArchive">
+    <Key>
+      <PropertyRef Name="ForecastID" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Good" />
+    </Key>
+    <Property Name="ForecastID" Type="smallint" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" Nullable="false" />
+    <Property Name="Value" Type="real" Nullable="false" />
+    <Property Name="Good" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ForecastSnapShot' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ForecastSnapShot">
+    <Key>
+      <PropertyRef Name="ForecastID" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Good" />
+    </Key>
+    <Property Name="ForecastID" Type="smallint" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" Nullable="false" />
+    <Property Name="Value" Type="real" Nullable="false" />
+    <Property Name="Good" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ForecastType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ForecastType">
+    <Key>
+      <PropertyRef Name="ForecastTypeID" />
+    </Key>
+    <Property Name="ForecastTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="40" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="RequestCode" Type="tinyint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ForecastTypeAlias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ForecastTypeAlias">
+    <Key>
+      <PropertyRef Name="ForecastTypeID" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="ForecastTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="40" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ForecastValue' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ForecastValue">
+    <Key>
+      <PropertyRef Name="ForecastID" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Good" />
+    </Key>
+    <Property Name="ForecastID" Type="smallint" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" Nullable="false" />
+    <Property Name="Value" Type="real" Nullable="false" />
+    <Property Name="Good" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GasTurbine">
+    <Key>
+      <PropertyRef Name="GasTurbineID" />
+    </Key>
+    <Property Name="GasTurbineID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="GeneratorID" Type="tinyint" Nullable="false" />
+    <Property Name="GasTurbineTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.GasTurbineAlias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GasTurbineAlias">
+    <Key>
+      <PropertyRef Name="GasTurbineID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Acronym" />
+    </Key>
+    <Property Name="GasTurbineID" Type="tinyint" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GasTurbineType">
+    <Key>
+      <PropertyRef Name="GasTurbineTypeID" />
+    </Key>
+    <Property Name="GasTurbineTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Manufacturer" Type="nvarchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.GasTurbineVariable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GasTurbineVariable">
+    <Key>
+      <PropertyRef Name="GasTurbineVariableID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="VariableType" />
+      <PropertyRef Name="VariableTypeID" />
+    </Key>
+    <Property Name="GasTurbineVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Generator">
+    <Key>
+      <PropertyRef Name="GeneratorID" />
+    </Key>
+    <Property Name="GeneratorID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.GeneratorAlias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GeneratorAlias">
+    <Key>
+      <PropertyRef Name="GeneratorID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Acronym" />
+    </Key>
+    <Property Name="GeneratorID" Type="tinyint" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GeneratorVariable">
+    <Key>
+      <PropertyRef Name="GeneratorVariableID" />
+    </Key>
+    <Property Name="GeneratorVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Grid">
+    <Key>
+      <PropertyRef Name="GridID" />
+    </Key>
+    <Property Name="GridID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Type" Type="tinyint" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.GridCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GridCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="GridID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="GridID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.GridHealthCheck' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GridHealthCheck">
+    <Key>
+      <PropertyRef Name="GridID" />
+      <PropertyRef Name="Position" />
+      <PropertyRef Name="HealthCheckID" />
+      <PropertyRef Name="Decimals" />
+      <PropertyRef Name="Alpha" />
+      <PropertyRef Name="Red" />
+      <PropertyRef Name="Green" />
+      <PropertyRef Name="Blue" />
+      <PropertyRef Name="Size" />
+      <PropertyRef Name="Bold" />
+      <PropertyRef Name="Italic" />
+    </Key>
+    <Property Name="GridID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="tinyint" Nullable="false" />
+    <Property Name="HealthCheckID" Type="int" Nullable="false" />
+    <Property Name="Decimals" Type="tinyint" Nullable="false" />
+    <Property Name="Alpha" Type="tinyint" Nullable="false" />
+    <Property Name="Red" Type="tinyint" Nullable="false" />
+    <Property Name="Green" Type="tinyint" Nullable="false" />
+    <Property Name="Blue" Type="tinyint" Nullable="false" />
+    <Property Name="Size" Type="tinyint" Nullable="false" />
+    <Property Name="Bold" Type="bit" Nullable="false" />
+    <Property Name="Italic" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.GridVariable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GridVariable">
+    <Key>
+      <PropertyRef Name="GridID" />
+      <PropertyRef Name="Position" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Decimals" />
+      <PropertyRef Name="Alpha" />
+      <PropertyRef Name="Red" />
+      <PropertyRef Name="Green" />
+      <PropertyRef Name="Blue" />
+      <PropertyRef Name="Size" />
+      <PropertyRef Name="Bold" />
+      <PropertyRef Name="Italic" />
+    </Key>
+    <Property Name="GridID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="tinyint" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Decimals" Type="tinyint" Nullable="false" />
+    <Property Name="Alpha" Type="tinyint" Nullable="false" />
+    <Property Name="Red" Type="tinyint" Nullable="false" />
+    <Property Name="Green" Type="tinyint" Nullable="false" />
+    <Property Name="Blue" Type="tinyint" Nullable="false" />
+    <Property Name="Size" Type="tinyint" Nullable="false" />
+    <Property Name="Bold" Type="bit" Nullable="false" />
+    <Property Name="Italic" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HealthCheck">
+    <Key>
+      <PropertyRef Name="HealthCheckID" />
+    </Key>
+    <Property Name="HealthCheckID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="ModelID" Type="int" Nullable="false" />
+    <Property Name="Actual" Type="real" Nullable="false" />
+    <Property Name="Predicted" Type="real" Nullable="false" />
+    <Property Name="Comparison" Type="tinyint" Nullable="false" />
+    <Property Name="Threshold" Type="real" Nullable="false" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="Duration" Type="int" Nullable="false" />
+    <Property Name="AlertCount" Type="int" Nullable="false" />
+    <Property Name="NormalCount" Type="int" Nullable="false" />
+    <Property Name="AlertStatus" Type="bit" Nullable="false" />
+    <Property Name="MessageID" Type="int" Nullable="false" />
+    <Property Name="Good" Type="bit" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" />
+    <Property Name="Visible" Type="bit" Nullable="false" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+    <Property Name="Abbreviation" Type="nvarchar" MaxLength="10" />
+    <Property Name="FilterID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.HealthCheckCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="HealthCheckCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="HealthCheckID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="HealthCheckID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.HealthCheckCompare' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="HealthCheckCompare">
+    <Key>
+      <PropertyRef Name="HealthCheckID" />
+      <PropertyRef Name="ModelVariableID" />
+      <PropertyRef Name="CompareVariableID" />
+    </Key>
+    <Property Name="HealthCheckID" Type="int" Nullable="false" />
+    <Property Name="ModelVariableID" Type="int" Nullable="false" />
+    <Property Name="CompareVariableID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.HealthCheckFilter' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="HealthCheckFilter">
+    <Key>
+      <PropertyRef Name="FilterID" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="FilterID" Type="int" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Lower" Type="real" />
+    <Property Name="LowerEqual" Type="bit" />
+    <Property Name="Upper" Type="real" />
+    <Property Name="UpperEqual" Type="bit" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="Position" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.HealthCheckReading' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="HealthCheckReading">
+    <Key>
+      <PropertyRef Name="HealthCheckID" />
+      <PropertyRef Name="Actual" />
+      <PropertyRef Name="Predicted" />
+      <PropertyRef Name="Comparison" />
+      <PropertyRef Name="Threshold" />
+      <PropertyRef Name="AlertStatus" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="Good" />
+    </Key>
+    <Property Name="HealthCheckID" Type="int" Nullable="false" />
+    <Property Name="Actual" Type="real" Nullable="false" />
+    <Property Name="Predicted" Type="real" Nullable="false" />
+    <Property Name="Comparison" Type="tinyint" Nullable="false" />
+    <Property Name="Threshold" Type="real" Nullable="false" />
+    <Property Name="AlertStatus" Type="bit" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" Nullable="false" />
+    <Property Name="Good" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HRSG">
+    <Key>
+      <PropertyRef Name="HRSGID" />
+    </Key>
+    <Property Name="HRSGID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="GasTurbineID" Type="tinyint" Nullable="false" />
+    <Property Name="SteamTurbineID" Type="tinyint" Nullable="false" />
+    <Property Name="DuctBurners" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.HRSGAlias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="HRSGAlias">
+    <Key>
+      <PropertyRef Name="HRSGID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Acronym" />
+    </Key>
+    <Property Name="HRSGID" Type="tinyint" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HRSGVariable">
+    <Key>
+      <PropertyRef Name="HRSGVariableID" />
+    </Key>
+    <Property Name="HRSGVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.InletCoolingTypeAlias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="InletCoolingTypeAlias">
+    <Key>
+      <PropertyRef Name="InletCoolingTypeID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Acronym" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="InletCoolingTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.LayoutPanel' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LayoutPanel">
+    <Key>
+      <PropertyRef Name="LayoutPanelID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="LastModified" />
+    </Key>
+    <Property Name="LayoutPanelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="LayoutImage" Type="varbinary(max)" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="PanelWidth" Type="int" />
+    <Property Name="PanelHeight" Type="int" />
+    <Property Name="AutoSize" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.LayoutPanelCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LayoutPanelCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="LayoutPanelID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="LayoutPanelID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.LayoutPanelObject' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LayoutPanelObject">
+    <Key>
+      <PropertyRef Name="LayoutPanelObjectID" />
+      <PropertyRef Name="LayoutPanelID" />
+      <PropertyRef Name="HeaderText" />
+      <PropertyRef Name="PositionX" />
+      <PropertyRef Name="PositionY" />
+      <PropertyRef Name="Rows" />
+      <PropertyRef Name="Columns" />
+      <PropertyRef Name="BorderStyle" />
+    </Key>
+    <Property Name="LayoutPanelObjectID" Type="int" Nullable="false" />
+    <Property Name="LayoutPanelID" Type="int" Nullable="false" />
+    <Property Name="HeaderText" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PositionX" Type="int" Nullable="false" />
+    <Property Name="PositionY" Type="int" Nullable="false" />
+    <Property Name="Rows" Type="tinyint" Nullable="false" />
+    <Property Name="Columns" Type="tinyint" Nullable="false" />
+    <Property Name="BorderStyle" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.LayoutPanelObjectVariable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="LayoutPanelObjectVariable">
+    <Key>
+      <PropertyRef Name="LayoutPanelObjectID" />
+      <PropertyRef Name="LayoutPanelID" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="ModelID" />
+      <PropertyRef Name="Alignment" />
+      <PropertyRef Name="Row" />
+      <PropertyRef Name="Column" />
+      <PropertyRef Name="Size" />
+    </Key>
+    <Property Name="LayoutPanelObjectID" Type="int" Nullable="false" />
+    <Property Name="LayoutPanelID" Type="int" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="ModelID" Type="int" Nullable="false" />
+    <Property Name="Text" Type="nvarchar" MaxLength="1000" />
+    <Property Name="Alignment" Type="tinyint" Nullable="false" />
+    <Property Name="Row" Type="tinyint" Nullable="false" />
+    <Property Name="Column" Type="tinyint" Nullable="false" />
+    <Property Name="Size" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'RealTimePower.dbo.LayoutPanelObjectVariablesExtension' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="LayoutPanelObjectVariablesExtension">
+          <Property Name="LayoutPanelID" Type="int" />
+          <Property Name="VariableID" Type="int" />
+          <Property Name="ChartID" Type="int" />
+          <Property Name="ModelID" Type="int" />
+          <Property Name="HealthCheckID" Type="int" />
+          <Property Name="LastModified" Type="datetimeoffset" Precision="7" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.MessageLog' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="MessageLog">
+    <Key>
+      <PropertyRef Name="LogID" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="LogID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="7" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="250" />
+    <Property Name="Source" Type="nvarchar" MaxLength="250" />
+    <Property Name="DisplayObjectTypeID" Type="tinyint" />
+    <Property Name="DisplayObjectID" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Model">
+    <Key>
+      <PropertyRef Name="ModelID" />
+    </Key>
+    <Property Name="ModelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="FilterID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Constant" Type="float" Nullable="false" />
+    <Property Name="Fit" Type="float" Nullable="false" />
+    <Property Name="Min" Type="real" />
+    <Property Name="Max" Type="real" />
+    <Property Name="Mean" Type="float" />
+    <Property Name="Stdev" Type="float" />
+    <Property Name="PredictionID" Type="int" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ModelCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ModelCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="ModelID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ModelID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ModelInput' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ModelInput">
+    <Key>
+      <PropertyRef Name="ModelID" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Position" />
+    </Key>
+    <Property Name="ModelID" Type="int" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Position" Type="tinyint" Nullable="false" />
+    <Property Name="Min" Type="real" />
+    <Property Name="Max" Type="real" />
+    <Property Name="Mean" Type="float" />
+    <Property Name="Stdev" Type="float" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ModelInputCoeff' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ModelInputCoeff">
+    <Key>
+      <PropertyRef Name="ModelID" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Power" />
+      <PropertyRef Name="Value" />
+    </Key>
+    <Property Name="ModelID" Type="int" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Power" Type="tinyint" Nullable="false" />
+    <Property Name="Value" Type="float" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ModelTemplate' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ModelTemplate">
+    <Key>
+      <PropertyRef Name="ModelTemplateID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="VariableMasterID" />
+    </Key>
+    <Property Name="ModelTemplateID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="ModelTemplateDescription" Type="nvarchar" MaxLength="1000" />
+    <Property Name="VariableMasterID" Type="int" Nullable="false" />
+    <Property Name="LastModified" Type="datetimeoffset" Precision="7" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ModelTemplateCategory' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ModelTemplateCategory">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+      <PropertyRef Name="ModelTemplateID" />
+    </Key>
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="ModelTemplateID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.ModelTemplateInput' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ModelTemplateInput">
+    <Key>
+      <PropertyRef Name="ModelTemplateID" />
+      <PropertyRef Name="VariableMasterID" />
+      <PropertyRef Name="Power" />
+    </Key>
+    <Property Name="ModelTemplateID" Type="int" Nullable="false" />
+    <Property Name="VariableMasterID" Type="int" Nullable="false" />
+    <Property Name="Power" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.PanelSettings' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PanelSettings">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="DisplayObjectID" />
+      <PropertyRef Name="DisplayObjectTypeID" />
+    </Key>
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="DisplayObjectID" Type="int" Nullable="false" />
+    <Property Name="DisplayObjectTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="FilterID" Type="int" />
+    <Property Name="SplitterDistance" Type="int" />
+    <Property Name="Panel2Collasped" Type="bit" />
+    <Property Name="Orientation" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="PlantObjectType">
+    <Key>
+      <PropertyRef Name="PlantObjectTypeID" />
+    </Key>
+    <Property Name="PlantObjectTypeID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Table" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="AliasTable" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTable" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableAliasTable" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="ReadingTable" Type="nvarchar" MaxLength="40" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.PlantObjectTypeAlias' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PlantObjectTypeAlias">
+    <Key>
+      <PropertyRef Name="PlantObjectTypeID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="PlantObjectTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="UserID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PlantVariable">
+    <Key>
+      <PropertyRef Name="PlantVariableID" />
+    </Key>
+    <Property Name="PlantVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SentinelUser">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserDomainName" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="UserLevel" Type="tinyint" Nullable="false" />
+    <Property Name="BookID" Type="int" />
+    <Property Name="Position" Type="smallint" Nullable="false" />
+    <Property Name="UserAlias" Type="nvarchar" MaxLength="50" />
+    <Property Name="UserLastLogin" Type="datetimeoffset" Precision="7" />
+    <Property Name="UserVersion" Type="nvarchar" MaxLength="15" />
+    <Property Name="OperatingSys" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.SentinelUserActivity' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SentinelUserActivity">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="LoginTime" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="LoginTime" Type="datetimeoffset" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Name="SiteID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Location" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="Latitude" Type="real" Nullable="false" />
+    <Property Name="Longitude" Type="real" Nullable="false" />
+    <Property Name="Elevation" Type="real" Nullable="false" />
+    <Property Name="Timezone" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="DataDirectory" Type="nvarchar" MaxLength="500" />
+    <Property Name="UseMetricUnits" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.Source' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Source">
+    <Key>
+      <PropertyRef Name="SourceID" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="SourceID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SteamTurbine">
+    <Key>
+      <PropertyRef Name="SteamTurbineID" />
+    </Key>
+    <Property Name="SteamTurbineID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="GeneratorID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SteamTurbineVariable">
+    <Key>
+      <PropertyRef Name="SteamTurbineVariableID" />
+    </Key>
+    <Property Name="SteamTurbineVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.Summary' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Summary">
+    <Key>
+      <PropertyRef Name="SummaryID" />
+      <PropertyRef Name="SiteID" />
+      <PropertyRef Name="BlockID" />
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Interval" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="SummaryID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Interval" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.SummaryType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SummaryType">
+    <Key>
+      <PropertyRef Name="SummaryTypeID" />
+    </Key>
+    <Property Name="SummaryTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.SummaryValues' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="SummaryValues">
+    <Key>
+      <PropertyRef Name="SummaryID" />
+      <PropertyRef Name="Average" />
+      <PropertyRef Name="Maximum" />
+      <PropertyRef Name="Minimum" />
+      <PropertyRef Name="Start" />
+      <PropertyRef Name="Finish" />
+    </Key>
+    <Property Name="SummaryID" Type="smallint" Nullable="false" />
+    <Property Name="Average" Type="real" Nullable="false" />
+    <Property Name="Maximum" Type="real" Nullable="false" />
+    <Property Name="Minimum" Type="real" Nullable="false" />
+    <Property Name="Start" Type="datetimeoffset" Precision="0" Nullable="false" />
+    <Property Name="Finish" Type="datetimeoffset" Precision="0" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TES">
+    <Key>
+      <PropertyRef Name="TESID" />
+    </Key>
+    <Property Name="TESID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TESVariable">
+    <Key>
+      <PropertyRef Name="TESVariableID" />
+    </Key>
+    <Property Name="TESVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.Unit' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Unit">
+    <Key>
+      <PropertyRef Name="UnitID" />
+      <PropertyRef Name="Acronym" />
+      <PropertyRef Name="PlantID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="DataServer" />
+      <PropertyRef Name="Port" />
+    </Key>
+    <Property Name="UnitID" Type="tinyint" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="PlantID" Type="tinyint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="DataServer" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Port" Type="smallint" Nullable="false" />
+    <Property Name="FileLocation" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="UnitVariable">
+    <Key>
+      <PropertyRef Name="UnitVariableID" />
+    </Key>
+    <Property Name="UnitVariableID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="80" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.UpdateService' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="UpdateService">
+    <Key>
+      <PropertyRef Name="UpdateVariables" />
+    </Key>
+    <Property Name="UpdateVariables" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.Variable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Variable">
+    <Key>
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="VariableTypeID" />
+      <PropertyRef Name="SiteID" />
+      <PropertyRef Name="BlockID" />
+      <PropertyRef Name="PlantObjectTypeID" />
+      <PropertyRef Name="PlantObjectID" />
+      <PropertyRef Name="PlantObjectVariableID" />
+      <PropertyRef Name="Local" />
+    </Key>
+    <Property Name="VariableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="20" />
+    <Property Name="VariableType" Type="nvarchar" MaxLength="40" />
+    <Property Name="VariableTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="Site" Type="nvarchar" MaxLength="10" />
+    <Property Name="SiteID" Type="tinyint" Nullable="false" />
+    <Property Name="Block" Type="nvarchar" MaxLength="10" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="PlantObjectType" Type="nvarchar" MaxLength="20" />
+    <Property Name="PlantObjectTypeID" Type="tinyint" Nullable="false" />
+    <Property Name="PlantObject" Type="nvarchar" MaxLength="20" />
+    <Property Name="PlantObjectID" Type="tinyint" Nullable="false" />
+    <Property Name="PlantObjectVariable" Type="nvarchar" MaxLength="80" />
+    <Property Name="PlantObjectVariableID" Type="smallint" Nullable="false" />
+    <Property Name="ForecastID" Type="smallint" />
+    <Property Name="Local" Type="bit" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" />
+    <Property Name="Value" Type="real" />
+    <Property Name="Good" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.VariableArchive' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VariableArchive">
+    <Key>
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Good" />
+    </Key>
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" Nullable="false" />
+    <Property Name="Value" Type="real" Nullable="false" />
+    <Property Name="Good" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.VariableMaster' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VariableMaster">
+    <Key>
+      <PropertyRef Name="VariableMasterID" />
+    </Key>
+    <Property Name="VariableMasterID" Type="smallint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" />
+    <Property Name="Description" Type="nvarchar" MaxLength="100" />
+    <Property Name="PlantObjectTypeID" Type="tinyint" />
+    <Property Name="VariableTypeID" Type="smallint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.VariablePoint' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VariablePoint">
+    <Key>
+      <PropertyRef Name="VariableID" />
+    </Key>
+    <Property Name="VariableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" />
+    <Property Name="EngUnits" Type="nchar" MaxLength="10" />
+    <Property Name="VariableTypeID" Type="smallint" />
+    <Property Name="VariableMasterID" Type="smallint" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="50" />
+    <Property Name="SiteID" Type="smallint" />
+    <Property Name="BlockID" Type="tinyint" />
+    <Property Name="PlantObjectID" Type="tinyint" />
+    <Property Name="PlantObjectTypeID" Type="smallint" />
+    <Property Name="SourceID" Type="tinyint" />
+    <Property Name="Min" Type="float" />
+    <Property Name="Max" Type="float" />
+    <Property Name="ForecastID" Type="smallint" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="7" />
+    <Property Name="Value" Type="real" />
+    <Property Name="Good" Type="bit" />
+    <Property Name="Status" Type="tinyint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.VariablePointBackup' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VariablePointBackup">
+    <Key>
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="VariableTypeID" />
+      <PropertyRef Name="VariableMasterID" />
+      <PropertyRef Name="SiteID" />
+      <PropertyRef Name="BlockID" />
+      <PropertyRef Name="PlantObjectID" />
+      <PropertyRef Name="PlantObjectTypeID" />
+      <PropertyRef Name="SourceID" />
+      <PropertyRef Name="ForecastID" />
+    </Key>
+    <Property Name="VariableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="EngUnits" Type="nchar" MaxLength="10" />
+    <Property Name="VariableTypeID" Type="smallint" Nullable="false" />
+    <Property Name="VariableMasterID" Type="smallint" Nullable="false" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="50" />
+    <Property Name="SiteID" Type="smallint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="PlantObjectID" Type="tinyint" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="smallint" Nullable="false" />
+    <Property Name="SourceID" Type="tinyint" Nullable="false" />
+    <Property Name="Min" Type="float" />
+    <Property Name="Max" Type="float" />
+    <Property Name="ForecastID" Type="smallint" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="7" />
+    <Property Name="Value" Type="real" />
+    <Property Name="Good" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.VariablePointTemp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VariablePointTemp">
+    <Key>
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="VariableTypeID" />
+      <PropertyRef Name="VariableMasterID" />
+      <PropertyRef Name="SiteID" />
+      <PropertyRef Name="BlockID" />
+      <PropertyRef Name="PlantObjectID" />
+      <PropertyRef Name="PlantObjectTypeID" />
+      <PropertyRef Name="SourceID" />
+      <PropertyRef Name="ForecastID" />
+    </Key>
+    <Property Name="VariableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="80" Nullable="false" />
+    <Property Name="EngUnits" Type="nchar" MaxLength="10" />
+    <Property Name="VariableTypeID" Type="smallint" Nullable="false" />
+    <Property Name="VariableMasterID" Type="smallint" Nullable="false" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="50" />
+    <Property Name="SiteID" Type="smallint" Nullable="false" />
+    <Property Name="BlockID" Type="tinyint" Nullable="false" />
+    <Property Name="PlantObjectID" Type="tinyint" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="smallint" Nullable="false" />
+    <Property Name="SourceID" Type="tinyint" Nullable="false" />
+    <Property Name="Min" Type="float" />
+    <Property Name="Max" Type="float" />
+    <Property Name="ForecastID" Type="smallint" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="7" />
+    <Property Name="Value" Type="real" />
+    <Property Name="Good" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.VariableSnapshot' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VariableSnapshot">
+    <Key>
+      <PropertyRef Name="VariableID" />
+      <PropertyRef Name="Timestamp" />
+      <PropertyRef Name="Value" />
+      <PropertyRef Name="Good" />
+    </Key>
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="Timestamp" Type="datetimeoffset" Precision="0" Nullable="false" />
+    <Property Name="Value" Type="real" Nullable="false" />
+    <Property Name="Good" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.dbo.VariableType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VariableType">
+    <Key>
+      <PropertyRef Name="VariableTypeID" />
+      <PropertyRef Name="Acronym" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="VariableTypeID" Type="tinyint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="40" Nullable="false" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'RealTimePower.sys.database_firewall_rules' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="database_firewall_rules">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="name" />
+      <PropertyRef Name="start_ip_address" />
+      <PropertyRef Name="end_ip_address" />
+      <PropertyRef Name="create_date" />
+      <PropertyRef Name="modify_date" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="start_ip_address" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="end_ip_address" Type="varchar" MaxLength="45" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="modify_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Function Name="BulkInsertModifyVariableForm" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ResultMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="BulkTest" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="BulkUpdateModifyVariableForm" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ResultMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="GetPlantVariableListByUnit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_BindVariableModifyForm" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_ChartVariableBetweenDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="EndDate" Type="datetimeoffset" Mode="In" />
+  </Function>
+  <Function Name="usp_ConvertToModelForMultipleConversion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_CopyBook" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyChart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyGridTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyHealthCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyModel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyModelTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CopyVariable_obsolete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="CopyTag" Type="nvarchar" Mode="In" />
+    <Parameter Name="NewObjectID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewBook" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="newBookID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Position" Type="int" Mode="In" />
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="tinyint" Mode="In" />
+    <Parameter Name="newCategoryID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewChart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="newChartID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewChartVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_CreateNewDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="Rows" Type="int" Mode="In" />
+    <Parameter Name="Columns" Type="int" Mode="In" />
+    <Parameter Name="MinRowHeight" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="newDisplayID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="newFilterID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewGrid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="int" Mode="In" />
+    <Parameter Name="Title" Type="varchar" Mode="In" />
+    <Parameter Name="newGridID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewHealthCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="newHealthCheckID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewLayoutPanel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="newLayoutPanelID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewModel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="newModelID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewModelTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="ModelTemplateID" Type="int" Mode="InOut" />
+    <Parameter Name="VariableMasterID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_CreateNewRelativeFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="varchar" Mode="In" />
+    <Parameter Name="MaxRows" Type="int" Mode="In" />
+    <Parameter Name="Relative" Type="bit" Mode="In" />
+    <Parameter Name="Start" Type="int" Mode="In" />
+    <Parameter Name="Finish" Type="int" Mode="In" />
+    <Parameter Name="newFilterID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_DataGridViewMasterVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_DataGridviewModifyPlantVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_DataGridViewPlantVariableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_DataGridViewVariableType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_DeleteBook" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteChart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteDisplayObject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+    <Parameter Name="DisplayObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteHealthCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteLayoutPanel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteModel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteModelTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteVariableFromGridTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_DeleteVariableTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_FindAndDeleteDuplicatesInReadingTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetActiveHealthChecks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetBookDisplayList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetBookList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetCategoryList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartAndChartVariables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartInfowithFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+    <Parameter Name="FilterId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartListQuick" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartRealTimeValues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartVariableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartVariableValuesWithNoFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetChartWithFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+    <Parameter Name="FilterId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetCLRVariableHistoryWithFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="Interval" Type="int" Mode="In" />
+    <Parameter Name="Tmin" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="Tmax" Type="datetimeoffset" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDataByChartID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="Tmax" Type="datetime" Mode="In" />
+    <Parameter Name="Tmin" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDisplayDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDisplayObject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDisplayObjectDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDisplayObjectListsByUserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="GetUserList" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="usp_GetDisplayObjectName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayObjectID" Type="int" Mode="In" />
+    <Parameter Name="DisplayObjectTypeID" Type="int" Mode="In" />
+    <Parameter Name="DisplayObjectName" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_GetFilterDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetFilterDetailsToView" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetFilterIDByName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_GetFilterList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetFilterName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="FilterName" Type="nvarchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_GetFilterTimeRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetFilterValueandTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetFilterValueRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetForecastValuesByDateTime" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Start" Type="datetime" Mode="In" />
+    <Parameter Name="End" Type="datetime" Mode="In" />
+    <Parameter Name="ForecastID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetForecastValuesByVariableID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetFullModelComparisonTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGasTurbineData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="variableId" Type="int" Mode="In" />
+    <Parameter Name="sd" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="ed" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="mins" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridHealthCheckData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="objectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridHealthCheckInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridHealthChecksForDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_GetGridList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridListForModifyForm" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridTableForGridControl" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridVariableInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetGridVariablesForDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckHistoryForChart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Start" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="End" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckHistoryForGrid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Start" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="End" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckListandModel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckModelAndFilterName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckReadingTableData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckRealTimeInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckRealTimeValues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckRealTimeValuesDataTableInput" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetHealthChecksActive" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="AlertStatus" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthChecksByEquipmentType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Start" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="End" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthChecksInAlert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthChecksLastHours" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Hours" Type="decimal" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthChecksVisibleForUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckToModify" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetHealthCheckVariation" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Days" Type="decimal" Mode="In" />
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetLayoutPanelDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LayoutPanelID" Type="int" Mode="In" />
+    <Parameter Name="LayoutPanelObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetLayoutPanelList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LayoutPanelID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetLayoutPanelVariableValues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetMessageLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LogID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetMinMaxAvgBetweenDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="EndDate" Type="datetimeoffset" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelAndCoeffs" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelAndFilterDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelComparisonTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelDashBoard" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelDataForModelTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelInfoToPlot" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelInput" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelInputCoeff" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelInputCurrentValues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelInputReadingTableDataByModelID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelInputsForCreateModelFromTemplateForm" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelInputsFromModeledVariableTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelTemplateID" Type="int" Mode="In" />
+    <Parameter Name="ModeledVariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelsAllowedOnChart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelsByModeledVariableID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelsWithRelativeFilters" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelTemplateFormData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelTemplateId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelVariablesAndFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModeledVariable" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="CompareFilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModelWhatIfFormTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetModifyFilterFormTables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetNewVariableForGridList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Type" Type="int" Mode="In" />
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetNumberOfConnections" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetObjectCategoryByUserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="GetCatList" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="usp_GetObjectListsByUserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="GetUserList" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="usp_GetObjectSelectionFormData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="GetUserList" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="usp_GetOpenConnectionTypes" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetPanelSettings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetPlantObjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PlantObjectTypeID" Type="int" Mode="In" />
+    <Parameter Name="SiteID" Type="int" Mode="In" />
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetPlantObjectType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PlantObjectTypeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetPlantObjectVariables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PlantObjectVariableID" Type="int" Mode="In" />
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetReadingTableData" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetReadingTableDataByGridID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetReadingTableDataByHealthCheckID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetReadingTableDataByVariableIDList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetReadingTableDataForRelativeTimeModels" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetReadingTableRowCount" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetReadingTableValues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterString" Type="varchar" Mode="In" />
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_GetRecentHealthChecks" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Hour" Type="decimal" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetSimilarVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetSimilarVariableFromVariablePoint" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableMasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetSimilarVariablesFromVariableMaster" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetTableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetTop5Alerts" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Hours" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUnitList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserAccessLevel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserActivityHistory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserDomainName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetUserList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetValuesBetweenDates" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="StartDate" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="EndDate" Type="datetimeoffset" Mode="In" />
+  </Function>
+  <Function Name="usp_GetValuesByChartIDAndFilterID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="TmaxIn" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="TminIn" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="Tmax" Type="datetimeoffset" Mode="InOut" />
+    <Parameter Name="Tmin" Type="datetimeoffset" Mode="InOut" />
+    <Parameter Name="Interval" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetValuesByFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="FilterTimeRange" Type="nvarchar" Mode="In" />
+    <Parameter Name="FilterValueRange" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="usp_GetValuesByVariableIDAndFilterID" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="TmaxIn" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="TminIn" Type="datetimeoffset" Mode="In" />
+    <Parameter Name="Tmax" Type="datetimeoffset" Mode="InOut" />
+    <Parameter Name="Tmin" Type="datetimeoffset" Mode="InOut" />
+    <Parameter Name="Interval" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableAndFilterReadingInfo" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterId" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableBuilder" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableDetails" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_GetVariableForModifyFilterForm" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableListByBlock" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableMasterIdFromModelTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelTemplateID" Type="int" Mode="In" />
+    <Parameter Name="VariableMasterID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_GetVariableMasterList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableMasterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableSummaryDetail" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableType" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableTypeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_GetVariableValuesBetweenDatesFromTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Date1" Type="datetime" Mode="In" />
+    <Parameter Name="Date2" Type="datetime" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertBookDisplays" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="BookID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertFilterTimeRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertFilterValueRange" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertMessageLog" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_InsertModelInputAndCoeff" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertModelTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelTemplateID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_InsertMultipleObjectCategoryList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Type" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertNewPlantObjectVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar" Mode="In" />
+    <Parameter Name="VariableTypeID" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectTypeID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_InsertNewUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserDomainName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserLevel" Type="int" Mode="In" />
+    <Parameter Name="UserAlias" Type="nvarchar" Mode="In" />
+    <Parameter Name="Position" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_InsertNewVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewVariableID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_InsertObjectCategoryList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+    <Parameter Name="ObjectID" Type="int" Mode="In" />
+    <Parameter Name="Type" Type="nvarchar" Mode="In" />
+    <Parameter Name="ActionType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MasterVariableInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="desc" Type="varchar" Mode="In" />
+    <Parameter Name="plantComp" Type="int" Mode="In" />
+    <Parameter Name="variableType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_MasterVariableUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="desc" Type="varchar" Mode="In" />
+    <Parameter Name="plantComp" Type="int" Mode="In" />
+    <Parameter Name="variableType" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_PlantModifyVriableCheckBox" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="chkbxVal" Type="int" Mode="In" />
+    <Parameter Name="rowInx" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_RenameBook" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="BookID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameChart" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameHealthCheck" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameLayoutPanel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="LayoutPanelID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameModel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameModelTemplate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_RenameVariableTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NewName" Type="nvarchar" Mode="In" />
+    <Parameter Name="GridID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Found" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_SaveMultipleModels" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="VariableCount" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateCategory" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Position" Type="int" Mode="In" />
+    <Parameter Name="CategoryID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="tinyint" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateChartProperties" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateChartProperties2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ChartID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateDisplay" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Rows" Type="int" Mode="In" />
+    <Parameter Name="Columns" Type="int" Mode="In" />
+    <Parameter Name="MinRowHeight" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateDisplayObjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateDisplayWithObject" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+    <Parameter Name="Row" Type="int" Mode="In" />
+    <Parameter Name="Column" Type="int" Mode="In" />
+    <Parameter Name="DisplayObjectID" Type="int" Mode="In" />
+    <Parameter Name="DisplayObjectTypeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateDisplayWithSwappedObjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DisplayID" Type="int" Mode="In" />
+    <Parameter Name="DisplayObject1ID" Type="int" Mode="In" />
+    <Parameter Name="DisplayObject2ID" Type="int" Mode="In" />
+    <Parameter Name="Row1" Type="int" Mode="In" />
+    <Parameter Name="Col1" Type="int" Mode="In" />
+    <Parameter Name="Row2" Type="int" Mode="In" />
+    <Parameter Name="Col2" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateFilterProperties" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateGridVariables" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="GridID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateHealthCheckCompare" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+    <Parameter Name="ModelVariableID" Type="int" Mode="In" />
+    <Parameter Name="CompareVariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateHealthCheckProperties" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="HealthCheckID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateHealthCheckVisible" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Visible" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateLayoutPanel" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LayoutPanelID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="LayoutImage" Type="image" Mode="In" />
+    <Parameter Name="PanelWidth" Type="int" Mode="In" />
+    <Parameter Name="PanelHeight" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateLayoutPanelObjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="LayoutPanelID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateModelFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateModelProperties" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelID" Type="int" Mode="In" />
+    <Parameter Name="newModelID" Type="int" Mode="InOut" />
+  </Function>
+  <Function Name="usp_UpdateModelTemplateProperties" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ModelTemplateID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateModifyVariableDatagrid" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="EngUnits" Type="varchar" Mode="In" />
+    <Parameter Name="Tag" Type="varchar" Mode="In" />
+    <Parameter Name="SiteID" Type="int" Mode="In" />
+    <Parameter Name="block" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectTypeID" Type="int" Mode="In" />
+    <Parameter Name="UnitNumber" Type="varchar" Mode="In" />
+    <Parameter Name="MasterVariableID" Type="int" Mode="In" />
+    <Parameter Name="VariableTypeID" Type="int" Mode="In" />
+    <Parameter Name="SourceID" Type="int" Mode="In" />
+    <Parameter Name="ForecastID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateModifyVariableDatagrid_edit" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="EngUnits" Type="varchar" Mode="In" />
+    <Parameter Name="Tag" Type="varchar" Mode="In" />
+    <Parameter Name="SiteID" Type="int" Mode="In" />
+    <Parameter Name="block" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectTypeID" Type="int" Mode="In" />
+    <Parameter Name="UnitNumber" Type="varchar" Mode="In" />
+    <Parameter Name="VariableTypeID" Type="int" Mode="In" />
+    <Parameter Name="SourceID" Type="int" Mode="In" />
+    <Parameter Name="ForecastID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdatePanelSettings" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdatePlantObjectVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="PlantObjectTypeID" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectID" Type="int" Mode="In" />
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="Description" Type="nvarchar" Mode="In" />
+    <Parameter Name="VariableTypeID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateRelativeFilter" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FilterID" Type="int" Mode="In" />
+    <Parameter Name="Relative" Type="bit" Mode="In" />
+    <Parameter Name="Start" Type="int" Mode="In" />
+    <Parameter Name="Finish" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateUser" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="UserDomainName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserName" Type="nvarchar" Mode="In" />
+    <Parameter Name="UserLevel" Type="int" Mode="In" />
+    <Parameter Name="UserAlias" Type="nvarchar" Mode="In" />
+    <Parameter Name="Position" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateUserLastLogin" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateUserVersion" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UserID" Type="int" Mode="In" />
+    <Parameter Name="Version" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateVariable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="Name" Type="nvarchar" Mode="In" />
+    <Parameter Name="EngUnits" Type="nvarchar" Mode="In" />
+    <Parameter Name="VariableTypeID" Type="int" Mode="In" />
+    <Parameter Name="SiteID" Type="int" Mode="In" />
+    <Parameter Name="BlockID" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectTypeID" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectID" Type="int" Mode="In" />
+    <Parameter Name="PlantObjectVariableID" Type="int" Mode="In" />
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+    <Parameter Name="Local" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateVariablePoint" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="VariableID" Type="int" Mode="In" />
+  </Function>
+  <Function Name="usp_UpdateVariablePointValues" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="usp_VariableMasterInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ResultMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_VariableMasterUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ResultMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_VariableTypeBulkInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ResultMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_VariableTypeBulkUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ResultMsg" Type="varchar" Mode="InOut" />
+  </Function>
+  <Function Name="usp_VariableTypeInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="acronym" Type="varchar" Mode="In" />
+    <Parameter Name="engUnits" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="usp_VariableTypeUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+    <Parameter Name="name" Type="varchar" Mode="In" />
+    <Parameter Name="acronym" Type="varchar" Mode="In" />
+    <Parameter Name="engUnits" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="RealTimePowerModelStoreContainer">
+    <EntitySet Name="AuxBoiler" EntityType="Self.AuxBoiler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Block" EntityType="Self.Block" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Book" EntityType="Self.Book" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Chart" EntityType="Self.Chart" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ChartFormat" EntityType="Self.ChartFormat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Cogeneration" EntityType="Self.Cogeneration" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Condenser" EntityType="Self.Condenser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CondenserVariable" EntityType="Self.CondenserVariable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Display" EntityType="Self.Display" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Filter" EntityType="Self.Filter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GasTurbine" EntityType="Self.GasTurbine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GasTurbineType" EntityType="Self.GasTurbineType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Generator" EntityType="Self.Generator" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GeneratorVariable" EntityType="Self.GeneratorVariable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Grid" EntityType="Self.Grid" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HealthCheck" EntityType="Self.HealthCheck" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HRSG" EntityType="Self.HRSG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HRSGVariable" EntityType="Self.HRSGVariable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Model" EntityType="Self.Model" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlantObjectType" EntityType="Self.PlantObjectType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlantVariable" EntityType="Self.PlantVariable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SentinelUser" EntityType="Self.SentinelUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Site" EntityType="Self.Site" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SteamTurbine" EntityType="Self.SteamTurbine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SteamTurbineVariable" EntityType="Self.SteamTurbineVariable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TES" EntityType="Self.TES" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TESVariable" EntityType="Self.TESVariable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UnitVariable" EntityType="Self.UnitVariable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="BookDisplay" EntityType="Self.BookDisplay" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BookDisplay].[BookID] AS [BookID], 
+    [BookDisplay].[DisplayID] AS [DisplayID], 
+    [BookDisplay].[Position] AS [Position]
+    FROM [dbo].[BookDisplay] AS [BookDisplay]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ChartCategory" EntityType="Self.ChartCategory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ChartCategory].[CategoryID] AS [CategoryID], 
+    [ChartCategory].[ChartID] AS [ChartID], 
+    [ChartCategory].[Position] AS [Position]
+    FROM [dbo].[ChartCategory] AS [ChartCategory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ChartVariable" EntityType="Self.ChartVariable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ChartVariable].[ChartID] AS [ChartID], 
+    [ChartVariable].[Axis] AS [Axis], 
+    [ChartVariable].[Position] AS [Position], 
+    [ChartVariable].[VariableID] AS [VariableID], 
+    [ChartVariable].[VariableIDType] AS [VariableIDType], 
+    [ChartVariable].[LineType] AS [LineType], 
+    [ChartVariable].[Alpha] AS [Alpha], 
+    [ChartVariable].[Red] AS [Red], 
+    [ChartVariable].[Green] AS [Green], 
+    [ChartVariable].[Blue] AS [Blue], 
+    [ChartVariable].[Dashed] AS [Dashed], 
+    [ChartVariable].[Size] AS [Size]
+    FROM [dbo].[ChartVariable] AS [ChartVariable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CondenserAlias" EntityType="Self.CondenserAlias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CondenserAlias].[CondenserID] AS [CondenserID], 
+    [CondenserAlias].[UserID] AS [UserID], 
+    [CondenserAlias].[Acronym] AS [Acronym]
+    FROM [dbo].[CondenserAlias] AS [CondenserAlias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DisplayObject" EntityType="Self.DisplayObject" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DisplayObject].[DisplayID] AS [DisplayID], 
+    [DisplayObject].[Row] AS [Row], 
+    [DisplayObject].[Column] AS [Column], 
+    [DisplayObject].[RowSpan] AS [RowSpan], 
+    [DisplayObject].[ColumnSpan] AS [ColumnSpan], 
+    [DisplayObject].[DisplayObjectID] AS [DisplayObjectID], 
+    [DisplayObject].[DisplayObjectTypeID] AS [DisplayObjectTypeID]
+    FROM [dbo].[DisplayObject] AS [DisplayObject]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="DisplayObjectType" EntityType="Self.DisplayObjectType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [DisplayObjectType].[DisplayObjectTypeID] AS [DisplayObjectTypeID], 
+    [DisplayObjectType].[Name] AS [Name], 
+    [DisplayObjectType].[Table] AS [Table]
+    FROM [dbo].[DisplayObjectType] AS [DisplayObjectType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="EngUnitsConversion" EntityType="Self.EngUnitsConversion" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [EngUnitsConversion].[VariableType] AS [VariableType], 
+    [EngUnitsConversion].[VariableTypeID] AS [VariableTypeID], 
+    [EngUnitsConversion].[From] AS [From], 
+    [EngUnitsConversion].[To] AS [To], 
+    [EngUnitsConversion].[Offset] AS [Offset], 
+    [EngUnitsConversion].[Scaling] AS [Scaling], 
+    [EngUnitsConversion].[Operation] AS [Operation]
+    FROM [dbo].[EngUnitsConversion] AS [EngUnitsConversion]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FilterCategory" EntityType="Self.FilterCategory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FilterCategory].[CategoryID] AS [CategoryID], 
+    [FilterCategory].[FilterID] AS [FilterID], 
+    [FilterCategory].[Position] AS [Position]
+    FROM [dbo].[FilterCategory] AS [FilterCategory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FilterTimeRange" EntityType="Self.FilterTimeRange" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FilterTimeRange].[FilterID] AS [FilterID], 
+    [FilterTimeRange].[Start] AS [Start], 
+    [FilterTimeRange].[Finish] AS [Finish], 
+    [FilterTimeRange].[Position] AS [Position]
+    FROM [dbo].[FilterTimeRange] AS [FilterTimeRange]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="FilterValueRange" EntityType="Self.FilterValueRange" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [FilterValueRange].[FilterID] AS [FilterID], 
+    [FilterValueRange].[VariableID] AS [VariableID], 
+    [FilterValueRange].[Lower] AS [Lower], 
+    [FilterValueRange].[LowerEqual] AS [LowerEqual], 
+    [FilterValueRange].[Upper] AS [Upper], 
+    [FilterValueRange].[UpperEqual] AS [UpperEqual], 
+    [FilterValueRange].[EngUnits] AS [EngUnits], 
+    [FilterValueRange].[Position] AS [Position]
+    FROM [dbo].[FilterValueRange] AS [FilterValueRange]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Forecast" EntityType="Self.Forecast" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Forecast].[ForecastID] AS [ForecastID], 
+    [Forecast].[SiteID] AS [SiteID], 
+    [Forecast].[BlockID] AS [BlockID], 
+    [Forecast].[VariableID] AS [VariableID], 
+    [Forecast].[ForecastTypeID] AS [ForecastTypeID], 
+    [Forecast].[Acronym] AS [Acronym], 
+    [Forecast].[Name] AS [Name], 
+    [Forecast].[LoadIndex] AS [LoadIndex]
+    FROM [dbo].[Forecast] AS [Forecast]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ForecastArchive" EntityType="Self.ForecastArchive" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ForecastArchive].[ForecastID] AS [ForecastID], 
+    [ForecastArchive].[Timestamp] AS [Timestamp], 
+    [ForecastArchive].[Value] AS [Value], 
+    [ForecastArchive].[Good] AS [Good]
+    FROM [dbo].[ForecastArchive] AS [ForecastArchive]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ForecastSnapShot" EntityType="Self.ForecastSnapShot" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ForecastSnapShot].[ForecastID] AS [ForecastID], 
+    [ForecastSnapShot].[Timestamp] AS [Timestamp], 
+    [ForecastSnapShot].[Value] AS [Value], 
+    [ForecastSnapShot].[Good] AS [Good]
+    FROM [dbo].[ForecastSnapShot] AS [ForecastSnapShot]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ForecastType" EntityType="Self.ForecastType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ForecastType].[ForecastTypeID] AS [ForecastTypeID], 
+    [ForecastType].[Name] AS [Name], 
+    [ForecastType].[EngUnits] AS [EngUnits], 
+    [ForecastType].[RequestCode] AS [RequestCode]
+    FROM [dbo].[ForecastType] AS [ForecastType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ForecastTypeAlias" EntityType="Self.ForecastTypeAlias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ForecastTypeAlias].[ForecastTypeID] AS [ForecastTypeID], 
+    [ForecastTypeAlias].[UserID] AS [UserID], 
+    [ForecastTypeAlias].[Name] AS [Name], 
+    [ForecastTypeAlias].[EngUnits] AS [EngUnits]
+    FROM [dbo].[ForecastTypeAlias] AS [ForecastTypeAlias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ForecastValue" EntityType="Self.ForecastValue" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ForecastValue].[ForecastID] AS [ForecastID], 
+    [ForecastValue].[Timestamp] AS [Timestamp], 
+    [ForecastValue].[Value] AS [Value], 
+    [ForecastValue].[Good] AS [Good]
+    FROM [dbo].[ForecastValue] AS [ForecastValue]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GasTurbineAlias" EntityType="Self.GasTurbineAlias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GasTurbineAlias].[GasTurbineID] AS [GasTurbineID], 
+    [GasTurbineAlias].[UserID] AS [UserID], 
+    [GasTurbineAlias].[Acronym] AS [Acronym]
+    FROM [dbo].[GasTurbineAlias] AS [GasTurbineAlias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GasTurbineVariable" EntityType="Self.GasTurbineVariable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GasTurbineVariable].[GasTurbineVariableID] AS [GasTurbineVariableID], 
+    [GasTurbineVariable].[Name] AS [Name], 
+    [GasTurbineVariable].[Description] AS [Description], 
+    [GasTurbineVariable].[VariableType] AS [VariableType], 
+    [GasTurbineVariable].[VariableTypeID] AS [VariableTypeID]
+    FROM [dbo].[GasTurbineVariable] AS [GasTurbineVariable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GeneratorAlias" EntityType="Self.GeneratorAlias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GeneratorAlias].[GeneratorID] AS [GeneratorID], 
+    [GeneratorAlias].[UserID] AS [UserID], 
+    [GeneratorAlias].[Acronym] AS [Acronym]
+    FROM [dbo].[GeneratorAlias] AS [GeneratorAlias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GridCategory" EntityType="Self.GridCategory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GridCategory].[CategoryID] AS [CategoryID], 
+    [GridCategory].[GridID] AS [GridID], 
+    [GridCategory].[Position] AS [Position]
+    FROM [dbo].[GridCategory] AS [GridCategory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GridHealthCheck" EntityType="Self.GridHealthCheck" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GridHealthCheck].[GridID] AS [GridID], 
+    [GridHealthCheck].[Position] AS [Position], 
+    [GridHealthCheck].[HealthCheckID] AS [HealthCheckID], 
+    [GridHealthCheck].[Decimals] AS [Decimals], 
+    [GridHealthCheck].[Alpha] AS [Alpha], 
+    [GridHealthCheck].[Red] AS [Red], 
+    [GridHealthCheck].[Green] AS [Green], 
+    [GridHealthCheck].[Blue] AS [Blue], 
+    [GridHealthCheck].[Size] AS [Size], 
+    [GridHealthCheck].[Bold] AS [Bold], 
+    [GridHealthCheck].[Italic] AS [Italic]
+    FROM [dbo].[GridHealthCheck] AS [GridHealthCheck]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GridVariable" EntityType="Self.GridVariable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GridVariable].[GridID] AS [GridID], 
+    [GridVariable].[Position] AS [Position], 
+    [GridVariable].[VariableID] AS [VariableID], 
+    [GridVariable].[Decimals] AS [Decimals], 
+    [GridVariable].[Alpha] AS [Alpha], 
+    [GridVariable].[Red] AS [Red], 
+    [GridVariable].[Green] AS [Green], 
+    [GridVariable].[Blue] AS [Blue], 
+    [GridVariable].[Size] AS [Size], 
+    [GridVariable].[Bold] AS [Bold], 
+    [GridVariable].[Italic] AS [Italic]
+    FROM [dbo].[GridVariable] AS [GridVariable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HealthCheckCategory" EntityType="Self.HealthCheckCategory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [HealthCheckCategory].[CategoryID] AS [CategoryID], 
+    [HealthCheckCategory].[HealthCheckID] AS [HealthCheckID], 
+    [HealthCheckCategory].[Position] AS [Position]
+    FROM [dbo].[HealthCheckCategory] AS [HealthCheckCategory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HealthCheckCompare" EntityType="Self.HealthCheckCompare" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [HealthCheckCompare].[HealthCheckID] AS [HealthCheckID], 
+    [HealthCheckCompare].[ModelVariableID] AS [ModelVariableID], 
+    [HealthCheckCompare].[CompareVariableID] AS [CompareVariableID]
+    FROM [dbo].[HealthCheckCompare] AS [HealthCheckCompare]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HealthCheckFilter" EntityType="Self.HealthCheckFilter" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [HealthCheckFilter].[FilterID] AS [FilterID], 
+    [HealthCheckFilter].[VariableID] AS [VariableID], 
+    [HealthCheckFilter].[Lower] AS [Lower], 
+    [HealthCheckFilter].[LowerEqual] AS [LowerEqual], 
+    [HealthCheckFilter].[Upper] AS [Upper], 
+    [HealthCheckFilter].[UpperEqual] AS [UpperEqual], 
+    [HealthCheckFilter].[EngUnits] AS [EngUnits], 
+    [HealthCheckFilter].[Position] AS [Position]
+    FROM [dbo].[HealthCheckFilter] AS [HealthCheckFilter]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HealthCheckReading" EntityType="Self.HealthCheckReading" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [HealthCheckReading].[HealthCheckID] AS [HealthCheckID], 
+    [HealthCheckReading].[Actual] AS [Actual], 
+    [HealthCheckReading].[Predicted] AS [Predicted], 
+    [HealthCheckReading].[Comparison] AS [Comparison], 
+    [HealthCheckReading].[Threshold] AS [Threshold], 
+    [HealthCheckReading].[AlertStatus] AS [AlertStatus], 
+    [HealthCheckReading].[Timestamp] AS [Timestamp], 
+    [HealthCheckReading].[Good] AS [Good]
+    FROM [dbo].[HealthCheckReading] AS [HealthCheckReading]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HRSGAlias" EntityType="Self.HRSGAlias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [HRSGAlias].[HRSGID] AS [HRSGID], 
+    [HRSGAlias].[UserID] AS [UserID], 
+    [HRSGAlias].[Acronym] AS [Acronym]
+    FROM [dbo].[HRSGAlias] AS [HRSGAlias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="InletCoolingTypeAlias" EntityType="Self.InletCoolingTypeAlias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [InletCoolingTypeAlias].[InletCoolingTypeID] AS [InletCoolingTypeID], 
+    [InletCoolingTypeAlias].[UserID] AS [UserID], 
+    [InletCoolingTypeAlias].[Acronym] AS [Acronym], 
+    [InletCoolingTypeAlias].[Name] AS [Name]
+    FROM [dbo].[InletCoolingTypeAlias] AS [InletCoolingTypeAlias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LayoutPanel" EntityType="Self.LayoutPanel" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LayoutPanel].[LayoutPanelID] AS [LayoutPanelID], 
+    [LayoutPanel].[UserID] AS [UserID], 
+    [LayoutPanel].[Name] AS [Name], 
+    [LayoutPanel].[LayoutImage] AS [LayoutImage], 
+    [LayoutPanel].[LastModified] AS [LastModified], 
+    [LayoutPanel].[PanelWidth] AS [PanelWidth], 
+    [LayoutPanel].[PanelHeight] AS [PanelHeight], 
+    [LayoutPanel].[AutoSize] AS [AutoSize]
+    FROM [dbo].[LayoutPanel] AS [LayoutPanel]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LayoutPanelCategory" EntityType="Self.LayoutPanelCategory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LayoutPanelCategory].[CategoryID] AS [CategoryID], 
+    [LayoutPanelCategory].[LayoutPanelID] AS [LayoutPanelID], 
+    [LayoutPanelCategory].[Position] AS [Position]
+    FROM [dbo].[LayoutPanelCategory] AS [LayoutPanelCategory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LayoutPanelObject" EntityType="Self.LayoutPanelObject" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LayoutPanelObject].[LayoutPanelObjectID] AS [LayoutPanelObjectID], 
+    [LayoutPanelObject].[LayoutPanelID] AS [LayoutPanelID], 
+    [LayoutPanelObject].[HeaderText] AS [HeaderText], 
+    [LayoutPanelObject].[PositionX] AS [PositionX], 
+    [LayoutPanelObject].[PositionY] AS [PositionY], 
+    [LayoutPanelObject].[Rows] AS [Rows], 
+    [LayoutPanelObject].[Columns] AS [Columns], 
+    [LayoutPanelObject].[BorderStyle] AS [BorderStyle]
+    FROM [dbo].[LayoutPanelObject] AS [LayoutPanelObject]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="LayoutPanelObjectVariable" EntityType="Self.LayoutPanelObjectVariable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [LayoutPanelObjectVariable].[LayoutPanelObjectID] AS [LayoutPanelObjectID], 
+    [LayoutPanelObjectVariable].[LayoutPanelID] AS [LayoutPanelID], 
+    [LayoutPanelObjectVariable].[VariableID] AS [VariableID], 
+    [LayoutPanelObjectVariable].[ModelID] AS [ModelID], 
+    [LayoutPanelObjectVariable].[Text] AS [Text], 
+    [LayoutPanelObjectVariable].[Alignment] AS [Alignment], 
+    [LayoutPanelObjectVariable].[Row] AS [Row], 
+    [LayoutPanelObjectVariable].[Column] AS [Column], 
+    [LayoutPanelObjectVariable].[Size] AS [Size]
+    FROM [dbo].[LayoutPanelObjectVariable] AS [LayoutPanelObjectVariable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="MessageLog" EntityType="Self.MessageLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [MessageLog].[LogID] AS [LogID], 
+    [MessageLog].[Timestamp] AS [Timestamp], 
+    [MessageLog].[UserID] AS [UserID], 
+    [MessageLog].[Message] AS [Message], 
+    [MessageLog].[Source] AS [Source], 
+    [MessageLog].[DisplayObjectTypeID] AS [DisplayObjectTypeID], 
+    [MessageLog].[DisplayObjectID] AS [DisplayObjectID]
+    FROM [dbo].[MessageLog] AS [MessageLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ModelCategory" EntityType="Self.ModelCategory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ModelCategory].[CategoryID] AS [CategoryID], 
+    [ModelCategory].[ModelID] AS [ModelID], 
+    [ModelCategory].[Position] AS [Position]
+    FROM [dbo].[ModelCategory] AS [ModelCategory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ModelInput" EntityType="Self.ModelInput" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ModelInput].[ModelID] AS [ModelID], 
+    [ModelInput].[VariableID] AS [VariableID], 
+    [ModelInput].[Position] AS [Position], 
+    [ModelInput].[Min] AS [Min], 
+    [ModelInput].[Max] AS [Max], 
+    [ModelInput].[Mean] AS [Mean], 
+    [ModelInput].[Stdev] AS [Stdev]
+    FROM [dbo].[ModelInput] AS [ModelInput]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ModelInputCoeff" EntityType="Self.ModelInputCoeff" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ModelInputCoeff].[ModelID] AS [ModelID], 
+    [ModelInputCoeff].[VariableID] AS [VariableID], 
+    [ModelInputCoeff].[Power] AS [Power], 
+    [ModelInputCoeff].[Value] AS [Value]
+    FROM [dbo].[ModelInputCoeff] AS [ModelInputCoeff]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ModelTemplate" EntityType="Self.ModelTemplate" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ModelTemplate].[ModelTemplateID] AS [ModelTemplateID], 
+    [ModelTemplate].[UserID] AS [UserID], 
+    [ModelTemplate].[Name] AS [Name], 
+    [ModelTemplate].[ModelTemplateDescription] AS [ModelTemplateDescription], 
+    [ModelTemplate].[VariableMasterID] AS [VariableMasterID], 
+    [ModelTemplate].[LastModified] AS [LastModified]
+    FROM [dbo].[ModelTemplate] AS [ModelTemplate]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ModelTemplateCategory" EntityType="Self.ModelTemplateCategory" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ModelTemplateCategory].[CategoryID] AS [CategoryID], 
+    [ModelTemplateCategory].[ModelTemplateID] AS [ModelTemplateID]
+    FROM [dbo].[ModelTemplateCategory] AS [ModelTemplateCategory]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ModelTemplateInput" EntityType="Self.ModelTemplateInput" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ModelTemplateInput].[ModelTemplateID] AS [ModelTemplateID], 
+    [ModelTemplateInput].[VariableMasterID] AS [VariableMasterID], 
+    [ModelTemplateInput].[Power] AS [Power]
+    FROM [dbo].[ModelTemplateInput] AS [ModelTemplateInput]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PanelSettings" EntityType="Self.PanelSettings" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PanelSettings].[UserID] AS [UserID], 
+    [PanelSettings].[DisplayObjectID] AS [DisplayObjectID], 
+    [PanelSettings].[DisplayObjectTypeID] AS [DisplayObjectTypeID], 
+    [PanelSettings].[FilterID] AS [FilterID], 
+    [PanelSettings].[SplitterDistance] AS [SplitterDistance], 
+    [PanelSettings].[Panel2Collasped] AS [Panel2Collasped], 
+    [PanelSettings].[Orientation] AS [Orientation]
+    FROM [dbo].[PanelSettings] AS [PanelSettings]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PlantObjectTypeAlias" EntityType="Self.PlantObjectTypeAlias" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PlantObjectTypeAlias].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [PlantObjectTypeAlias].[UserID] AS [UserID], 
+    [PlantObjectTypeAlias].[Acronym] AS [Acronym], 
+    [PlantObjectTypeAlias].[Name] AS [Name]
+    FROM [dbo].[PlantObjectTypeAlias] AS [PlantObjectTypeAlias]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SentinelUserActivity" EntityType="Self.SentinelUserActivity" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SentinelUserActivity].[UserID] AS [UserID], 
+    [SentinelUserActivity].[LoginTime] AS [LoginTime]
+    FROM [dbo].[SentinelUserActivity] AS [SentinelUserActivity]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Source" EntityType="Self.Source" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Source].[SourceID] AS [SourceID], 
+    [Source].[Name] AS [Name]
+    FROM [dbo].[Source] AS [Source]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Summary" EntityType="Self.Summary" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Summary].[SummaryID] AS [SummaryID], 
+    [Summary].[SiteID] AS [SiteID], 
+    [Summary].[BlockID] AS [BlockID], 
+    [Summary].[VariableID] AS [VariableID], 
+    [Summary].[Interval] AS [Interval], 
+    [Summary].[Name] AS [Name]
+    FROM [dbo].[Summary] AS [Summary]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SummaryType" EntityType="Self.SummaryType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SummaryType].[SummaryTypeID] AS [SummaryTypeID], 
+    [SummaryType].[Acronym] AS [Acronym], 
+    [SummaryType].[Name] AS [Name]
+    FROM [dbo].[SummaryType] AS [SummaryType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SummaryValues" EntityType="Self.SummaryValues" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [SummaryValues].[SummaryID] AS [SummaryID], 
+    [SummaryValues].[Average] AS [Average], 
+    [SummaryValues].[Maximum] AS [Maximum], 
+    [SummaryValues].[Minimum] AS [Minimum], 
+    [SummaryValues].[Start] AS [Start], 
+    [SummaryValues].[Finish] AS [Finish]
+    FROM [dbo].[SummaryValues] AS [SummaryValues]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Unit" EntityType="Self.Unit" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Unit].[UnitID] AS [UnitID], 
+    [Unit].[Acronym] AS [Acronym], 
+    [Unit].[PlantID] AS [PlantID], 
+    [Unit].[Name] AS [Name], 
+    [Unit].[DataServer] AS [DataServer], 
+    [Unit].[Port] AS [Port], 
+    [Unit].[FileLocation] AS [FileLocation]
+    FROM [dbo].[Unit] AS [Unit]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="UpdateService" EntityType="Self.UpdateService" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [UpdateService].[UpdateVariables] AS [UpdateVariables]
+    FROM [dbo].[UpdateService] AS [UpdateService]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Variable" EntityType="Self.Variable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Variable].[VariableID] AS [VariableID], 
+    [Variable].[Name] AS [Name], 
+    [Variable].[EngUnits] AS [EngUnits], 
+    [Variable].[VariableType] AS [VariableType], 
+    [Variable].[VariableTypeID] AS [VariableTypeID], 
+    [Variable].[Site] AS [Site], 
+    [Variable].[SiteID] AS [SiteID], 
+    [Variable].[Block] AS [Block], 
+    [Variable].[BlockID] AS [BlockID], 
+    [Variable].[PlantObjectType] AS [PlantObjectType], 
+    [Variable].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [Variable].[PlantObject] AS [PlantObject], 
+    [Variable].[PlantObjectID] AS [PlantObjectID], 
+    [Variable].[PlantObjectVariable] AS [PlantObjectVariable], 
+    [Variable].[PlantObjectVariableID] AS [PlantObjectVariableID], 
+    [Variable].[ForecastID] AS [ForecastID], 
+    [Variable].[Local] AS [Local], 
+    [Variable].[Timestamp] AS [Timestamp], 
+    [Variable].[Value] AS [Value], 
+    [Variable].[Good] AS [Good]
+    FROM [dbo].[Variable] AS [Variable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VariableArchive" EntityType="Self.VariableArchive" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VariableArchive].[VariableID] AS [VariableID], 
+    [VariableArchive].[Timestamp] AS [Timestamp], 
+    [VariableArchive].[Value] AS [Value], 
+    [VariableArchive].[Good] AS [Good]
+    FROM [dbo].[VariableArchive] AS [VariableArchive]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VariableMaster" EntityType="Self.VariableMaster" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VariableMaster].[VariableMasterID] AS [VariableMasterID], 
+    [VariableMaster].[Name] AS [Name], 
+    [VariableMaster].[Description] AS [Description], 
+    [VariableMaster].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [VariableMaster].[VariableTypeID] AS [VariableTypeID]
+    FROM [dbo].[VariableMaster] AS [VariableMaster]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VariablePoint" EntityType="Self.VariablePoint" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VariablePoint].[VariableID] AS [VariableID], 
+    [VariablePoint].[Name] AS [Name], 
+    [VariablePoint].[EngUnits] AS [EngUnits], 
+    [VariablePoint].[VariableTypeID] AS [VariableTypeID], 
+    [VariablePoint].[VariableMasterID] AS [VariableMasterID], 
+    [VariablePoint].[Tag] AS [Tag], 
+    [VariablePoint].[SiteID] AS [SiteID], 
+    [VariablePoint].[BlockID] AS [BlockID], 
+    [VariablePoint].[PlantObjectID] AS [PlantObjectID], 
+    [VariablePoint].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [VariablePoint].[SourceID] AS [SourceID], 
+    [VariablePoint].[Min] AS [Min], 
+    [VariablePoint].[Max] AS [Max], 
+    [VariablePoint].[ForecastID] AS [ForecastID], 
+    [VariablePoint].[Timestamp] AS [Timestamp], 
+    [VariablePoint].[Value] AS [Value], 
+    [VariablePoint].[Good] AS [Good], 
+    [VariablePoint].[Status] AS [Status]
+    FROM [dbo].[VariablePoint] AS [VariablePoint]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VariablePointBackup" EntityType="Self.VariablePointBackup" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VariablePointBackup].[VariableID] AS [VariableID], 
+    [VariablePointBackup].[Name] AS [Name], 
+    [VariablePointBackup].[EngUnits] AS [EngUnits], 
+    [VariablePointBackup].[VariableTypeID] AS [VariableTypeID], 
+    [VariablePointBackup].[VariableMasterID] AS [VariableMasterID], 
+    [VariablePointBackup].[Tag] AS [Tag], 
+    [VariablePointBackup].[SiteID] AS [SiteID], 
+    [VariablePointBackup].[BlockID] AS [BlockID], 
+    [VariablePointBackup].[PlantObjectID] AS [PlantObjectID], 
+    [VariablePointBackup].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [VariablePointBackup].[SourceID] AS [SourceID], 
+    [VariablePointBackup].[Min] AS [Min], 
+    [VariablePointBackup].[Max] AS [Max], 
+    [VariablePointBackup].[ForecastID] AS [ForecastID], 
+    [VariablePointBackup].[Timestamp] AS [Timestamp], 
+    [VariablePointBackup].[Value] AS [Value], 
+    [VariablePointBackup].[Good] AS [Good]
+    FROM [dbo].[VariablePointBackup] AS [VariablePointBackup]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VariablePointTemp" EntityType="Self.VariablePointTemp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VariablePointTemp].[VariableID] AS [VariableID], 
+    [VariablePointTemp].[Name] AS [Name], 
+    [VariablePointTemp].[EngUnits] AS [EngUnits], 
+    [VariablePointTemp].[VariableTypeID] AS [VariableTypeID], 
+    [VariablePointTemp].[VariableMasterID] AS [VariableMasterID], 
+    [VariablePointTemp].[Tag] AS [Tag], 
+    [VariablePointTemp].[SiteID] AS [SiteID], 
+    [VariablePointTemp].[BlockID] AS [BlockID], 
+    [VariablePointTemp].[PlantObjectID] AS [PlantObjectID], 
+    [VariablePointTemp].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [VariablePointTemp].[SourceID] AS [SourceID], 
+    [VariablePointTemp].[Min] AS [Min], 
+    [VariablePointTemp].[Max] AS [Max], 
+    [VariablePointTemp].[ForecastID] AS [ForecastID], 
+    [VariablePointTemp].[Timestamp] AS [Timestamp], 
+    [VariablePointTemp].[Value] AS [Value], 
+    [VariablePointTemp].[Good] AS [Good]
+    FROM [dbo].[VariablePointTemp] AS [VariablePointTemp]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VariableSnapshot" EntityType="Self.VariableSnapshot" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VariableSnapshot].[VariableID] AS [VariableID], 
+    [VariableSnapshot].[Timestamp] AS [Timestamp], 
+    [VariableSnapshot].[Value] AS [Value], 
+    [VariableSnapshot].[Good] AS [Good]
+    FROM [dbo].[VariableSnapshot] AS [VariableSnapshot]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="VariableType" EntityType="Self.VariableType" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VariableType].[VariableTypeID] AS [VariableTypeID], 
+    [VariableType].[Acronym] AS [Acronym], 
+    [VariableType].[Name] AS [Name], 
+    [VariableType].[EngUnits] AS [EngUnits]
+    FROM [dbo].[VariableType] AS [VariableType]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="database_firewall_rules" EntityType="Self.database_firewall_rules" store:Type="Views" store:Schema="sys">
+      <DefiningQuery>SELECT 
+    [database_firewall_rules].[id] AS [id], 
+    [database_firewall_rules].[name] AS [name], 
+    [database_firewall_rules].[start_ip_address] AS [start_ip_address], 
+    [database_firewall_rules].[end_ip_address] AS [end_ip_address], 
+    [database_firewall_rules].[create_date] AS [create_date], 
+    [database_firewall_rules].[modify_date] AS [modify_date]
+    FROM [sys].[database_firewall_rules] AS [database_firewall_rules]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

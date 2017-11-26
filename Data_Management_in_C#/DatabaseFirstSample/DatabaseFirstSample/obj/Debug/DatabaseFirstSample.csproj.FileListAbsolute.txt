@@ -1,0 +1,12 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\DatabaseFirstSample.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\EntityFrameDataAccess.BloggingContext.mdf
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\EntityFrameDataAccess.BloggingContext_log.ldf
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\DatabaseFirstSample.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\DatabaseFirstSample.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\EntityFramework.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\EntityFramework.xml
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\obj\Debug\DatabaseFirstSample.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\obj\Debug\DatabaseFirstSample.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\DatabaseFirstSample\DatabaseFirstSample\obj\Debug\DatabaseFirstSample.pdb

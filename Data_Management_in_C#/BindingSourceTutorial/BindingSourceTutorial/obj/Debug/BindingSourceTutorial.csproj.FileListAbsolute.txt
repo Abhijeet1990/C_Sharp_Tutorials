@@ -1,0 +1,9 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\bin\Debug\BindingSourceTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\bin\Debug\BindingSourceTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\bin\Debug\BindingSourceTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\obj\Debug\BindingSourceTutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\obj\Debug\BindingSourceTutorial.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\obj\Debug\BindingSourceTutorial.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\obj\Debug\BindingSourceTutorial.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\obj\Debug\BindingSourceTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\BindingSourceTutorial\BindingSourceTutorial\obj\Debug\BindingSourceTutorial.pdb

@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicComboDG", "DynamicComboDG\DynamicComboDG.csproj", "{92F39F3C-90E8-4480-8558-2794CA375582}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackGroundWorkerTutorial", "BackGroundWorkerTutorial\BackGroundWorkerTutorial.csproj", "{8800E5F9-B63E-45C0-A823-36EE57C7327F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatusBarTutorial", "StatusBarTutorial\StatusBarTutorial.csproj", "{85CDA7A4-C305-42F3-AA7B-D410B609381C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConditionalContent", "ConditionalContent\ConditionalContent.csproj", "{E656D667-7696-4D43-B0E8-E99BE2205B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboBoxIssue", "ComboBoxIssue\ComboBoxIssue.csproj", "{1D045A23-EB99-4071-AFEF-DA6D06AD5636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTransitionStatus", "FormTransitionStatus\FormTransitionStatus.csproj", "{22617D55-F3FC-4382-9B6B-09EEEC0F1654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeViewApproach", "TreeViewApproach\TreeViewApproach.csproj", "{2DF1A3A7-730E-4380-8829-412531C23CA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92F39F3C-90E8-4480-8558-2794CA375582}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92F39F3C-90E8-4480-8558-2794CA375582}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92F39F3C-90E8-4480-8558-2794CA375582}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92F39F3C-90E8-4480-8558-2794CA375582}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8800E5F9-B63E-45C0-A823-36EE57C7327F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8800E5F9-B63E-45C0-A823-36EE57C7327F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8800E5F9-B63E-45C0-A823-36EE57C7327F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8800E5F9-B63E-45C0-A823-36EE57C7327F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85CDA7A4-C305-42F3-AA7B-D410B609381C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85CDA7A4-C305-42F3-AA7B-D410B609381C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85CDA7A4-C305-42F3-AA7B-D410B609381C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85CDA7A4-C305-42F3-AA7B-D410B609381C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E656D667-7696-4D43-B0E8-E99BE2205B24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E656D667-7696-4D43-B0E8-E99BE2205B24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E656D667-7696-4D43-B0E8-E99BE2205B24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E656D667-7696-4D43-B0E8-E99BE2205B24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D045A23-EB99-4071-AFEF-DA6D06AD5636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D045A23-EB99-4071-AFEF-DA6D06AD5636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D045A23-EB99-4071-AFEF-DA6D06AD5636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D045A23-EB99-4071-AFEF-DA6D06AD5636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22617D55-F3FC-4382-9B6B-09EEEC0F1654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22617D55-F3FC-4382-9B6B-09EEEC0F1654}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22617D55-F3FC-4382-9B6B-09EEEC0F1654}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22617D55-F3FC-4382-9B6B-09EEEC0F1654}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DF1A3A7-730E-4380-8829-412531C23CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DF1A3A7-730E-4380-8829-412531C23CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DF1A3A7-730E-4380-8829-412531C23CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DF1A3A7-730E-4380-8829-412531C23CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

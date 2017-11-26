@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ForecastAppDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Block">
+    <Key>
+      <PropertyRef Name="BlockID" />
+    </Key>
+    <Property Name="BlockID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BlockType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Condenser">
+    <Key>
+      <PropertyRef Name="CondenserID" />
+    </Key>
+    <Property Name="CondenserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="int" />
+    <Property Name="BlockID" Type="int" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoolingType" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="Forecast">
+    <Key>
+      <PropertyRef Name="ForecastID" />
+    </Key>
+    <Property Name="ForecastID" Type="int" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" />
+    <Property Name="LoadIndex" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="ForecastMapping">
+    <Key>
+      <PropertyRef Name="ForecastMappingID" />
+    </Key>
+    <Property Name="ForecastMappingID" Type="int" Nullable="false" />
+    <Property Name="ForecastTypeID" Type="int" />
+    <Property Name="VariableMasterID" Type="int" />
+    <Property Name="Mandatory" Type="bit" />
+  </EntityType>
+  <EntityType Name="ForecastType">
+    <Key>
+      <PropertyRef Name="ForecastTypeID" />
+    </Key>
+    <Property Name="ForecastTypeID" Type="int" Nullable="false" />
+    <Property Name="EngUnits" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GasTurbine">
+    <Key>
+      <PropertyRef Name="GasTurbineID" />
+    </Key>
+    <Property Name="GasTurbineID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GasTurbineType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Generator">
+    <Key>
+      <PropertyRef Name="GeneratorID" />
+    </Key>
+    <Property Name="GeneratorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HRSG">
+    <Key>
+      <PropertyRef Name="HRSGID" />
+    </Key>
+    <Property Name="HRSGID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DuctBurners" Type="tinyint" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ObjectGroups">
+    <Key>
+      <PropertyRef Name="ObjectGroupID" />
+    </Key>
+    <Property Name="ObjectGroupID" Type="int" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="int" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ForecastAppDatabase.dbo.PiSnapshot' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PiSnapshot">
+    <Key>
+      <PropertyRef Name="Tag" />
+    </Key>
+    <Property Name="Tag" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Descriptor" Type="nvarchar" MaxLength="255" />
+    <Property Name="Value" Type="float" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="255" />
+    <Property Name="Status" Type="float" />
+    <Property Name="Time" Type="datetime" />
+    <Property Name="PointType" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="PlantObjectType">
+    <Key>
+      <PropertyRef Name="PlantObjectTypeID" />
+    </Key>
+    <Property Name="PlantObjectTypeID" Type="int" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Name="SiteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Elevation" Type="real" />
+    <Property Name="Latitude" Type="real" />
+    <Property Name="Longitude" Type="real" />
+    <Property Name="Location" Type="nvarchar" MaxLength="50" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Timezone" Type="nvarchar" MaxLength="50" />
+    <Property Name="UseMetricUnits" Type="bit" />
+    <Property Name="DataDirectory" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SteamTurbine">
+    <Key>
+      <PropertyRef Name="SteamTurbineID" />
+    </Key>
+    <Property Name="SteamTurbineID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TrainMapping">
+    <Key>
+      <PropertyRef Name="MappingID" />
+    </Key>
+    <Property Name="MappingID" Type="int" Nullable="false" />
+    <Property Name="BlockTypeID" Type="int" Nullable="false" />
+    <Property Name="TrainID" Type="int" Nullable="false" />
+    <Property Name="GasTurbineID" Type="int" Nullable="false" />
+    <Property Name="HRSGID" Type="int" Nullable="false" />
+    <Property Name="SteamTurbineID" Type="int" Nullable="false" />
+    <Property Name="CondenserID" Type="int" Nullable="false" />
+    <Property Name="GeneratorID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VariableMaster">
+    <Key>
+      <PropertyRef Name="VariableMasterID" />
+    </Key>
+    <Property Name="VariableMasterID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nchar" MaxLength="20" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="PlantObjectTypeID" Type="int" Nullable="false" />
+    <Property Name="ObjectGroupID" Type="nchar" MaxLength="10" />
+    <Property Name="CharSearch" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VariableMasterMapping">
+    <Key>
+      <PropertyRef Name="VariableMasterMappingID" />
+    </Key>
+    <Property Name="VariableMasterMappingID" Type="int" Nullable="false" />
+    <Property Name="VariableMasterID" Type="int" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="int" Nullable="false" />
+    <Property Name="EquipmentTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VariablePoint">
+    <Key>
+      <PropertyRef Name="VariableID" />
+    </Key>
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="BlockID" Type="int" />
+    <Property Name="EngUnits" Type="nchar" MaxLength="10" />
+    <Property Name="ForecastID" Type="smallint" />
+    <Property Name="Good" Type="bit" />
+    <Property Name="Max" Type="float" />
+    <Property Name="Min" Type="float" />
+    <Property Name="Timestamp" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Value" Type="real" />
+    <Property Name="Status" Type="tinyint" />
+    <Property Name="VariableMasterID" Type="int" />
+    <Property Name="VariableTypeID" Type="int" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="ForecastAppDatabaseModelStoreContainer">
+    <EntitySet Name="Block" EntityType="Self.Block" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Condenser" EntityType="Self.Condenser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Forecast" EntityType="Self.Forecast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ForecastMapping" EntityType="Self.ForecastMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ForecastType" EntityType="Self.ForecastType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GasTurbine" EntityType="Self.GasTurbine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Generator" EntityType="Self.Generator" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HRSG" EntityType="Self.HRSG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ObjectGroups" EntityType="Self.ObjectGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlantObjectType" EntityType="Self.PlantObjectType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Site" EntityType="Self.Site" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SteamTurbine" EntityType="Self.SteamTurbine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrainMapping" EntityType="Self.TrainMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VariableMaster" EntityType="Self.VariableMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VariableMasterMapping" EntityType="Self.VariableMasterMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VariablePoint" EntityType="Self.VariablePoint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PiSnapshot" EntityType="Self.PiSnapshot" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PiSnapshot].[Tag] AS [Tag], 
+    [PiSnapshot].[Descriptor] AS [Descriptor], 
+    [PiSnapshot].[Value] AS [Value], 
+    [PiSnapshot].[EngUnits] AS [EngUnits], 
+    [PiSnapshot].[Status] AS [Status], 
+    [PiSnapshot].[Time] AS [Time], 
+    [PiSnapshot].[PointType] AS [PointType]
+    FROM [dbo].[PiSnapshot] AS [PiSnapshot]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

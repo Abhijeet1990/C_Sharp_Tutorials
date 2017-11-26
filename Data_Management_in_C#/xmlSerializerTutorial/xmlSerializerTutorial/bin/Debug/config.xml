@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ConfigData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <buffsize>1024</buffsize>
+  <local_gate_ip>192.168.2.2</local_gate_ip>
+  <target_ip>192.168.2.10</target_ip>
+  <ports>
+    <int>3500</int>
+    <int>4500</int>
+  </ports>
+</ConfigData>

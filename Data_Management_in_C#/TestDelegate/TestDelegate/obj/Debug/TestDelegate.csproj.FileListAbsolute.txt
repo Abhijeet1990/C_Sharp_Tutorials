@@ -1,0 +1,10 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\bin\Debug\TestDelegate.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\bin\Debug\TestDelegate.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\bin\Debug\TestDelegate.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\obj\Debug\TestDelegate.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\obj\Debug\TestDelegate.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\obj\Debug\TestDelegate.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\obj\Debug\TestDelegate.Publisher.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\obj\Debug\TestDelegate.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\obj\Debug\TestDelegate.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDelegate\TestDelegate\obj\Debug\TestDelegate.pdb

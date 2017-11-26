@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WizardDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AttributeMaster">
+    <Key>
+      <PropertyRef Name="Attribute Master ID" />
+    </Key>
+    <Property Name="Attribute Master ID" Type="int" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="int" />
+    <Property Name="ShortName" Type="nvarchar" MaxLength="30" />
+    <Property Name="LongName" Type="nvarchar" MaxLength="100" />
+    <Property Name="VariableMasterID" Type="int" />
+    <Property Name="BlockEnhancementID" Type="int" />
+    <Property Name="TextBoxControl" Type="nvarchar" MaxLength="20" />
+    <Property Name="ComboBoxControl" Type="nvarchar" MaxLength="100" />
+    <Property Name="LookUpTable" Type="int" />
+    <Property Name="Mandatory" Type="nvarchar" MaxLength="10" />
+    <Property Name="ObjectGroupID" Type="int" />
+    <Property Name="ComboBoxContent" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Block">
+    <Key>
+      <PropertyRef Name="BlockID" />
+    </Key>
+    <Property Name="BlockID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BlockType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="GasTurbineType" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.BlockEnhancementType' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="BlockEnhancementType">
+          <Property Name="BlockEnhancementTypeID" Type="int" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="20" />
+          <Property Name="InForecastType" Type="bit" />
+          <Property Name="SimpleCycleNotAvailable" Type="bit" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.BlockWiseEnhancementSelection' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="BlockWiseEnhancementSelection">
+          <Property Name="BlockID" Type="int" />
+          <Property Name="BlockEnhancementTypeID" Type="int" />
+          <Property Name="SiteID" Type="int" />
+        </EntityType>-->
+  <EntityType Name="Condenser">
+    <Key>
+      <PropertyRef Name="CondenserID" />
+    </Key>
+    <Property Name="CondenserID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiteID" Type="int" />
+    <Property Name="BlockID" Type="int" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="CoolingType" Type="tinyint" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.EnhancementUniquePlantMasterVariable' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="EnhancementUniquePlantMasterVariable">
+          <Property Name="EnhancementTypeID" Type="int" />
+          <Property Name="EnhancementTypeName" Type="nvarchar" MaxLength="20" />
+          <Property Name="PlantMasterVariableID" Type="int" />
+          <Property Name="Mandatory" Type="nvarchar" MaxLength="20" />
+        </EntityType>-->
+  <EntityType Name="Forecast">
+    <Key>
+      <PropertyRef Name="ForecastID" />
+    </Key>
+    <Property Name="ForecastID" Type="int" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" />
+    <Property Name="LoadIndex" Type="tinyint" />
+    <Property Name="Criteria" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ForecastMapping">
+    <Key>
+      <PropertyRef Name="ForecastMappingID" />
+    </Key>
+    <Property Name="ForecastMappingID" Type="int" Nullable="false" />
+    <Property Name="ForecastTypeID" Type="int" />
+    <Property Name="VariableMasterID" Type="int" />
+    <Property Name="Mandatory" Type="bit" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.ForecastMasterByBlockTypeConfiguration' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ForecastMasterByBlockTypeConfiguration">
+          <Property Name="ForecastMasterID" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="BlockTypeID" Type="int" />
+          <Property Name="GTCount" Type="nvarchar" MaxLength="50" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="50" />
+          <Property Name="TrainID" Type="nvarchar" MaxLength="10" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.ForecastMasterByEnhancement_Temp' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ForecastMasterByEnhancement_Temp">
+          <Property Name="ForecastMasterByEnhancement" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="UniqueAlias" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.ForecastMasterEnhancementMapping' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ForecastMasterEnhancementMapping">
+          <Property Name="ForecastMasterID" Type="int" />
+          <Property Name="BlockEnhancementTypeID" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.ForecastMasterPossible' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="ForecastMasterPossible">
+          <Property Name="ForecastMasterID" Type="int" />
+          <Property Name="BlockID" Type="int" />
+          <Property Name="ForecastName" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ForecastAppDatabase.dbo.ForecastSelection' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="ForecastSelection">
+    <Key>
+      <PropertyRef Name="SelectionID" />
+    </Key>
+    <Property Name="SelectionID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="50" />
+    <Property Name="BlockID" Type="int" />
+    <Property Name="ForecastMasterByBlockType" Type="nvarchar" MaxLength="50" />
+    <Property Name="BlockEnhancements" Type="nvarchar" MaxLength="50" />
+    <Property Name="TrainID" Type="nvarchar" MaxLength="20" />
+    <Property Name="Criteria" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="ForecastType">
+    <Key>
+      <PropertyRef Name="ForecastTypeID" />
+    </Key>
+    <Property Name="ForecastTypeID" Type="int" Nullable="false" />
+    <Property Name="EngUnits" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GasTurbine">
+    <Key>
+      <PropertyRef Name="GasTurbineID" />
+    </Key>
+    <Property Name="GasTurbineID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GasTurbineType" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Generator">
+    <Key>
+      <PropertyRef Name="GeneratorID" />
+    </Key>
+    <Property Name="GeneratorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Alias" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="GasTurbineID" Type="int" />
+    <Property Name="SteamTurbineID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ForecastAppDatabase.dbo.GTTypeUniquePlantMasterVariable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GTTypeUniquePlantMasterVariable">
+    <Key>
+      <PropertyRef Name="GasTurbineTypeID" />
+    </Key>
+    <Property Name="GasTurbineTypeID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="PlantMasterVariableID" Type="int" />
+    <Property Name="Mandatory" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="HRSG">
+    <Key>
+      <PropertyRef Name="HRSGID" />
+    </Key>
+    <Property Name="HRSGID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DuctBurners" Type="tinyint" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="GasTurbineID" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.LookUpTables' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="LookUpTables">
+          <Property Name="LookUpTableID" Type="int" />
+          <Property Name="SiteID" Type="int" />
+          <Property Name="PlantObjectTypeID" Type="int" />
+          <Property Name="ObjectID" Type="int" />
+          <Property Name="XValues" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="YValues" Type="decimal" Precision="18" Scale="0" />
+        </EntityType>-->
+  <EntityType Name="ObjectGroups">
+    <Key>
+      <PropertyRef Name="ObjectGroupID" />
+    </Key>
+    <Property Name="ObjectGroupID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ForecastAppDatabase.dbo.PiSnapshot' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PiSnapshot">
+    <Key>
+      <PropertyRef Name="Tag" />
+    </Key>
+    <Property Name="Tag" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="Descriptor" Type="nvarchar" MaxLength="255" />
+    <Property Name="Value" Type="float" />
+    <Property Name="EngUnits" Type="nvarchar" MaxLength="255" />
+    <Property Name="Status" Type="float" />
+    <Property Name="Time" Type="datetime" />
+    <Property Name="PointType" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ForecastAppDatabase.dbo.PlantMasterVariable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PlantMasterVariable">
+    <Key>
+      <PropertyRef Name="PlantMasterVariableID" />
+    </Key>
+    <Property Name="PlantMasterVariableID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="PlantObjectTypeID" Type="int" />
+    <Property Name="ObjectGroupID" Type="int" />
+    <Property Name="UniqueID" Type="int" />
+    <Property Name="Mandatory" Type="nvarchar" MaxLength="10" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.PlantMasterVariable_Temp' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="PlantMasterVariable_Temp">
+          <Property Name="PlantMasterVariableID" Type="int" />
+          <Property Name="BlockID" Type="int" />
+          <Property Name="Alias" Type="nvarchar" MaxLength="20" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="PlantObjectTypeID" Type="int" />
+          <Property Name="ObjectGroupID" Type="int" />
+          <Property Name="Mandatory" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityType Name="PlantObjectType">
+    <Key>
+      <PropertyRef Name="PlantObjectTypeID" />
+    </Key>
+    <Property Name="PlantObjectTypeID" Type="int" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.PossibleForecastMaster' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="PossibleForecastMaster">
+          <Property Name="PossibleForecastMasterID" Type="int" />
+          <Property Name="BlockID" Type="int" />
+          <Property Name="PossibleForecastName" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ForecastAppDatabase.dbo.PossiblePlantMasterVariable' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="PossiblePlantMasterVariable">
+    <Key>
+      <PropertyRef Name="PlantVariableID" />
+    </Key>
+    <Property Name="PlantVariableID" Type="int" Nullable="false" />
+    <Property Name="PlantMasterVariableID" Type="int" />
+    <Property Name="BlockID" Type="int" />
+    <Property Name="Alias" Type="nvarchar" MaxLength="30" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="TrainID" Type="int" />
+    <Property Name="PlantObjectTypeID" Type="int" />
+    <Property Name="ObjectGroupID" Type="int" />
+    <Property Name="Mandatory" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Name="SiteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Acronym" Type="nvarchar" MaxLength="10" />
+    <Property Name="Elevation" Type="real" Nullable="false" />
+    <Property Name="Latitude" Type="real" Nullable="false" />
+    <Property Name="Longitude" Type="real" Nullable="false" />
+    <Property Name="Location" Type="nvarchar" MaxLength="200" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Timezone" Type="nvarchar" MaxLength="50" />
+    <Property Name="UseMetricUnits" Type="bit" />
+    <Property Name="DataDirectory" Type="nvarchar" MaxLength="50" />
+    <Property Name="CustomerID" Type="int" />
+    <Property Name="Interval" Type="varchar" MaxLength="200" />
+    <Property Name="Duration" Type="varchar" MaxLength="200" />
+    <Property Name="ArchiveInterval" Type="varchar" MaxLength="200" />
+    <Property Name="Archive_Duration" Type="varchar" MaxLength="200" />
+    <Property Name="Grid_Frequency" Type="varchar" MaxLength="200" />
+    <Property Name="Heat_Rate_Units" Type="nvarchar" MaxLength="200" />
+    <Property Name="Heat_Rate_Calculation" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="SteamTurbine">
+    <Key>
+      <PropertyRef Name="SteamTurbineID" />
+    </Key>
+    <Property Name="SteamTurbineID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlockID" Type="int" Nullable="false" />
+    <Property Name="SiteID" Type="int" Nullable="false" />
+    <Property Name="Acronym" Type="nchar" MaxLength="10" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TrainMapping">
+    <Key>
+      <PropertyRef Name="MappingID" />
+    </Key>
+    <Property Name="MappingID" Type="int" Nullable="false" />
+    <Property Name="BlockTypeID" Type="int" Nullable="false" />
+    <Property Name="TrainID" Type="int" Nullable="false" />
+    <Property Name="GasTurbineID" Type="int" Nullable="false" />
+    <Property Name="HRSGID" Type="int" Nullable="false" />
+    <Property Name="SteamTurbineID" Type="int" Nullable="false" />
+    <Property Name="CondenserID" Type="int" Nullable="false" />
+    <Property Name="GeneratorID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VariableMaster">
+    <Key>
+      <PropertyRef Name="VariableMasterID" />
+    </Key>
+    <Property Name="VariableMasterID" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="PlantObjectTypeID" Type="int" Nullable="false" />
+    <Property Name="ObjectGroupID" Type="int" />
+    <Property Name="CharSearch" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="VariableMasterMapping">
+    <Key>
+      <PropertyRef Name="VariableMasterMappingID" />
+    </Key>
+    <Property Name="VariableMasterMappingID" Type="int" Nullable="false" />
+    <Property Name="VariableMasterID" Type="int" Nullable="false" />
+    <Property Name="PlantObjectTypeID" Type="int" Nullable="false" />
+    <Property Name="EquipmentTypeID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VariablePoint">
+    <Key>
+      <PropertyRef Name="VariableID" />
+    </Key>
+    <Property Name="VariableID" Type="int" Nullable="false" />
+    <Property Name="BlockID" Type="int" />
+    <Property Name="EngUnits" Type="nchar" MaxLength="10" />
+    <Property Name="ForecastID" Type="smallint" />
+    <Property Name="Good" Type="bit" />
+    <Property Name="Max" Type="float" />
+    <Property Name="Min" Type="float" />
+    <Property Name="Timestamp" Type="datetime" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Value" Type="real" />
+    <Property Name="Status" Type="tinyint" />
+    <Property Name="VariableMasterID" Type="int" />
+    <Property Name="VariableTypeID" Type="int" />
+    <Property Name="Tag" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'ForecastAppDatabase.dbo.VariableType' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="VariableType">
+          <Property Name="VariableTypeID" Type="int" />
+          <Property Name="Acronym" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="EngUnits" Type="nvarchar" MaxLength="50" />
+        </EntityType>-->
+  <EntityContainer Name="WizardDatabaseModelStoreContainer">
+    <EntitySet Name="AttributeMaster" EntityType="Self.AttributeMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Block" EntityType="Self.Block" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Condenser" EntityType="Self.Condenser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Forecast" EntityType="Self.Forecast" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ForecastMapping" EntityType="Self.ForecastMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ForecastType" EntityType="Self.ForecastType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GasTurbine" EntityType="Self.GasTurbine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Generator" EntityType="Self.Generator" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HRSG" EntityType="Self.HRSG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ObjectGroups" EntityType="Self.ObjectGroups" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PlantObjectType" EntityType="Self.PlantObjectType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Site" EntityType="Self.Site" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SteamTurbine" EntityType="Self.SteamTurbine" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TrainMapping" EntityType="Self.TrainMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VariableMaster" EntityType="Self.VariableMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VariableMasterMapping" EntityType="Self.VariableMasterMapping" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VariablePoint" EntityType="Self.VariablePoint" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ForecastSelection" EntityType="Self.ForecastSelection" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ForecastSelection].[SelectionID] AS [SelectionID], 
+    [ForecastSelection].[Name] AS [Name], 
+    [ForecastSelection].[Alias] AS [Alias], 
+    [ForecastSelection].[BlockID] AS [BlockID], 
+    [ForecastSelection].[ForecastMasterByBlockType] AS [ForecastMasterByBlockType], 
+    [ForecastSelection].[BlockEnhancements] AS [BlockEnhancements], 
+    [ForecastSelection].[TrainID] AS [TrainID], 
+    [ForecastSelection].[Criteria] AS [Criteria]
+    FROM [dbo].[ForecastSelection] AS [ForecastSelection]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GTTypeUniquePlantMasterVariable" EntityType="Self.GTTypeUniquePlantMasterVariable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GTTypeUniquePlantMasterVariable].[GasTurbineTypeID] AS [GasTurbineTypeID], 
+    [GTTypeUniquePlantMasterVariable].[Name] AS [Name], 
+    [GTTypeUniquePlantMasterVariable].[PlantMasterVariableID] AS [PlantMasterVariableID], 
+    [GTTypeUniquePlantMasterVariable].[Mandatory] AS [Mandatory]
+    FROM [dbo].[GTTypeUniquePlantMasterVariable] AS [GTTypeUniquePlantMasterVariable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PiSnapshot" EntityType="Self.PiSnapshot" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PiSnapshot].[Tag] AS [Tag], 
+    [PiSnapshot].[Descriptor] AS [Descriptor], 
+    [PiSnapshot].[Value] AS [Value], 
+    [PiSnapshot].[EngUnits] AS [EngUnits], 
+    [PiSnapshot].[Status] AS [Status], 
+    [PiSnapshot].[Time] AS [Time], 
+    [PiSnapshot].[PointType] AS [PointType]
+    FROM [dbo].[PiSnapshot] AS [PiSnapshot]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PlantMasterVariable" EntityType="Self.PlantMasterVariable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PlantMasterVariable].[PlantMasterVariableID] AS [PlantMasterVariableID], 
+    [PlantMasterVariable].[Name] AS [Name], 
+    [PlantMasterVariable].[Description] AS [Description], 
+    [PlantMasterVariable].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [PlantMasterVariable].[ObjectGroupID] AS [ObjectGroupID], 
+    [PlantMasterVariable].[UniqueID] AS [UniqueID], 
+    [PlantMasterVariable].[Mandatory] AS [Mandatory]
+    FROM [dbo].[PlantMasterVariable] AS [PlantMasterVariable]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="PossiblePlantMasterVariable" EntityType="Self.PossiblePlantMasterVariable" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [PossiblePlantMasterVariable].[PlantVariableID] AS [PlantVariableID], 
+    [PossiblePlantMasterVariable].[PlantMasterVariableID] AS [PlantMasterVariableID], 
+    [PossiblePlantMasterVariable].[BlockID] AS [BlockID], 
+    [PossiblePlantMasterVariable].[Alias] AS [Alias], 
+    [PossiblePlantMasterVariable].[Description] AS [Description], 
+    [PossiblePlantMasterVariable].[TrainID] AS [TrainID], 
+    [PossiblePlantMasterVariable].[PlantObjectTypeID] AS [PlantObjectTypeID], 
+    [PossiblePlantMasterVariable].[ObjectGroupID] AS [ObjectGroupID], 
+    [PossiblePlantMasterVariable].[Mandatory] AS [Mandatory]
+    FROM [dbo].[PossiblePlantMasterVariable] AS [PossiblePlantMasterVariable]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

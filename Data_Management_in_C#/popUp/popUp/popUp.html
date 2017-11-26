@@ -1,0 +1,29 @@
+﻿<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<form id="popupForm" name="f">
+    <select id="urlField" name="url">
+        <option>
+            http://date.jsontest.com/
+        </option>
+        <option>
+            http://time.jsontest.com/
+        </option>
+        <option>
+            http://md5.jsontest.com/?text=HereIsSomeStuff
+        </option>
+    </select>
+    <div><input type="submit" /></div>
+</form>
+<script>
+    $('#popupForm').submit(function(e) {
+        e.preventDefault();
+        var url = $('#urlField').val();
+        console.log(url);
+        $.ajax({
+            url: url
+        }).then(function(data) {
+            console.log(JSON.stringify(data));
+            window.opener.setData(data);
+            window.close();
+        });
+    });
+</script>

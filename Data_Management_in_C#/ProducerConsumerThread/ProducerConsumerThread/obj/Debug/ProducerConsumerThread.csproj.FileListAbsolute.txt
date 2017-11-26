@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\ProducerConsumerThread\ProducerConsumerThread\bin\Debug\ProducerConsumerThread.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\ProducerConsumerThread\ProducerConsumerThread\bin\Debug\ProducerConsumerThread.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ProducerConsumerThread\ProducerConsumerThread\bin\Debug\ProducerConsumerThread.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ProducerConsumerThread\ProducerConsumerThread\obj\Debug\ProducerConsumerThread.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\ProducerConsumerThread\ProducerConsumerThread\obj\Debug\ProducerConsumerThread.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ProducerConsumerThread\ProducerConsumerThread\obj\Debug\ProducerConsumerThread.pdb

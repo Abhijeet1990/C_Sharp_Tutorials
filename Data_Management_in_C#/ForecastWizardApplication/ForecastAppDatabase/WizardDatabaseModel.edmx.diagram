@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0906eeb8a4cc4288ab8dd79ff134b722" Name="Diagram1">
+        <EntityTypeShape EntityType="WizardDatabaseModel.Block" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.Condenser" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.Forecast" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.ForecastMapping" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.ForecastType" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.GasTurbine" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.Generator" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.HRSG" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.ObjectGroup" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.PlantObjectType" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.Site" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.SteamTurbine" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.TrainMapping" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.VariableMaster" Width="1.5" PointX="8.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.VariableMasterMapping" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.VariablePoint" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.PiSnapshot" Width="1.5" PointX="3.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.MSreplication_options" Width="1.5" PointX="5.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.spt_fallback_db" Width="1.5" PointX="7.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.spt_fallback_dev" Width="1.5" PointX="9.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.spt_fallback_usg" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.spt_monitor" Width="1.5" PointX="11.375" PointY="4.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.AttributeMaster" Width="1.5" PointX="5.375" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.ForecastSelection" Width="1.5" PointX="7.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.GTTypeUniquePlantMasterVariable" Width="1.5" PointX="9.375" PointY="10.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.PlantMasterVariable" Width="1.5" PointX="11.375" PointY="0.75" />
+        <EntityTypeShape EntityType="WizardDatabaseModel.PossiblePlantMasterVariable" Width="1.5" PointX="11.375" PointY="4.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

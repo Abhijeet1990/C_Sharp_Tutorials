@@ -1,0 +1,1 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\AzureStorage\AzureStorage\bin\Debug\AzureStorage.exe.config

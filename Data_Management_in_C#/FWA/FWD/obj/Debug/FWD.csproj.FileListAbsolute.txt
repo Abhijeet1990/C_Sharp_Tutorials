@@ -1,0 +1,10 @@
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\bin\Debug\FWD.dll.config
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\bin\Debug\FWD.dll
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\bin\Debug\FWD.pdb
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\bin\Debug\EntityFramework.dll
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\bin\Debug\EntityFramework.SqlServer.dll
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\bin\Debug\EntityFramework.xml
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\bin\Debug\EntityFramework.SqlServer.xml
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\obj\Debug\FWD.csprojResolveAssemblyReference.cache
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\obj\Debug\FWD.dll
+c:\Users\Abhijeet\documents\visual studio 2015\Projects\FWA\FWD\obj\Debug\FWD.pdb

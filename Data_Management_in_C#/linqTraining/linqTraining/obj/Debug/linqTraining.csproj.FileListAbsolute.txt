@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\linqTraining\linqTraining\bin\Debug\linqTraining.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\linqTraining\linqTraining\bin\Debug\linqTraining.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\linqTraining\linqTraining\bin\Debug\linqTraining.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\linqTraining\linqTraining\obj\Debug\linqTraining.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\linqTraining\linqTraining\obj\Debug\linqTraining.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\linqTraining\linqTraining\obj\Debug\linqTraining.csprojResolveAssemblyReference.cache
