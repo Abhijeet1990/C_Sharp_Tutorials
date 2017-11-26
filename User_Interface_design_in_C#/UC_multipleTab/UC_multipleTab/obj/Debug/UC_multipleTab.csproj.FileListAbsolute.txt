@@ -1,0 +1,10 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\bin\Debug\UC_multipleTab.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\bin\Debug\UC_multipleTab.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\bin\Debug\UC_multipleTab.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\obj\Debug\UC_multipleTab.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\obj\Debug\UC_multipleTab.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\obj\Debug\UC_multipleTab.multitab.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\obj\Debug\UC_multipleTab.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\obj\Debug\UC_multipleTab.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\obj\Debug\UC_multipleTab.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\UC_multipleTab\UC_multipleTab\obj\Debug\UC_multipleTab.pdb

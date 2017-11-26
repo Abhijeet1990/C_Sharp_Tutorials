@@ -1,0 +1,12 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\bin\Debug\EnumCodeFirst.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\bin\Debug\EnumCodeFirst.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\bin\Debug\EnumCodeFirst.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\bin\Debug\EntityFramework.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\bin\Debug\EntityFramework.xml
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\obj\Debug\EnumCodeFirst.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\obj\Debug\EnumCodeFirst.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\obj\Debug\EnumCodeFirst.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\obj\Debug\EnumCodeFirst.Migrations.AddProffessor.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\EnumCodeFirst\EnumCodeFirst\obj\Debug\EnumCodeFirst.csproj.GenerateResource.Cache

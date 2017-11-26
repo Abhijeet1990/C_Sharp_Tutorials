@@ -1,0 +1,2895 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="RealTimePowerModelStoreContainer" CdmEntityContainer="RealTimePowerContext">
+    <EntitySetMapping Name="AuxBoilers">
+      <EntityTypeMapping TypeName="RealTimePowerModel.AuxBoiler">
+        <MappingFragment StoreEntitySet="AuxBoiler">
+          <ScalarProperty Name="AuxBoilerID" ColumnName="AuxBoilerID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Blocks">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Block">
+        <MappingFragment StoreEntitySet="Block">
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DataServer" ColumnName="DataServer" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="FileLocation" ColumnName="FileLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Books">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Book">
+        <MappingFragment StoreEntitySet="Book">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Charts">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Chart">
+        <MappingFragment StoreEntitySet="Chart">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LHAxis" ColumnName="LHAxis" />
+          <ScalarProperty Name="LHAxisDP" ColumnName="LHAxisDP" />
+          <ScalarProperty Name="LHAxisEngUnits" ColumnName="LHAxisEngUnits" />
+          <ScalarProperty Name="LHAxisMax" ColumnName="LHAxisMax" />
+          <ScalarProperty Name="LHAxisMin" ColumnName="LHAxisMin" />
+          <ScalarProperty Name="LHAxisMajor" ColumnName="LHAxisMajor" />
+          <ScalarProperty Name="LHAxisMinor" ColumnName="LHAxisMinor" />
+          <ScalarProperty Name="LHAxisTitle" ColumnName="LHAxisTitle" />
+          <ScalarProperty Name="LHAxisVariableTypeID" ColumnName="LHAxisVariableTypeID" />
+          <ScalarProperty Name="RHAxis" ColumnName="RHAxis" />
+          <ScalarProperty Name="RHAxisDP" ColumnName="RHAxisDP" />
+          <ScalarProperty Name="RHAxisEngUnits" ColumnName="RHAxisEngUnits" />
+          <ScalarProperty Name="RHAxisMax" ColumnName="RHAxisMax" />
+          <ScalarProperty Name="RHAxisMin" ColumnName="RHAxisMin" />
+          <ScalarProperty Name="RHAxisMajor" ColumnName="RHAxisMajor" />
+          <ScalarProperty Name="RHAxisMinor" ColumnName="RHAxisMinor" />
+          <ScalarProperty Name="RHAxisTitle" ColumnName="RHAxisTitle" />
+          <ScalarProperty Name="RHAxisVariableTypeID" ColumnName="RHAxisVariableTypeID" />
+          <ScalarProperty Name="TAxis" ColumnName="TAxis" />
+          <ScalarProperty Name="TAxisMode" ColumnName="TAxisMode" />
+          <ScalarProperty Name="TAxisMax" ColumnName="TAxisMax" />
+          <ScalarProperty Name="TAxisMin" ColumnName="TAxisMin" />
+          <ScalarProperty Name="TAxisPlus" ColumnName="TAxisPlus" />
+          <ScalarProperty Name="TAxisMinus" ColumnName="TAxisMinus" />
+          <ScalarProperty Name="TAxisTitle" ColumnName="TAxisTitle" />
+          <ScalarProperty Name="XAxis" ColumnName="XAxis" />
+          <ScalarProperty Name="XAxisDP" ColumnName="XAxisDP" />
+          <ScalarProperty Name="XAxisEngUnits" ColumnName="XAxisEngUnits" />
+          <ScalarProperty Name="XAxisMax" ColumnName="XAxisMax" />
+          <ScalarProperty Name="XAxisMin" ColumnName="XAxisMin" />
+          <ScalarProperty Name="XAxisMajor" ColumnName="XAxisMajor" />
+          <ScalarProperty Name="XAxisMinor" ColumnName="XAxisMinor" />
+          <ScalarProperty Name="XAxisTitle" ColumnName="XAxisTitle" />
+          <ScalarProperty Name="XAxisVariableTypeID" ColumnName="XAxisVariableTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="TAxisMinor" ColumnName="TAxisMinor" />
+          <ScalarProperty Name="TAxisMajor" ColumnName="TAxisMajor" />
+          <ScalarProperty Name="TAxisMinorType" ColumnName="TAxisMinorType" />
+          <ScalarProperty Name="TAxisMajorType" ColumnName="TAxisMajorType" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChartFormats">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ChartFormat">
+        <MappingFragment StoreEntitySet="ChartFormat">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="BackgroundColor" ColumnName="BackgroundColor" />
+          <ScalarProperty Name="MajorGrid" ColumnName="MajorGrid" />
+          <ScalarProperty Name="MinorGrid" ColumnName="MinorGrid" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cogenerations">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Cogeneration">
+        <MappingFragment StoreEntitySet="Cogeneration">
+          <ScalarProperty Name="CogenerationID" ColumnName="CogenerationID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Condensers">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Condenser">
+        <MappingFragment StoreEntitySet="Condenser">
+          <ScalarProperty Name="CondenserID" ColumnName="CondenserID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="SteamTurbineID" ColumnName="SteamTurbineID" />
+          <ScalarProperty Name="CoolingType" ColumnName="CoolingType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CondenserVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.CondenserVariable">
+        <MappingFragment StoreEntitySet="CondenserVariable">
+          <ScalarProperty Name="CondenserVariableID" ColumnName="CondenserVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Displays">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Display">
+        <MappingFragment StoreEntitySet="Display">
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="MinRowHeight" ColumnName="MinRowHeight" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Filters">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Filter">
+        <MappingFragment StoreEntitySet="Filter">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MaxRows" ColumnName="MaxRows" />
+          <ScalarProperty Name="Relative" ColumnName="Relative" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GasTurbines">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GasTurbine">
+        <MappingFragment StoreEntitySet="GasTurbine">
+          <ScalarProperty Name="GasTurbineID" ColumnName="GasTurbineID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="GeneratorID" ColumnName="GeneratorID" />
+          <ScalarProperty Name="GasTurbineTypeID" ColumnName="GasTurbineTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GasTurbineTypes">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GasTurbineType">
+        <MappingFragment StoreEntitySet="GasTurbineType">
+          <ScalarProperty Name="GasTurbineTypeID" ColumnName="GasTurbineTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Manufacturer" ColumnName="Manufacturer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Generators">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Generator">
+        <MappingFragment StoreEntitySet="Generator">
+          <ScalarProperty Name="GeneratorID" ColumnName="GeneratorID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeneratorVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GeneratorVariable">
+        <MappingFragment StoreEntitySet="GeneratorVariable">
+          <ScalarProperty Name="GeneratorVariableID" ColumnName="GeneratorVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Grids">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Grid">
+        <MappingFragment StoreEntitySet="Grid">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthChecks">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HealthCheck">
+        <MappingFragment StoreEntitySet="HealthCheck">
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Comparison" ColumnName="Comparison" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AlertCount" ColumnName="AlertCount" />
+          <ScalarProperty Name="NormalCount" ColumnName="NormalCount" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HRSGs">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HRSG">
+        <MappingFragment StoreEntitySet="HRSG">
+          <ScalarProperty Name="HRSGID" ColumnName="HRSGID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="GasTurbineID" ColumnName="GasTurbineID" />
+          <ScalarProperty Name="SteamTurbineID" ColumnName="SteamTurbineID" />
+          <ScalarProperty Name="DuctBurners" ColumnName="DuctBurners" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HRSGVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HRSGVariable">
+        <MappingFragment StoreEntitySet="HRSGVariable">
+          <ScalarProperty Name="HRSGVariableID" ColumnName="HRSGVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Models">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Model">
+        <MappingFragment StoreEntitySet="Model">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="PredictionID" ColumnName="PredictionID" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlantObjectTypes">
+      <EntityTypeMapping TypeName="RealTimePowerModel.PlantObjectType">
+        <MappingFragment StoreEntitySet="PlantObjectType">
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Table" ColumnName="Table" />
+          <ScalarProperty Name="AliasTable" ColumnName="AliasTable" />
+          <ScalarProperty Name="VariableTable" ColumnName="VariableTable" />
+          <ScalarProperty Name="VariableAliasTable" ColumnName="VariableAliasTable" />
+          <ScalarProperty Name="ReadingTable" ColumnName="ReadingTable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlantVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.PlantVariable">
+        <MappingFragment StoreEntitySet="PlantVariable">
+          <ScalarProperty Name="PlantVariableID" ColumnName="PlantVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SentinelUsers">
+      <EntityTypeMapping TypeName="RealTimePowerModel.SentinelUser">
+        <MappingFragment StoreEntitySet="SentinelUser">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserDomainName" ColumnName="UserDomainName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserLevel" ColumnName="UserLevel" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="UserAlias" ColumnName="UserAlias" />
+          <ScalarProperty Name="UserLastLogin" ColumnName="UserLastLogin" />
+          <ScalarProperty Name="UserVersion" ColumnName="UserVersion" />
+          <ScalarProperty Name="OperatingSys" ColumnName="OperatingSys" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sites">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Site">
+        <MappingFragment StoreEntitySet="Site">
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+          <ScalarProperty Name="Latitude" ColumnName="Latitude" />
+          <ScalarProperty Name="Longitude" ColumnName="Longitude" />
+          <ScalarProperty Name="Elevation" ColumnName="Elevation" />
+          <ScalarProperty Name="Timezone" ColumnName="Timezone" />
+          <ScalarProperty Name="DataDirectory" ColumnName="DataDirectory" />
+          <ScalarProperty Name="UseMetricUnits" ColumnName="UseMetricUnits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SteamTurbines">
+      <EntityTypeMapping TypeName="RealTimePowerModel.SteamTurbine">
+        <MappingFragment StoreEntitySet="SteamTurbine">
+          <ScalarProperty Name="SteamTurbineID" ColumnName="SteamTurbineID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="GeneratorID" ColumnName="GeneratorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SteamTurbineVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.SteamTurbineVariable">
+        <MappingFragment StoreEntitySet="SteamTurbineVariable">
+          <ScalarProperty Name="SteamTurbineVariableID" ColumnName="SteamTurbineVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TES">
+      <EntityTypeMapping TypeName="RealTimePowerModel.TE">
+        <MappingFragment StoreEntitySet="TES">
+          <ScalarProperty Name="TESID" ColumnName="TESID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TESVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.TESVariable">
+        <MappingFragment StoreEntitySet="TESVariable">
+          <ScalarProperty Name="TESVariableID" ColumnName="TESVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UnitVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.UnitVariable">
+        <MappingFragment StoreEntitySet="UnitVariable">
+          <ScalarProperty Name="UnitVariableID" ColumnName="UnitVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BookDisplays">
+      <EntityTypeMapping TypeName="RealTimePowerModel.BookDisplay">
+        <MappingFragment StoreEntitySet="BookDisplay">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChartCategories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ChartCategory">
+        <MappingFragment StoreEntitySet="ChartCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ChartVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ChartVariable">
+        <MappingFragment StoreEntitySet="ChartVariable">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="Axis" ColumnName="Axis" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="VariableIDType" ColumnName="VariableIDType" />
+          <ScalarProperty Name="LineType" ColumnName="LineType" />
+          <ScalarProperty Name="Alpha" ColumnName="Alpha" />
+          <ScalarProperty Name="Red" ColumnName="Red" />
+          <ScalarProperty Name="Green" ColumnName="Green" />
+          <ScalarProperty Name="Blue" ColumnName="Blue" />
+          <ScalarProperty Name="Dashed" ColumnName="Dashed" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CondenserAlias">
+      <EntityTypeMapping TypeName="RealTimePowerModel.CondenserAlia">
+        <MappingFragment StoreEntitySet="CondenserAlias">
+          <ScalarProperty Name="CondenserID" ColumnName="CondenserID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisplayObjects">
+      <EntityTypeMapping TypeName="RealTimePowerModel.DisplayObject">
+        <MappingFragment StoreEntitySet="DisplayObject">
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="Column" ColumnName="Column" />
+          <ScalarProperty Name="RowSpan" ColumnName="RowSpan" />
+          <ScalarProperty Name="ColumnSpan" ColumnName="ColumnSpan" />
+          <ScalarProperty Name="DisplayObjectID" ColumnName="DisplayObjectID" />
+          <ScalarProperty Name="DisplayObjectTypeID" ColumnName="DisplayObjectTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DisplayObjectTypes">
+      <EntityTypeMapping TypeName="RealTimePowerModel.DisplayObjectType">
+        <MappingFragment StoreEntitySet="DisplayObjectType">
+          <ScalarProperty Name="DisplayObjectTypeID" ColumnName="DisplayObjectTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Table" ColumnName="Table" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EngUnitsConversions">
+      <EntityTypeMapping TypeName="RealTimePowerModel.EngUnitsConversion">
+        <MappingFragment StoreEntitySet="EngUnitsConversion">
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="From" ColumnName="From" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Offset" ColumnName="Offset" />
+          <ScalarProperty Name="Scaling" ColumnName="Scaling" />
+          <ScalarProperty Name="Operation" ColumnName="Operation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterCategories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.FilterCategory">
+        <MappingFragment StoreEntitySet="FilterCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterTimeRanges">
+      <EntityTypeMapping TypeName="RealTimePowerModel.FilterTimeRange">
+        <MappingFragment StoreEntitySet="FilterTimeRange">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FilterValueRanges">
+      <EntityTypeMapping TypeName="RealTimePowerModel.FilterValueRange">
+        <MappingFragment StoreEntitySet="FilterValueRange">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Lower" ColumnName="Lower" />
+          <ScalarProperty Name="LowerEqual" ColumnName="LowerEqual" />
+          <ScalarProperty Name="Upper" ColumnName="Upper" />
+          <ScalarProperty Name="UpperEqual" ColumnName="UpperEqual" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Forecasts">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Forecast">
+        <MappingFragment StoreEntitySet="Forecast">
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="ForecastTypeID" ColumnName="ForecastTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LoadIndex" ColumnName="LoadIndex" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastArchives">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ForecastArchive">
+        <MappingFragment StoreEntitySet="ForecastArchive">
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastSnapShots">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ForecastSnapShot">
+        <MappingFragment StoreEntitySet="ForecastSnapShot">
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastTypes">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ForecastType">
+        <MappingFragment StoreEntitySet="ForecastType">
+          <ScalarProperty Name="ForecastTypeID" ColumnName="ForecastTypeID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="RequestCode" ColumnName="RequestCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastTypeAlias">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ForecastTypeAlia">
+        <MappingFragment StoreEntitySet="ForecastTypeAlias">
+          <ScalarProperty Name="ForecastTypeID" ColumnName="ForecastTypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ForecastValues">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ForecastValue">
+        <MappingFragment StoreEntitySet="ForecastValue">
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GasTurbineAlias">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GasTurbineAlia">
+        <MappingFragment StoreEntitySet="GasTurbineAlias">
+          <ScalarProperty Name="GasTurbineID" ColumnName="GasTurbineID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GasTurbineVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GasTurbineVariable">
+        <MappingFragment StoreEntitySet="GasTurbineVariable">
+          <ScalarProperty Name="GasTurbineVariableID" ColumnName="GasTurbineVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeneratorAlias">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GeneratorAlia">
+        <MappingFragment StoreEntitySet="GeneratorAlias">
+          <ScalarProperty Name="GeneratorID" ColumnName="GeneratorID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GridCategories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GridCategory">
+        <MappingFragment StoreEntitySet="GridCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GridHealthChecks">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GridHealthCheck">
+        <MappingFragment StoreEntitySet="GridHealthCheck">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="Decimals" ColumnName="Decimals" />
+          <ScalarProperty Name="Alpha" ColumnName="Alpha" />
+          <ScalarProperty Name="Red" ColumnName="Red" />
+          <ScalarProperty Name="Green" ColumnName="Green" />
+          <ScalarProperty Name="Blue" ColumnName="Blue" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Bold" ColumnName="Bold" />
+          <ScalarProperty Name="Italic" ColumnName="Italic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GridVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.GridVariable">
+        <MappingFragment StoreEntitySet="GridVariable">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Decimals" ColumnName="Decimals" />
+          <ScalarProperty Name="Alpha" ColumnName="Alpha" />
+          <ScalarProperty Name="Red" ColumnName="Red" />
+          <ScalarProperty Name="Green" ColumnName="Green" />
+          <ScalarProperty Name="Blue" ColumnName="Blue" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Bold" ColumnName="Bold" />
+          <ScalarProperty Name="Italic" ColumnName="Italic" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthCheckCategories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HealthCheckCategory">
+        <MappingFragment StoreEntitySet="HealthCheckCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthCheckCompares">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HealthCheckCompare">
+        <MappingFragment StoreEntitySet="HealthCheckCompare">
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelVariableID" ColumnName="ModelVariableID" />
+          <ScalarProperty Name="CompareVariableID" ColumnName="CompareVariableID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthCheckFilters">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HealthCheckFilter">
+        <MappingFragment StoreEntitySet="HealthCheckFilter">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Lower" ColumnName="Lower" />
+          <ScalarProperty Name="LowerEqual" ColumnName="LowerEqual" />
+          <ScalarProperty Name="Upper" ColumnName="Upper" />
+          <ScalarProperty Name="UpperEqual" ColumnName="UpperEqual" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HealthCheckReadings">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HealthCheckReading">
+        <MappingFragment StoreEntitySet="HealthCheckReading">
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Comparison" ColumnName="Comparison" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HRSGAlias">
+      <EntityTypeMapping TypeName="RealTimePowerModel.HRSGAlia">
+        <MappingFragment StoreEntitySet="HRSGAlias">
+          <ScalarProperty Name="HRSGID" ColumnName="HRSGID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InletCoolingTypeAlias">
+      <EntityTypeMapping TypeName="RealTimePowerModel.InletCoolingTypeAlia">
+        <MappingFragment StoreEntitySet="InletCoolingTypeAlias">
+          <ScalarProperty Name="InletCoolingTypeID" ColumnName="InletCoolingTypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LayoutPanels">
+      <EntityTypeMapping TypeName="RealTimePowerModel.LayoutPanel">
+        <MappingFragment StoreEntitySet="LayoutPanel">
+          <ScalarProperty Name="LayoutPanelID" ColumnName="LayoutPanelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LayoutImage" ColumnName="LayoutImage" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="PanelWidth" ColumnName="PanelWidth" />
+          <ScalarProperty Name="PanelHeight" ColumnName="PanelHeight" />
+          <ScalarProperty Name="AutoSize" ColumnName="AutoSize" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LayoutPanelCategories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.LayoutPanelCategory">
+        <MappingFragment StoreEntitySet="LayoutPanelCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="LayoutPanelID" ColumnName="LayoutPanelID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LayoutPanelObjects">
+      <EntityTypeMapping TypeName="RealTimePowerModel.LayoutPanelObject">
+        <MappingFragment StoreEntitySet="LayoutPanelObject">
+          <ScalarProperty Name="LayoutPanelObjectID" ColumnName="LayoutPanelObjectID" />
+          <ScalarProperty Name="LayoutPanelID" ColumnName="LayoutPanelID" />
+          <ScalarProperty Name="HeaderText" ColumnName="HeaderText" />
+          <ScalarProperty Name="PositionX" ColumnName="PositionX" />
+          <ScalarProperty Name="PositionY" ColumnName="PositionY" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="BorderStyle" ColumnName="BorderStyle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LayoutPanelObjectVariables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.LayoutPanelObjectVariable">
+        <MappingFragment StoreEntitySet="LayoutPanelObjectVariable">
+          <ScalarProperty Name="LayoutPanelObjectID" ColumnName="LayoutPanelObjectID" />
+          <ScalarProperty Name="LayoutPanelID" ColumnName="LayoutPanelID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Alignment" ColumnName="Alignment" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="Column" ColumnName="Column" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageLogs">
+      <EntityTypeMapping TypeName="RealTimePowerModel.MessageLog">
+        <MappingFragment StoreEntitySet="MessageLog">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="DisplayObjectTypeID" ColumnName="DisplayObjectTypeID" />
+          <ScalarProperty Name="DisplayObjectID" ColumnName="DisplayObjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModelCategories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ModelCategory">
+        <MappingFragment StoreEntitySet="ModelCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModelInputs">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ModelInput">
+        <MappingFragment StoreEntitySet="ModelInput">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModelInputCoeffs">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ModelInputCoeff">
+        <MappingFragment StoreEntitySet="ModelInputCoeff">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Power" ColumnName="Power" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModelTemplates">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ModelTemplate">
+        <MappingFragment StoreEntitySet="ModelTemplate">
+          <ScalarProperty Name="ModelTemplateID" ColumnName="ModelTemplateID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModelTemplateDescription" ColumnName="ModelTemplateDescription" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModelTemplateCategories">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ModelTemplateCategory">
+        <MappingFragment StoreEntitySet="ModelTemplateCategory">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="ModelTemplateID" ColumnName="ModelTemplateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ModelTemplateInputs">
+      <EntityTypeMapping TypeName="RealTimePowerModel.ModelTemplateInput">
+        <MappingFragment StoreEntitySet="ModelTemplateInput">
+          <ScalarProperty Name="ModelTemplateID" ColumnName="ModelTemplateID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Power" ColumnName="Power" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PanelSettings">
+      <EntityTypeMapping TypeName="RealTimePowerModel.PanelSetting">
+        <MappingFragment StoreEntitySet="PanelSettings">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DisplayObjectID" ColumnName="DisplayObjectID" />
+          <ScalarProperty Name="DisplayObjectTypeID" ColumnName="DisplayObjectTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="SplitterDistance" ColumnName="SplitterDistance" />
+          <ScalarProperty Name="Panel2Collasped" ColumnName="Panel2Collasped" />
+          <ScalarProperty Name="Orientation" ColumnName="Orientation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlantObjectTypeAlias">
+      <EntityTypeMapping TypeName="RealTimePowerModel.PlantObjectTypeAlia">
+        <MappingFragment StoreEntitySet="PlantObjectTypeAlias">
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SentinelUserActivities">
+      <EntityTypeMapping TypeName="RealTimePowerModel.SentinelUserActivity">
+        <MappingFragment StoreEntitySet="SentinelUserActivity">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="LoginTime" ColumnName="LoginTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sources">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Source">
+        <MappingFragment StoreEntitySet="Source">
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Summaries">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Summary">
+        <MappingFragment StoreEntitySet="Summary">
+          <ScalarProperty Name="SummaryID" ColumnName="SummaryID" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Interval" ColumnName="Interval" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SummaryTypes">
+      <EntityTypeMapping TypeName="RealTimePowerModel.SummaryType">
+        <MappingFragment StoreEntitySet="SummaryType">
+          <ScalarProperty Name="SummaryTypeID" ColumnName="SummaryTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SummaryValues">
+      <EntityTypeMapping TypeName="RealTimePowerModel.SummaryValue">
+        <MappingFragment StoreEntitySet="SummaryValues">
+          <ScalarProperty Name="SummaryID" ColumnName="SummaryID" />
+          <ScalarProperty Name="Average" ColumnName="Average" />
+          <ScalarProperty Name="Maximum" ColumnName="Maximum" />
+          <ScalarProperty Name="Minimum" ColumnName="Minimum" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Units">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Unit">
+        <MappingFragment StoreEntitySet="Unit">
+          <ScalarProperty Name="UnitID" ColumnName="UnitID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="PlantID" ColumnName="PlantID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DataServer" ColumnName="DataServer" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="FileLocation" ColumnName="FileLocation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UpdateServices">
+      <EntityTypeMapping TypeName="RealTimePowerModel.UpdateService">
+        <MappingFragment StoreEntitySet="UpdateService">
+          <ScalarProperty Name="UpdateVariables" ColumnName="UpdateVariables" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Variables">
+      <EntityTypeMapping TypeName="RealTimePowerModel.Variable">
+        <MappingFragment StoreEntitySet="Variable">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="PlantObjectType" ColumnName="PlantObjectType" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="PlantObject" ColumnName="PlantObject" />
+          <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+          <ScalarProperty Name="PlantObjectVariable" ColumnName="PlantObjectVariable" />
+          <ScalarProperty Name="PlantObjectVariableID" ColumnName="PlantObjectVariableID" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Local" ColumnName="Local" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariableArchives">
+      <EntityTypeMapping TypeName="RealTimePowerModel.VariableArchive">
+        <MappingFragment StoreEntitySet="VariableArchive">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariableMasters">
+      <EntityTypeMapping TypeName="RealTimePowerModel.VariableMaster">
+        <MappingFragment StoreEntitySet="VariableMaster">
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariablePoints">
+      <EntityTypeMapping TypeName="RealTimePowerModel.VariablePoint">
+        <MappingFragment StoreEntitySet="VariablePoint">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariablePointBackups">
+      <EntityTypeMapping TypeName="RealTimePowerModel.VariablePointBackup">
+        <MappingFragment StoreEntitySet="VariablePointBackup">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariablePointTemps">
+      <EntityTypeMapping TypeName="RealTimePowerModel.VariablePointTemp">
+        <MappingFragment StoreEntitySet="VariablePointTemp">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariableSnapshots">
+      <EntityTypeMapping TypeName="RealTimePowerModel.VariableSnapshot">
+        <MappingFragment StoreEntitySet="VariableSnapshot">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VariableTypes">
+      <EntityTypeMapping TypeName="RealTimePowerModel.VariableType">
+        <MappingFragment StoreEntitySet="VariableType">
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="database_firewall_rules">
+      <EntityTypeMapping TypeName="RealTimePowerModel.database_firewall_rules">
+        <MappingFragment StoreEntitySet="database_firewall_rules">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="start_ip_address" ColumnName="start_ip_address" />
+          <ScalarProperty Name="end_ip_address" ColumnName="end_ip_address" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="modify_date" ColumnName="modify_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="BulkInsertModifyVariableForm" FunctionName="RealTimePowerModel.Store.BulkInsertModifyVariableForm" />
+    <FunctionImportMapping FunctionImportName="BulkTest" FunctionName="RealTimePowerModel.Store.BulkTest" />
+    <FunctionImportMapping FunctionImportName="BulkUpdateModifyVariableForm" FunctionName="RealTimePowerModel.Store.BulkUpdateModifyVariableForm" />
+    <FunctionImportMapping FunctionImportName="GetPlantVariableListByUnit" FunctionName="RealTimePowerModel.Store.GetPlantVariableListByUnit">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.GetPlantVariableListByUnit_Result">
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_BindVariableModifyForm" FunctionName="RealTimePowerModel.Store.usp_BindVariableModifyForm" />
+    <FunctionImportMapping FunctionImportName="usp_ChartVariableBetweenDates" FunctionName="RealTimePowerModel.Store.usp_ChartVariableBetweenDates" />
+    <FunctionImportMapping FunctionImportName="usp_ConvertToModelForMultipleConversion" FunctionName="RealTimePowerModel.Store.usp_ConvertToModelForMultipleConversion" />
+    <FunctionImportMapping FunctionImportName="usp_CopyBook" FunctionName="RealTimePowerModel.Store.usp_CopyBook" />
+    <FunctionImportMapping FunctionImportName="usp_CopyChart" FunctionName="RealTimePowerModel.Store.usp_CopyChart" />
+    <FunctionImportMapping FunctionImportName="usp_CopyDisplay" FunctionName="RealTimePowerModel.Store.usp_CopyDisplay" />
+    <FunctionImportMapping FunctionImportName="usp_CopyFilter" FunctionName="RealTimePowerModel.Store.usp_CopyFilter" />
+    <FunctionImportMapping FunctionImportName="usp_CopyGridTable" FunctionName="RealTimePowerModel.Store.usp_CopyGridTable" />
+    <FunctionImportMapping FunctionImportName="usp_CopyHealthCheck" FunctionName="RealTimePowerModel.Store.usp_CopyHealthCheck" />
+    <FunctionImportMapping FunctionImportName="usp_CopyModel" FunctionName="RealTimePowerModel.Store.usp_CopyModel" />
+    <FunctionImportMapping FunctionImportName="usp_CopyModelTemplate" FunctionName="RealTimePowerModel.Store.usp_CopyModelTemplate" />
+    <FunctionImportMapping FunctionImportName="usp_CopyVariable_obsolete" FunctionName="RealTimePowerModel.Store.usp_CopyVariable_obsolete" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewBook" FunctionName="RealTimePowerModel.Store.usp_CreateNewBook" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewCategory" FunctionName="RealTimePowerModel.Store.usp_CreateNewCategory" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewChart" FunctionName="RealTimePowerModel.Store.usp_CreateNewChart" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewChartVariable" FunctionName="RealTimePowerModel.Store.usp_CreateNewChartVariable" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewDisplay" FunctionName="RealTimePowerModel.Store.usp_CreateNewDisplay" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewFilter" FunctionName="RealTimePowerModel.Store.usp_CreateNewFilter" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewGrid" FunctionName="RealTimePowerModel.Store.usp_CreateNewGrid" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewHealthCheck" FunctionName="RealTimePowerModel.Store.usp_CreateNewHealthCheck" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewLayoutPanel" FunctionName="RealTimePowerModel.Store.usp_CreateNewLayoutPanel" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewModel" FunctionName="RealTimePowerModel.Store.usp_CreateNewModel" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewModelTemplate" FunctionName="RealTimePowerModel.Store.usp_CreateNewModelTemplate" />
+    <FunctionImportMapping FunctionImportName="usp_CreateNewRelativeFilter" FunctionName="RealTimePowerModel.Store.usp_CreateNewRelativeFilter" />
+    <FunctionImportMapping FunctionImportName="usp_DataGridViewMasterVariable" FunctionName="RealTimePowerModel.Store.usp_DataGridViewMasterVariable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_DataGridViewMasterVariable_Result">
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="PlantComponent" ColumnName="PlantComponent" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_DataGridviewModifyPlantVariable" FunctionName="RealTimePowerModel.Store.usp_DataGridviewModifyPlantVariable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_DataGridviewModifyPlantVariable_Result">
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="BlockName" ColumnName="BlockName" />
+          <ScalarProperty Name="PlantComponent" ColumnName="PlantComponent" />
+          <ScalarProperty Name="PlantUnit" ColumnName="PlantUnit" />
+          <ScalarProperty Name="MasterVariable" ColumnName="MasterVariable" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="ForecastVariable" ColumnName="ForecastVariable" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_DataGridViewPlantVariableList" FunctionName="RealTimePowerModel.Store.usp_DataGridViewPlantVariableList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_DataGridViewPlantVariableList_Result">
+          <ScalarProperty Name="PlantVariableID" ColumnName="PlantVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="VariableType" ColumnName="VariableType" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_DataGridViewVariableType" FunctionName="RealTimePowerModel.Store.usp_DataGridViewVariableType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_DataGridViewVariableType_Result">
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_DeleteBook" FunctionName="RealTimePowerModel.Store.usp_DeleteBook" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteCategory" FunctionName="RealTimePowerModel.Store.usp_DeleteCategory" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteChart" FunctionName="RealTimePowerModel.Store.usp_DeleteChart" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteDisplay" FunctionName="RealTimePowerModel.Store.usp_DeleteDisplay" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteDisplayObject" FunctionName="RealTimePowerModel.Store.usp_DeleteDisplayObject" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteFilter" FunctionName="RealTimePowerModel.Store.usp_DeleteFilter" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteHealthCheck" FunctionName="RealTimePowerModel.Store.usp_DeleteHealthCheck" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteLayoutPanel" FunctionName="RealTimePowerModel.Store.usp_DeleteLayoutPanel" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteModel" FunctionName="RealTimePowerModel.Store.usp_DeleteModel" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteModelTemplate" FunctionName="RealTimePowerModel.Store.usp_DeleteModelTemplate" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteUser" FunctionName="RealTimePowerModel.Store.usp_DeleteUser" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteVariable" FunctionName="RealTimePowerModel.Store.usp_DeleteVariable" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteVariableFromGridTable" FunctionName="RealTimePowerModel.Store.usp_DeleteVariableFromGridTable" />
+    <FunctionImportMapping FunctionImportName="usp_DeleteVariableTable" FunctionName="RealTimePowerModel.Store.usp_DeleteVariableTable" />
+    <FunctionImportMapping FunctionImportName="usp_FindAndDeleteDuplicatesInReadingTables" FunctionName="RealTimePowerModel.Store.usp_FindAndDeleteDuplicatesInReadingTables" />
+    <FunctionImportMapping FunctionImportName="usp_GetActiveHealthChecks" FunctionName="RealTimePowerModel.Store.usp_GetActiveHealthChecks">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetActiveHealthChecks_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetBookDisplayList" FunctionName="RealTimePowerModel.Store.usp_GetBookDisplayList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetBookDisplayList_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="BookName" ColumnName="BookName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetBookList" FunctionName="RealTimePowerModel.Store.usp_GetBookList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetBookList_Result">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCategoryList" FunctionName="RealTimePowerModel.Store.usp_GetCategoryList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetCategoryList_Result">
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartAndChartVariables" FunctionName="RealTimePowerModel.Store.usp_GetChartAndChartVariables">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartAndChartVariables_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LHAxis" ColumnName="LHAxis" />
+          <ScalarProperty Name="LHAxisDP" ColumnName="LHAxisDP" />
+          <ScalarProperty Name="LHAxisEngUnits" ColumnName="LHAxisEngUnits" />
+          <ScalarProperty Name="LHAxisMax" ColumnName="LHAxisMax" />
+          <ScalarProperty Name="LHAxisMin" ColumnName="LHAxisMin" />
+          <ScalarProperty Name="LHAxisMajor" ColumnName="LHAxisMajor" />
+          <ScalarProperty Name="LHAxisMinor" ColumnName="LHAxisMinor" />
+          <ScalarProperty Name="LHAxisTitle" ColumnName="LHAxisTitle" />
+          <ScalarProperty Name="LHAxisVariableTypeID" ColumnName="LHAxisVariableTypeID" />
+          <ScalarProperty Name="RHAxis" ColumnName="RHAxis" />
+          <ScalarProperty Name="RHAxisDP" ColumnName="RHAxisDP" />
+          <ScalarProperty Name="RHAxisEngUnits" ColumnName="RHAxisEngUnits" />
+          <ScalarProperty Name="RHAxisMax" ColumnName="RHAxisMax" />
+          <ScalarProperty Name="RHAxisMin" ColumnName="RHAxisMin" />
+          <ScalarProperty Name="RHAxisMajor" ColumnName="RHAxisMajor" />
+          <ScalarProperty Name="RHAxisMinor" ColumnName="RHAxisMinor" />
+          <ScalarProperty Name="RHAxisTitle" ColumnName="RHAxisTitle" />
+          <ScalarProperty Name="RHAxisVariableTypeID" ColumnName="RHAxisVariableTypeID" />
+          <ScalarProperty Name="TAxis" ColumnName="TAxis" />
+          <ScalarProperty Name="TAxisMode" ColumnName="TAxisMode" />
+          <ScalarProperty Name="TAxisMax" ColumnName="TAxisMax" />
+          <ScalarProperty Name="TAxisMin" ColumnName="TAxisMin" />
+          <ScalarProperty Name="TAxisPlus" ColumnName="TAxisPlus" />
+          <ScalarProperty Name="TAxisMinus" ColumnName="TAxisMinus" />
+          <ScalarProperty Name="TAxisTitle" ColumnName="TAxisTitle" />
+          <ScalarProperty Name="XAxis" ColumnName="XAxis" />
+          <ScalarProperty Name="XAxisDP" ColumnName="XAxisDP" />
+          <ScalarProperty Name="XAxisEngUnits" ColumnName="XAxisEngUnits" />
+          <ScalarProperty Name="XAxisMax" ColumnName="XAxisMax" />
+          <ScalarProperty Name="XAxisMin" ColumnName="XAxisMin" />
+          <ScalarProperty Name="XAxisMajor" ColumnName="XAxisMajor" />
+          <ScalarProperty Name="XAxisMinor" ColumnName="XAxisMinor" />
+          <ScalarProperty Name="XAxisTitle" ColumnName="XAxisTitle" />
+          <ScalarProperty Name="XAxisVariableTypeID" ColumnName="XAxisVariableTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="TAxisMinor" ColumnName="TAxisMinor" />
+          <ScalarProperty Name="TAxisMajor" ColumnName="TAxisMajor" />
+          <ScalarProperty Name="TAxisMinorType" ColumnName="TAxisMinorType" />
+          <ScalarProperty Name="TAxisMajorType" ColumnName="TAxisMajorType" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartDetails" FunctionName="RealTimePowerModel.Store.usp_GetChartDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartDetails_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LHAxis" ColumnName="LHAxis" />
+          <ScalarProperty Name="LHAxisDP" ColumnName="LHAxisDP" />
+          <ScalarProperty Name="LHAxisEngUnits" ColumnName="LHAxisEngUnits" />
+          <ScalarProperty Name="LHAxisMax" ColumnName="LHAxisMax" />
+          <ScalarProperty Name="LHAxisMin" ColumnName="LHAxisMin" />
+          <ScalarProperty Name="LHAxisMajor" ColumnName="LHAxisMajor" />
+          <ScalarProperty Name="LHAxisMinor" ColumnName="LHAxisMinor" />
+          <ScalarProperty Name="LHAxisTitle" ColumnName="LHAxisTitle" />
+          <ScalarProperty Name="LHAxisVariableTypeID" ColumnName="LHAxisVariableTypeID" />
+          <ScalarProperty Name="RHAxis" ColumnName="RHAxis" />
+          <ScalarProperty Name="RHAxisDP" ColumnName="RHAxisDP" />
+          <ScalarProperty Name="RHAxisEngUnits" ColumnName="RHAxisEngUnits" />
+          <ScalarProperty Name="RHAxisMax" ColumnName="RHAxisMax" />
+          <ScalarProperty Name="RHAxisMin" ColumnName="RHAxisMin" />
+          <ScalarProperty Name="RHAxisMajor" ColumnName="RHAxisMajor" />
+          <ScalarProperty Name="RHAxisMinor" ColumnName="RHAxisMinor" />
+          <ScalarProperty Name="RHAxisTitle" ColumnName="RHAxisTitle" />
+          <ScalarProperty Name="RHAxisVariableTypeID" ColumnName="RHAxisVariableTypeID" />
+          <ScalarProperty Name="TAxis" ColumnName="TAxis" />
+          <ScalarProperty Name="TAxisMode" ColumnName="TAxisMode" />
+          <ScalarProperty Name="TAxisMax" ColumnName="TAxisMax" />
+          <ScalarProperty Name="TAxisMin" ColumnName="TAxisMin" />
+          <ScalarProperty Name="TAxisPlus" ColumnName="TAxisPlus" />
+          <ScalarProperty Name="TAxisMinus" ColumnName="TAxisMinus" />
+          <ScalarProperty Name="TAxisTitle" ColumnName="TAxisTitle" />
+          <ScalarProperty Name="XAxis" ColumnName="XAxis" />
+          <ScalarProperty Name="XAxisDP" ColumnName="XAxisDP" />
+          <ScalarProperty Name="XAxisEngUnits" ColumnName="XAxisEngUnits" />
+          <ScalarProperty Name="XAxisMax" ColumnName="XAxisMax" />
+          <ScalarProperty Name="XAxisMin" ColumnName="XAxisMin" />
+          <ScalarProperty Name="XAxisMajor" ColumnName="XAxisMajor" />
+          <ScalarProperty Name="XAxisMinor" ColumnName="XAxisMinor" />
+          <ScalarProperty Name="XAxisTitle" ColumnName="XAxisTitle" />
+          <ScalarProperty Name="XAxisVariableTypeID" ColumnName="XAxisVariableTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="TAxisMinor" ColumnName="TAxisMinor" />
+          <ScalarProperty Name="TAxisMajor" ColumnName="TAxisMajor" />
+          <ScalarProperty Name="TAxisMinorType" ColumnName="TAxisMinorType" />
+          <ScalarProperty Name="TAxisMajorType" ColumnName="TAxisMajorType" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartInfo" FunctionName="RealTimePowerModel.Store.usp_GetChartInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartInfo_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LHAxis" ColumnName="LHAxis" />
+          <ScalarProperty Name="LHAxisDP" ColumnName="LHAxisDP" />
+          <ScalarProperty Name="LHAxisEngUnits" ColumnName="LHAxisEngUnits" />
+          <ScalarProperty Name="LHAxisMax" ColumnName="LHAxisMax" />
+          <ScalarProperty Name="LHAxisMin" ColumnName="LHAxisMin" />
+          <ScalarProperty Name="LHAxisMajor" ColumnName="LHAxisMajor" />
+          <ScalarProperty Name="LHAxisMinor" ColumnName="LHAxisMinor" />
+          <ScalarProperty Name="LHAxisTitle" ColumnName="LHAxisTitle" />
+          <ScalarProperty Name="LHAxisVariableTypeID" ColumnName="LHAxisVariableTypeID" />
+          <ScalarProperty Name="RHAxis" ColumnName="RHAxis" />
+          <ScalarProperty Name="RHAxisDP" ColumnName="RHAxisDP" />
+          <ScalarProperty Name="RHAxisEngUnits" ColumnName="RHAxisEngUnits" />
+          <ScalarProperty Name="RHAxisMax" ColumnName="RHAxisMax" />
+          <ScalarProperty Name="RHAxisMin" ColumnName="RHAxisMin" />
+          <ScalarProperty Name="RHAxisMajor" ColumnName="RHAxisMajor" />
+          <ScalarProperty Name="RHAxisMinor" ColumnName="RHAxisMinor" />
+          <ScalarProperty Name="RHAxisTitle" ColumnName="RHAxisTitle" />
+          <ScalarProperty Name="RHAxisVariableTypeID" ColumnName="RHAxisVariableTypeID" />
+          <ScalarProperty Name="TAxis" ColumnName="TAxis" />
+          <ScalarProperty Name="TAxisMode" ColumnName="TAxisMode" />
+          <ScalarProperty Name="TAxisMax" ColumnName="TAxisMax" />
+          <ScalarProperty Name="TAxisMin" ColumnName="TAxisMin" />
+          <ScalarProperty Name="TAxisPlus" ColumnName="TAxisPlus" />
+          <ScalarProperty Name="TAxisMinus" ColumnName="TAxisMinus" />
+          <ScalarProperty Name="TAxisTitle" ColumnName="TAxisTitle" />
+          <ScalarProperty Name="XAxis" ColumnName="XAxis" />
+          <ScalarProperty Name="XAxisDP" ColumnName="XAxisDP" />
+          <ScalarProperty Name="XAxisEngUnits" ColumnName="XAxisEngUnits" />
+          <ScalarProperty Name="XAxisMax" ColumnName="XAxisMax" />
+          <ScalarProperty Name="XAxisMin" ColumnName="XAxisMin" />
+          <ScalarProperty Name="XAxisMajor" ColumnName="XAxisMajor" />
+          <ScalarProperty Name="XAxisMinor" ColumnName="XAxisMinor" />
+          <ScalarProperty Name="XAxisTitle" ColumnName="XAxisTitle" />
+          <ScalarProperty Name="XAxisVariableTypeID" ColumnName="XAxisVariableTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="TAxisMinor" ColumnName="TAxisMinor" />
+          <ScalarProperty Name="TAxisMajor" ColumnName="TAxisMajor" />
+          <ScalarProperty Name="TAxisMinorType" ColumnName="TAxisMinorType" />
+          <ScalarProperty Name="TAxisMajorType" ColumnName="TAxisMajorType" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Filter" ColumnName="Filter" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartInfowithFilter" FunctionName="RealTimePowerModel.Store.usp_GetChartInfowithFilter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartInfowithFilter_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LHAxis" ColumnName="LHAxis" />
+          <ScalarProperty Name="LHAxisDP" ColumnName="LHAxisDP" />
+          <ScalarProperty Name="LHAxisEngUnits" ColumnName="LHAxisEngUnits" />
+          <ScalarProperty Name="LHAxisMax" ColumnName="LHAxisMax" />
+          <ScalarProperty Name="LHAxisMin" ColumnName="LHAxisMin" />
+          <ScalarProperty Name="LHAxisMajor" ColumnName="LHAxisMajor" />
+          <ScalarProperty Name="LHAxisMinor" ColumnName="LHAxisMinor" />
+          <ScalarProperty Name="LHAxisTitle" ColumnName="LHAxisTitle" />
+          <ScalarProperty Name="LHAxisVariableTypeID" ColumnName="LHAxisVariableTypeID" />
+          <ScalarProperty Name="RHAxis" ColumnName="RHAxis" />
+          <ScalarProperty Name="RHAxisDP" ColumnName="RHAxisDP" />
+          <ScalarProperty Name="RHAxisEngUnits" ColumnName="RHAxisEngUnits" />
+          <ScalarProperty Name="RHAxisMax" ColumnName="RHAxisMax" />
+          <ScalarProperty Name="RHAxisMin" ColumnName="RHAxisMin" />
+          <ScalarProperty Name="RHAxisMajor" ColumnName="RHAxisMajor" />
+          <ScalarProperty Name="RHAxisMinor" ColumnName="RHAxisMinor" />
+          <ScalarProperty Name="RHAxisTitle" ColumnName="RHAxisTitle" />
+          <ScalarProperty Name="RHAxisVariableTypeID" ColumnName="RHAxisVariableTypeID" />
+          <ScalarProperty Name="TAxis" ColumnName="TAxis" />
+          <ScalarProperty Name="TAxisMode" ColumnName="TAxisMode" />
+          <ScalarProperty Name="TAxisMax" ColumnName="TAxisMax" />
+          <ScalarProperty Name="TAxisMin" ColumnName="TAxisMin" />
+          <ScalarProperty Name="TAxisPlus" ColumnName="TAxisPlus" />
+          <ScalarProperty Name="TAxisMinus" ColumnName="TAxisMinus" />
+          <ScalarProperty Name="TAxisTitle" ColumnName="TAxisTitle" />
+          <ScalarProperty Name="XAxis" ColumnName="XAxis" />
+          <ScalarProperty Name="XAxisDP" ColumnName="XAxisDP" />
+          <ScalarProperty Name="XAxisEngUnits" ColumnName="XAxisEngUnits" />
+          <ScalarProperty Name="XAxisMax" ColumnName="XAxisMax" />
+          <ScalarProperty Name="XAxisMin" ColumnName="XAxisMin" />
+          <ScalarProperty Name="XAxisMajor" ColumnName="XAxisMajor" />
+          <ScalarProperty Name="XAxisMinor" ColumnName="XAxisMinor" />
+          <ScalarProperty Name="XAxisTitle" ColumnName="XAxisTitle" />
+          <ScalarProperty Name="XAxisVariableTypeID" ColumnName="XAxisVariableTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="TAxisMinor" ColumnName="TAxisMinor" />
+          <ScalarProperty Name="TAxisMajor" ColumnName="TAxisMajor" />
+          <ScalarProperty Name="TAxisMinorType" ColumnName="TAxisMinorType" />
+          <ScalarProperty Name="TAxisMajorType" ColumnName="TAxisMajorType" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Filter" ColumnName="Filter" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartList" FunctionName="RealTimePowerModel.Store.usp_GetChartList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartList_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LHAxis" ColumnName="LHAxis" />
+          <ScalarProperty Name="LHAxisDP" ColumnName="LHAxisDP" />
+          <ScalarProperty Name="LHAxisEngUnits" ColumnName="LHAxisEngUnits" />
+          <ScalarProperty Name="LHAxisMax" ColumnName="LHAxisMax" />
+          <ScalarProperty Name="LHAxisMin" ColumnName="LHAxisMin" />
+          <ScalarProperty Name="LHAxisMajor" ColumnName="LHAxisMajor" />
+          <ScalarProperty Name="LHAxisMinor" ColumnName="LHAxisMinor" />
+          <ScalarProperty Name="LHAxisTitle" ColumnName="LHAxisTitle" />
+          <ScalarProperty Name="LHAxisVariableTypeID" ColumnName="LHAxisVariableTypeID" />
+          <ScalarProperty Name="RHAxis" ColumnName="RHAxis" />
+          <ScalarProperty Name="RHAxisDP" ColumnName="RHAxisDP" />
+          <ScalarProperty Name="RHAxisEngUnits" ColumnName="RHAxisEngUnits" />
+          <ScalarProperty Name="RHAxisMax" ColumnName="RHAxisMax" />
+          <ScalarProperty Name="RHAxisMin" ColumnName="RHAxisMin" />
+          <ScalarProperty Name="RHAxisMajor" ColumnName="RHAxisMajor" />
+          <ScalarProperty Name="RHAxisMinor" ColumnName="RHAxisMinor" />
+          <ScalarProperty Name="RHAxisTitle" ColumnName="RHAxisTitle" />
+          <ScalarProperty Name="RHAxisVariableTypeID" ColumnName="RHAxisVariableTypeID" />
+          <ScalarProperty Name="TAxis" ColumnName="TAxis" />
+          <ScalarProperty Name="TAxisMode" ColumnName="TAxisMode" />
+          <ScalarProperty Name="TAxisMax" ColumnName="TAxisMax" />
+          <ScalarProperty Name="TAxisMin" ColumnName="TAxisMin" />
+          <ScalarProperty Name="TAxisPlus" ColumnName="TAxisPlus" />
+          <ScalarProperty Name="TAxisMinus" ColumnName="TAxisMinus" />
+          <ScalarProperty Name="TAxisTitle" ColumnName="TAxisTitle" />
+          <ScalarProperty Name="XAxis" ColumnName="XAxis" />
+          <ScalarProperty Name="XAxisDP" ColumnName="XAxisDP" />
+          <ScalarProperty Name="XAxisEngUnits" ColumnName="XAxisEngUnits" />
+          <ScalarProperty Name="XAxisMax" ColumnName="XAxisMax" />
+          <ScalarProperty Name="XAxisMin" ColumnName="XAxisMin" />
+          <ScalarProperty Name="XAxisMajor" ColumnName="XAxisMajor" />
+          <ScalarProperty Name="XAxisMinor" ColumnName="XAxisMinor" />
+          <ScalarProperty Name="XAxisTitle" ColumnName="XAxisTitle" />
+          <ScalarProperty Name="XAxisVariableTypeID" ColumnName="XAxisVariableTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="TAxisMinor" ColumnName="TAxisMinor" />
+          <ScalarProperty Name="TAxisMajor" ColumnName="TAxisMajor" />
+          <ScalarProperty Name="TAxisMinorType" ColumnName="TAxisMinorType" />
+          <ScalarProperty Name="TAxisMajorType" ColumnName="TAxisMajorType" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartListQuick" FunctionName="RealTimePowerModel.Store.usp_GetChartListQuick">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartListQuick_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartRealTimeValues" FunctionName="RealTimePowerModel.Store.usp_GetChartRealTimeValues">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartRealTimeValues_Result">
+          <ScalarProperty Name="Axis" ColumnName="Axis" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartType" FunctionName="RealTimePowerModel.Store.usp_GetChartType" />
+    <FunctionImportMapping FunctionImportName="usp_GetChartVariable" FunctionName="RealTimePowerModel.Store.usp_GetChartVariable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartVariable_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="Axis" ColumnName="Axis" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="VariableIDType" ColumnName="VariableIDType" />
+          <ScalarProperty Name="LineType" ColumnName="LineType" />
+          <ScalarProperty Name="Alpha" ColumnName="Alpha" />
+          <ScalarProperty Name="Red" ColumnName="Red" />
+          <ScalarProperty Name="Green" ColumnName="Green" />
+          <ScalarProperty Name="Blue" ColumnName="Blue" />
+          <ScalarProperty Name="Dashed" ColumnName="Dashed" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartVariableList" FunctionName="RealTimePowerModel.Store.usp_GetChartVariableList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartVariableList_Result">
+          <ScalarProperty Name="Axis" ColumnName="Axis" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetChartVariableValuesWithNoFilter" FunctionName="RealTimePowerModel.Store.usp_GetChartVariableValuesWithNoFilter" />
+    <FunctionImportMapping FunctionImportName="usp_GetChartWithFilter" FunctionName="RealTimePowerModel.Store.usp_GetChartWithFilter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetChartWithFilter_Result">
+          <ScalarProperty Name="ChartID" ColumnName="ChartID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LHAxis" ColumnName="LHAxis" />
+          <ScalarProperty Name="LHAxisDP" ColumnName="LHAxisDP" />
+          <ScalarProperty Name="LHAxisEngUnits" ColumnName="LHAxisEngUnits" />
+          <ScalarProperty Name="LHAxisMax" ColumnName="LHAxisMax" />
+          <ScalarProperty Name="LHAxisMin" ColumnName="LHAxisMin" />
+          <ScalarProperty Name="LHAxisMajor" ColumnName="LHAxisMajor" />
+          <ScalarProperty Name="LHAxisMinor" ColumnName="LHAxisMinor" />
+          <ScalarProperty Name="LHAxisTitle" ColumnName="LHAxisTitle" />
+          <ScalarProperty Name="LHAxisVariableTypeID" ColumnName="LHAxisVariableTypeID" />
+          <ScalarProperty Name="RHAxis" ColumnName="RHAxis" />
+          <ScalarProperty Name="RHAxisDP" ColumnName="RHAxisDP" />
+          <ScalarProperty Name="RHAxisEngUnits" ColumnName="RHAxisEngUnits" />
+          <ScalarProperty Name="RHAxisMax" ColumnName="RHAxisMax" />
+          <ScalarProperty Name="RHAxisMin" ColumnName="RHAxisMin" />
+          <ScalarProperty Name="RHAxisMajor" ColumnName="RHAxisMajor" />
+          <ScalarProperty Name="RHAxisMinor" ColumnName="RHAxisMinor" />
+          <ScalarProperty Name="RHAxisTitle" ColumnName="RHAxisTitle" />
+          <ScalarProperty Name="RHAxisVariableTypeID" ColumnName="RHAxisVariableTypeID" />
+          <ScalarProperty Name="TAxis" ColumnName="TAxis" />
+          <ScalarProperty Name="TAxisMode" ColumnName="TAxisMode" />
+          <ScalarProperty Name="TAxisMax" ColumnName="TAxisMax" />
+          <ScalarProperty Name="TAxisMin" ColumnName="TAxisMin" />
+          <ScalarProperty Name="TAxisPlus" ColumnName="TAxisPlus" />
+          <ScalarProperty Name="TAxisMinus" ColumnName="TAxisMinus" />
+          <ScalarProperty Name="TAxisTitle" ColumnName="TAxisTitle" />
+          <ScalarProperty Name="XAxis" ColumnName="XAxis" />
+          <ScalarProperty Name="XAxisDP" ColumnName="XAxisDP" />
+          <ScalarProperty Name="XAxisEngUnits" ColumnName="XAxisEngUnits" />
+          <ScalarProperty Name="XAxisMax" ColumnName="XAxisMax" />
+          <ScalarProperty Name="XAxisMin" ColumnName="XAxisMin" />
+          <ScalarProperty Name="XAxisMajor" ColumnName="XAxisMajor" />
+          <ScalarProperty Name="XAxisMinor" ColumnName="XAxisMinor" />
+          <ScalarProperty Name="XAxisTitle" ColumnName="XAxisTitle" />
+          <ScalarProperty Name="XAxisVariableTypeID" ColumnName="XAxisVariableTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="TGroupMode" ColumnName="TGroupMode" />
+          <ScalarProperty Name="TAxisMinor" ColumnName="TAxisMinor" />
+          <ScalarProperty Name="TAxisMajor" ColumnName="TAxisMajor" />
+          <ScalarProperty Name="TAxisMinorType" ColumnName="TAxisMinorType" />
+          <ScalarProperty Name="TAxisMajorType" ColumnName="TAxisMajorType" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetCLRVariableHistoryWithFilter" FunctionName="RealTimePowerModel.Store.usp_GetCLRVariableHistoryWithFilter" />
+    <FunctionImportMapping FunctionImportName="usp_GetDataByChartID" FunctionName="RealTimePowerModel.Store.usp_GetDataByChartID" />
+    <FunctionImportMapping FunctionImportName="usp_GetDisplay" FunctionName="RealTimePowerModel.Store.usp_GetDisplay">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetDisplay_Result">
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="MinRowHeight" ColumnName="MinRowHeight" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDisplayDetails" FunctionName="RealTimePowerModel.Store.usp_GetDisplayDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetDisplayDetails_Result">
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="MinRowHeight" ColumnName="MinRowHeight" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDisplayObject" FunctionName="RealTimePowerModel.Store.usp_GetDisplayObject">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetDisplayObject_Result">
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="Row" ColumnName="Row" />
+          <ScalarProperty Name="Column" ColumnName="Column" />
+          <ScalarProperty Name="RowSpan" ColumnName="RowSpan" />
+          <ScalarProperty Name="ColumnSpan" ColumnName="ColumnSpan" />
+          <ScalarProperty Name="DisplayObjectID" ColumnName="DisplayObjectID" />
+          <ScalarProperty Name="DisplayObjectTypeID" ColumnName="DisplayObjectTypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDisplayObjectDetails" FunctionName="RealTimePowerModel.Store.usp_GetDisplayObjectDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetDisplayObjectDetails_Result">
+          <ScalarProperty Name="DisplayID" ColumnName="DisplayID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Rows" ColumnName="Rows" />
+          <ScalarProperty Name="Columns" ColumnName="Columns" />
+          <ScalarProperty Name="MinRowHeight" ColumnName="MinRowHeight" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+          <ScalarProperty Name="UserID1" ColumnName="UserID1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDisplayObjectListsByUserID" FunctionName="RealTimePowerModel.Store.usp_GetDisplayObjectListsByUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetDisplayObjectListsByUserID_Result">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetDisplayObjectName" FunctionName="RealTimePowerModel.Store.usp_GetDisplayObjectName" />
+    <FunctionImportMapping FunctionImportName="usp_GetFilterDetails" FunctionName="RealTimePowerModel.Store.usp_GetFilterDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetFilterDetails_Result">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MaxRows" ColumnName="MaxRows" />
+          <ScalarProperty Name="Relative" ColumnName="Relative" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetFilterDetailsToView" FunctionName="RealTimePowerModel.Store.usp_GetFilterDetailsToView">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetFilterDetailsToView_Result">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MaxRows" ColumnName="MaxRows" />
+          <ScalarProperty Name="Relative" ColumnName="Relative" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetFilterIDByName" FunctionName="RealTimePowerModel.Store.usp_GetFilterIDByName" />
+    <FunctionImportMapping FunctionImportName="usp_GetFilterList" FunctionName="RealTimePowerModel.Store.usp_GetFilterList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetFilterList_Result">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MaxRows" ColumnName="MaxRows" />
+          <ScalarProperty Name="Relative" ColumnName="Relative" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetFilterName" FunctionName="RealTimePowerModel.Store.usp_GetFilterName" />
+    <FunctionImportMapping FunctionImportName="usp_GetFilterTimeRange" FunctionName="RealTimePowerModel.Store.usp_GetFilterTimeRange">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetFilterTimeRange_Result">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Relative" ColumnName="Relative" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetFilterValueandTime" FunctionName="RealTimePowerModel.Store.usp_GetFilterValueandTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetFilterValueandTime_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Relative" ColumnName="Relative" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="LOWER" ColumnName="LOWER" />
+          <ScalarProperty Name="LC" ColumnName="LC" />
+          <ScalarProperty Name="Variable" ColumnName="Variable" />
+          <ScalarProperty Name="UC" ColumnName="UC" />
+          <ScalarProperty Name="UPPER" ColumnName="UPPER" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetFilterValueRange" FunctionName="RealTimePowerModel.Store.usp_GetFilterValueRange">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetFilterValueRange_Result">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Lower" ColumnName="Lower" />
+          <ScalarProperty Name="LowerEqual" ColumnName="LowerEqual" />
+          <ScalarProperty Name="Upper" ColumnName="Upper" />
+          <ScalarProperty Name="UpperEqual" ColumnName="UpperEqual" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetForecastValuesByDateTime" FunctionName="RealTimePowerModel.Store.usp_GetForecastValuesByDateTime">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetForecastValuesByDateTime_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Forecast_Type" ColumnName="Forecast Type" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetForecastValuesByVariableID" FunctionName="RealTimePowerModel.Store.usp_GetForecastValuesByVariableID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetForecastValuesByVariableID_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetFullModelComparisonTables" FunctionName="RealTimePowerModel.Store.usp_GetFullModelComparisonTables">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetFullModelComparisonTables_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="MAX" ColumnName="MAX" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="PredictionID" ColumnName="PredictionID" />
+          <ScalarProperty Name="ReadingTable" ColumnName="ReadingTable" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGasTurbineData" FunctionName="RealTimePowerModel.Store.usp_GetGasTurbineData" />
+    <FunctionImportMapping FunctionImportName="usp_GetGridHealthCheckData" FunctionName="RealTimePowerModel.Store.usp_GetGridHealthCheckData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridHealthCheckData_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="Decimals" ColumnName="Decimals" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGridHealthCheckInfo" FunctionName="RealTimePowerModel.Store.usp_GetGridHealthCheckInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridHealthCheckInfo_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGridHealthChecksForDisplay" FunctionName="RealTimePowerModel.Store.usp_GetGridHealthChecksForDisplay">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridHealthChecksForDisplay_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGridInfo" FunctionName="RealTimePowerModel.Store.usp_GetGridInfo" />
+    <FunctionImportMapping FunctionImportName="usp_GetGridList" FunctionName="RealTimePowerModel.Store.usp_GetGridList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridList_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGridListForModifyForm" FunctionName="RealTimePowerModel.Store.usp_GetGridListForModifyForm">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridListForModifyForm_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGridTableForGridControl" FunctionName="RealTimePowerModel.Store.usp_GetGridTableForGridControl">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridTableForGridControl_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGridVariableInfo" FunctionName="RealTimePowerModel.Store.usp_GetGridVariableInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridVariableInfo_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGridVariablesForDisplay" FunctionName="RealTimePowerModel.Store.usp_GetGridVariablesForDisplay">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetGridVariablesForDisplay_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckFilter" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckFilter">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckFilter_Result">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Lower" ColumnName="Lower" />
+          <ScalarProperty Name="LowerEqual" ColumnName="LowerEqual" />
+          <ScalarProperty Name="Upper" ColumnName="Upper" />
+          <ScalarProperty Name="UpperEqual" ColumnName="UpperEqual" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckHistoryForChart" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckHistoryForChart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckHistoryForChart_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckHistoryForGrid" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckHistoryForGrid">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckHistoryForGrid_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckList" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckList_Result">
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="Comparison" ColumnName="Comparison" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AlertCount" ColumnName="AlertCount" />
+          <ScalarProperty Name="NormalCount" ColumnName="NormalCount" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HCLastModified" ColumnName="HCLastModified" />
+          <ScalarProperty Name="ModelLastModified" ColumnName="ModelLastModified" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="CompareVariableID" ColumnName="CompareVariableID" />
+          <ScalarProperty Name="CompareVariable" ColumnName="CompareVariable" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckListandModel" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckListandModel">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckListandModel_Result">
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckModelAndFilterName" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckModelAndFilterName">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckModelAndFilterName_Result">
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="ModelVariableID" ColumnName="ModelVariableID" />
+          <ScalarProperty Name="ModelVariableName" ColumnName="ModelVariableName" />
+          <ScalarProperty Name="ModelVariableEngUnits" ColumnName="ModelVariableEngUnits" />
+          <ScalarProperty Name="ModelVariableUnitID" ColumnName="ModelVariableUnitID" />
+          <ScalarProperty Name="ModelVariableUnitName" ColumnName="ModelVariableUnitName" />
+          <ScalarProperty Name="CompareVariableID" ColumnName="CompareVariableID" />
+          <ScalarProperty Name="CompareVariableName" ColumnName="CompareVariableName" />
+          <ScalarProperty Name="CompareVariableEngUnits" ColumnName="CompareVariableEngUnits" />
+          <ScalarProperty Name="CompareVariableUnitID" ColumnName="CompareVariableUnitID" />
+          <ScalarProperty Name="CompareVariableUnitName" ColumnName="CompareVariableUnitName" />
+          <ScalarProperty Name="Comparison" ColumnName="Comparison" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AlertCount" ColumnName="AlertCount" />
+          <ScalarProperty Name="NormalCount" ColumnName="NormalCount" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="FilterName" ColumnName="FilterName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckReadingTableData" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckReadingTableData" />
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckRealTimeInfo" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckRealTimeInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckRealTimeInfo_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckRealTimeValues" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckRealTimeValues">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckRealTimeValues_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="Difference" ColumnName="Difference" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckRealTimeValuesDataTableInput" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckRealTimeValuesDataTableInput" />
+    <FunctionImportMapping FunctionImportName="usp_GetHealthChecksActive" FunctionName="RealTimePowerModel.Store.usp_GetHealthChecksActive">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthChecksActive_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthChecksByEquipmentType" FunctionName="RealTimePowerModel.Store.usp_GetHealthChecksByEquipmentType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthChecksByEquipmentType_Result">
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthChecksInAlert" FunctionName="RealTimePowerModel.Store.usp_GetHealthChecksInAlert">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthChecksInAlert_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthChecksLastHours" FunctionName="RealTimePowerModel.Store.usp_GetHealthChecksLastHours">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthChecksLastHours_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthChecksVisibleForUser" FunctionName="RealTimePowerModel.Store.usp_GetHealthChecksVisibleForUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthChecksVisibleForUser_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckTable" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckTable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckTable_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckToModify" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckToModify">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckToModify_Result">
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="MessageID" ColumnName="MessageID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="Abbreviation" ColumnName="Abbreviation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetHealthCheckVariation" FunctionName="RealTimePowerModel.Store.usp_GetHealthCheckVariation">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetHealthCheckVariation_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetLayoutPanelDetails" FunctionName="RealTimePowerModel.Store.usp_GetLayoutPanelDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetLayoutPanelDetails_Result">
+          <ScalarProperty Name="LayoutPanelID" ColumnName="LayoutPanelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LayoutImage" ColumnName="LayoutImage" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="PanelWidth" ColumnName="PanelWidth" />
+          <ScalarProperty Name="PanelHeight" ColumnName="PanelHeight" />
+          <ScalarProperty Name="AutoSize" ColumnName="AutoSize" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetLayoutPanelList" FunctionName="RealTimePowerModel.Store.usp_GetLayoutPanelList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetLayoutPanelList_Result">
+          <ScalarProperty Name="LayoutPanelID" ColumnName="LayoutPanelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LayoutImage" ColumnName="LayoutImage" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="PanelWidth" ColumnName="PanelWidth" />
+          <ScalarProperty Name="PanelHeight" ColumnName="PanelHeight" />
+          <ScalarProperty Name="AutoSize" ColumnName="AutoSize" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetLayoutPanelVariableValues" FunctionName="RealTimePowerModel.Store.usp_GetLayoutPanelVariableValues" />
+    <FunctionImportMapping FunctionImportName="usp_GetMessageLog" FunctionName="RealTimePowerModel.Store.usp_GetMessageLog">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetMessageLog_Result">
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="DisplayObjectTypeID" ColumnName="DisplayObjectTypeID" />
+          <ScalarProperty Name="DisplayObjectID" ColumnName="DisplayObjectID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetMinMaxAvgBetweenDates" FunctionName="RealTimePowerModel.Store.usp_GetMinMaxAvgBetweenDates" />
+    <FunctionImportMapping FunctionImportName="usp_GetModelAndCoeffs" FunctionName="RealTimePowerModel.Store.usp_GetModelAndCoeffs">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelAndCoeffs_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Modeled_Variable" ColumnName="Modeled Variable" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Filter" ColumnName="Filter" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelAndFilterDetails" FunctionName="RealTimePowerModel.Store.usp_GetModelAndFilterDetails">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelAndFilterDetails_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModelFilterName" ColumnName="ModelFilterName" />
+          <ScalarProperty Name="FilterLastModified" ColumnName="FilterLastModified" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="PredictionID" ColumnName="PredictionID" />
+          <ScalarProperty Name="ModelLastModified" ColumnName="ModelLastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelComparisonTables" FunctionName="RealTimePowerModel.Store.usp_GetModelComparisonTables">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelComparisonTables_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModelFilterName" ColumnName="ModelFilterName" />
+          <ScalarProperty Name="FilterLastModified" ColumnName="FilterLastModified" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="PredictionID" ColumnName="PredictionID" />
+          <ScalarProperty Name="ModelLastModified" ColumnName="ModelLastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelDashBoard" FunctionName="RealTimePowerModel.Store.usp_GetModelDashBoard">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelDashBoard_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Filter" ColumnName="Filter" />
+          <ScalarProperty Name="Modeled_Variable" ColumnName="Modeled Variable" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Last_Modified" ColumnName="Last Modified" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelDataForModelTemplate" FunctionName="RealTimePowerModel.Store.usp_GetModelDataForModelTemplate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelDataForModelTemplate_Result">
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="ModeledVariableName" ColumnName="ModeledVariableName" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelInfoToPlot" FunctionName="RealTimePowerModel.Store.usp_GetModelInfoToPlot">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelInfoToPlot_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModelFilterName" ColumnName="ModelFilterName" />
+          <ScalarProperty Name="FilterLastModified" ColumnName="FilterLastModified" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="PredictionID" ColumnName="PredictionID" />
+          <ScalarProperty Name="ModelLastModified" ColumnName="ModelLastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelInput" FunctionName="RealTimePowerModel.Store.usp_GetModelInput">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelInput_Result">
+          <ScalarProperty Name="VARIABLEID" ColumnName="VARIABLEID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MIN" ColumnName="MIN" />
+          <ScalarProperty Name="MAX" ColumnName="MAX" />
+          <ScalarProperty Name="MEAN" ColumnName="MEAN" />
+          <ScalarProperty Name="STDEV" ColumnName="STDEV" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelInputCoeff" FunctionName="RealTimePowerModel.Store.usp_GetModelInputCoeff" />
+    <FunctionImportMapping FunctionImportName="usp_GetModelInputCurrentValues" FunctionName="RealTimePowerModel.Store.usp_GetModelInputCurrentValues">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelInputCurrentValues_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Model_Input" ColumnName="Model Input" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelInputReadingTableDataByModelID" FunctionName="RealTimePowerModel.Store.usp_GetModelInputReadingTableDataByModelID" />
+    <FunctionImportMapping FunctionImportName="usp_GetModelInputsForCreateModelFromTemplateForm" FunctionName="RealTimePowerModel.Store.usp_GetModelInputsForCreateModelFromTemplateForm">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelInputsForCreateModelFromTemplateForm_Result">
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NumOfCoeffs" ColumnName="NumOfCoeffs" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelInputsFromModeledVariableTemplate" FunctionName="RealTimePowerModel.Store.usp_GetModelInputsFromModeledVariableTemplate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelInputsFromModeledVariableTemplate_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Power" ColumnName="Power" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelList" FunctionName="RealTimePowerModel.Store.usp_GetModelList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelList_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="PredictionID" ColumnName="PredictionID" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelsAllowedOnChart" FunctionName="RealTimePowerModel.Store.usp_GetModelsAllowedOnChart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelsAllowedOnChart_Result">
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="ChartVariable" ColumnName="ChartVariable" />
+          <ScalarProperty Name="UserAlias" ColumnName="UserAlias" />
+          <ScalarProperty Name="ModelLastModified" ColumnName="ModelLastModified" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelsByModeledVariableID" FunctionName="RealTimePowerModel.Store.usp_GetModelsByModeledVariableID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelsByModeledVariableID_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelsWithRelativeFilters" FunctionName="RealTimePowerModel.Store.usp_GetModelsWithRelativeFilters" />
+    <FunctionImportMapping FunctionImportName="usp_GetModelTemplateFormData" FunctionName="RealTimePowerModel.Store.usp_GetModelTemplateFormData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelTemplateFormData_Result">
+          <ScalarProperty Name="ModelTemplateID" ColumnName="ModelTemplateID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModeledVariableName" ColumnName="ModeledVariableName" />
+          <ScalarProperty Name="ModelTemplateDescription" ColumnName="ModelTemplateDescription" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModelVariablesAndFilter" FunctionName="RealTimePowerModel.Store.usp_GetModelVariablesAndFilter" />
+    <FunctionImportMapping FunctionImportName="usp_GetModelWhatIfFormTables" FunctionName="RealTimePowerModel.Store.usp_GetModelWhatIfFormTables">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModelWhatIfFormTables_Result">
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ModeledVariableName" ColumnName="ModeledVariableName" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+          <ScalarProperty Name="Fit" ColumnName="Fit" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="Mean" ColumnName="Mean" />
+          <ScalarProperty Name="Stdev" ColumnName="Stdev" />
+          <ScalarProperty Name="PredictionID" ColumnName="PredictionID" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetModifyFilterFormTables" FunctionName="RealTimePowerModel.Store.usp_GetModifyFilterFormTables">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetModifyFilterFormTables_Result">
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MaxRows" ColumnName="MaxRows" />
+          <ScalarProperty Name="Relative" ColumnName="Relative" />
+          <ScalarProperty Name="Start" ColumnName="Start" />
+          <ScalarProperty Name="Finish" ColumnName="Finish" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetNewVariableForGridList" FunctionName="RealTimePowerModel.Store.usp_GetNewVariableForGridList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetNewVariableForGridList_Result">
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetNumberOfConnections" FunctionName="RealTimePowerModel.Store.usp_GetNumberOfConnections" />
+    <FunctionImportMapping FunctionImportName="usp_GetObjectCategoryByUserID" FunctionName="RealTimePowerModel.Store.usp_GetObjectCategoryByUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetObjectCategoryByUserID_Result">
+          <ScalarProperty Name="ObjectID" ColumnName="ObjectID" />
+          <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetObjectListsByUserID" FunctionName="RealTimePowerModel.Store.usp_GetObjectListsByUserID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetObjectListsByUserID_Result">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetObjectSelectionFormData" FunctionName="RealTimePowerModel.Store.usp_GetObjectSelectionFormData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetObjectSelectionFormData_Result">
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+          <ScalarProperty Name="DisplayCount" ColumnName="DisplayCount" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetOpenConnectionTypes" FunctionName="RealTimePowerModel.Store.usp_GetOpenConnectionTypes">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetOpenConnectionTypes_Result">
+          <ScalarProperty Name="DBName" ColumnName="DBName" />
+          <ScalarProperty Name="NoOfConnections" ColumnName="NoOfConnections" />
+          <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetPanelSettings" FunctionName="RealTimePowerModel.Store.usp_GetPanelSettings">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetPanelSettings_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DisplayObjectID" ColumnName="DisplayObjectID" />
+          <ScalarProperty Name="DisplayObjectTypeID" ColumnName="DisplayObjectTypeID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+          <ScalarProperty Name="SplitterDistance" ColumnName="SplitterDistance" />
+          <ScalarProperty Name="Panel2Collasped" ColumnName="Panel2Collasped" />
+          <ScalarProperty Name="Orientation" ColumnName="Orientation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetPlantObjects" FunctionName="RealTimePowerModel.Store.usp_GetPlantObjects">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetPlantObjects_Result">
+          <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetPlantObjectType" FunctionName="RealTimePowerModel.Store.usp_GetPlantObjectType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetPlantObjectType_Result">
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Table" ColumnName="Table" />
+          <ScalarProperty Name="AliasTable" ColumnName="AliasTable" />
+          <ScalarProperty Name="VariableTable" ColumnName="VariableTable" />
+          <ScalarProperty Name="VariableAliasTable" ColumnName="VariableAliasTable" />
+          <ScalarProperty Name="ReadingTable" ColumnName="ReadingTable" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetPlantObjectVariables" FunctionName="RealTimePowerModel.Store.usp_GetPlantObjectVariables">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetPlantObjectVariables_Result">
+          <ScalarProperty Name="ObjectVariableID" ColumnName="ObjectVariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Object_Name" ColumnName="Object Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Std_Units" ColumnName="Std Units" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetReadingTableData" FunctionName="RealTimePowerModel.Store.usp_GetReadingTableData" />
+    <FunctionImportMapping FunctionImportName="usp_GetReadingTableDataByGridID" FunctionName="RealTimePowerModel.Store.usp_GetReadingTableDataByGridID" />
+    <FunctionImportMapping FunctionImportName="usp_GetReadingTableDataByHealthCheckID" FunctionName="RealTimePowerModel.Store.usp_GetReadingTableDataByHealthCheckID">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetReadingTableDataByHealthCheckID_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Constant" ColumnName="Constant" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetReadingTableDataByVariableIDList" FunctionName="RealTimePowerModel.Store.usp_GetReadingTableDataByVariableIDList" />
+    <FunctionImportMapping FunctionImportName="usp_GetReadingTableDataForRelativeTimeModels" FunctionName="RealTimePowerModel.Store.usp_GetReadingTableDataForRelativeTimeModels" />
+    <FunctionImportMapping FunctionImportName="usp_GetReadingTableRowCount" FunctionName="RealTimePowerModel.Store.usp_GetReadingTableRowCount" />
+    <FunctionImportMapping FunctionImportName="usp_GetReadingTableValues" FunctionName="RealTimePowerModel.Store.usp_GetReadingTableValues" />
+    <FunctionImportMapping FunctionImportName="usp_GetRecentHealthChecks" FunctionName="RealTimePowerModel.Store.usp_GetRecentHealthChecks">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetRecentHealthChecks_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="AlertStatus" ColumnName="AlertStatus" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+          <ScalarProperty Name="Equipment" ColumnName="Equipment" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Actual" ColumnName="Actual" />
+          <ScalarProperty Name="Predicted" ColumnName="Predicted" />
+          <ScalarProperty Name="Diff" ColumnName="Diff" />
+          <ScalarProperty Name="Threshold" ColumnName="Threshold" />
+          <ScalarProperty Name="PercentDiff" ColumnName="PercentDiff" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Visible" ColumnName="Visible" />
+          <ScalarProperty Name="HealthCheckID" ColumnName="HealthCheckID" />
+          <ScalarProperty Name="ModelID" ColumnName="ModelID" />
+          <ScalarProperty Name="FilterID" ColumnName="FilterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetSimilarVariable" FunctionName="RealTimePowerModel.Store.usp_GetSimilarVariable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetSimilarVariable_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetSimilarVariableFromVariablePoint" FunctionName="RealTimePowerModel.Store.usp_GetSimilarVariableFromVariablePoint">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetSimilarVariableFromVariablePoint_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetSimilarVariablesFromVariableMaster" FunctionName="RealTimePowerModel.Store.usp_GetSimilarVariablesFromVariableMaster">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetSimilarVariablesFromVariableMaster_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetTableList" FunctionName="RealTimePowerModel.Store.usp_GetTableList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetTableList_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="LastModified" ColumnName="LastModified" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetTop5Alerts" FunctionName="RealTimePowerModel.Store.usp_GetTop5Alerts">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetTop5Alerts_Result">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetUnitList" FunctionName="RealTimePowerModel.Store.usp_GetUnitList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetUnitList_Result">
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DataServer" ColumnName="DataServer" />
+          <ScalarProperty Name="Port" ColumnName="Port" />
+          <ScalarProperty Name="FileLocation" ColumnName="FileLocation" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetUserAccessLevel" FunctionName="RealTimePowerModel.Store.usp_GetUserAccessLevel" />
+    <FunctionImportMapping FunctionImportName="usp_GetUserActivityHistory" FunctionName="RealTimePowerModel.Store.usp_GetUserActivityHistory">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetUserActivityHistory_Result">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Column1" ColumnName="Column1" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetUserID" FunctionName="RealTimePowerModel.Store.usp_GetUserID" />
+    <FunctionImportMapping FunctionImportName="usp_GetUserInfo" FunctionName="RealTimePowerModel.Store.usp_GetUserInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetUserInfo_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Computer_Domain_Name" ColumnName="Computer Domain Name" />
+          <ScalarProperty Name="Windows_Login_Name" ColumnName="Windows Login Name" />
+          <ScalarProperty Name="Access_Level" ColumnName="Access Level" />
+          <ScalarProperty Name="Book_ID" ColumnName="Book ID" />
+          <ScalarProperty Name="Home_Page" ColumnName="Home Page" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="User_Alias" ColumnName="User Alias" />
+          <ScalarProperty Name="UserVersion" ColumnName="UserVersion" />
+          <ScalarProperty Name="Last_Activity" ColumnName="Last Activity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetUserList" FunctionName="RealTimePowerModel.Store.usp_GetUserList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetUserList_Result">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserDomainName" ColumnName="UserDomainName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserLevel" ColumnName="UserLevel" />
+          <ScalarProperty Name="BookID" ColumnName="BookID" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="UserAlias" ColumnName="UserAlias" />
+          <ScalarProperty Name="UserLastLogin" ColumnName="UserLastLogin" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetValuesBetweenDates" FunctionName="RealTimePowerModel.Store.usp_GetValuesBetweenDates" />
+    <FunctionImportMapping FunctionImportName="usp_GetValuesByChartIDAndFilterID" FunctionName="RealTimePowerModel.Store.usp_GetValuesByChartIDAndFilterID" />
+    <FunctionImportMapping FunctionImportName="usp_GetValuesByFilter" FunctionName="RealTimePowerModel.Store.usp_GetValuesByFilter" />
+    <FunctionImportMapping FunctionImportName="usp_GetValuesByVariableIDAndFilterID" FunctionName="RealTimePowerModel.Store.usp_GetValuesByVariableIDAndFilterID" />
+    <FunctionImportMapping FunctionImportName="usp_GetVariable" FunctionName="RealTimePowerModel.Store.usp_GetVariable">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariable_Result">
+          <ScalarProperty Name="GridID" ColumnName="GridID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableAndFilterReadingInfo" FunctionName="RealTimePowerModel.Store.usp_GetVariableAndFilterReadingInfo" />
+    <FunctionImportMapping FunctionImportName="usp_GetVariableBuilder" FunctionName="RealTimePowerModel.Store.usp_GetVariableBuilder">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableBuilder_Result">
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="VariableName" ColumnName="VariableName" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="AxisTitle" ColumnName="AxisTitle" />
+          <ScalarProperty Name="NameEngUnits" ColumnName="NameEngUnits" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableDetail" FunctionName="RealTimePowerModel.Store.usp_GetVariableDetail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableDetail_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="ReadingTable" ColumnName="ReadingTable" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableDetails" FunctionName="RealTimePowerModel.Store.usp_GetVariableDetails" />
+    <FunctionImportMapping FunctionImportName="usp_GetVariableForModifyFilterForm" FunctionName="RealTimePowerModel.Store.usp_GetVariableForModifyFilterForm">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableForModifyFilterForm_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableList" FunctionName="RealTimePowerModel.Store.usp_GetVariableList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableList_Result">
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="SiteID" ColumnName="SiteID" />
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="PlantObjectID" ColumnName="PlantObjectID" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="SourceID" ColumnName="SourceID" />
+          <ScalarProperty Name="Min" ColumnName="Min" />
+          <ScalarProperty Name="Max" ColumnName="Max" />
+          <ScalarProperty Name="ForecastID" ColumnName="ForecastID" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Good" ColumnName="Good" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableListByBlock" FunctionName="RealTimePowerModel.Store.usp_GetVariableListByBlock">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableListByBlock_Result">
+          <ScalarProperty Name="BlockID" ColumnName="BlockID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableMasterIdFromModelTemplate" FunctionName="RealTimePowerModel.Store.usp_GetVariableMasterIdFromModelTemplate" />
+    <FunctionImportMapping FunctionImportName="usp_GetVariableMasterList" FunctionName="RealTimePowerModel.Store.usp_GetVariableMasterList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableMasterList_Result">
+          <ScalarProperty Name="VariableMasterID" ColumnName="VariableMasterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="PlantObjectTypeID" ColumnName="PlantObjectTypeID" />
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableSummaryDetail" FunctionName="RealTimePowerModel.Store.usp_GetVariableSummaryDetail">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableSummaryDetail_Result">
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="Units" ColumnName="Units" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Tag" ColumnName="Tag" />
+          <ScalarProperty Name="VariableID" ColumnName="VariableID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableType" FunctionName="RealTimePowerModel.Store.usp_GetVariableType">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="RealTimePowerModel.usp_GetVariableType_Result">
+          <ScalarProperty Name="VariableTypeID" ColumnName="VariableTypeID" />
+          <ScalarProperty Name="Acronym" ColumnName="Acronym" />
+          <ScalarProperty Name="EngUnits" ColumnName="EngUnits" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetVariableValuesBetweenDatesFromTable" FunctionName="RealTimePowerModel.Store.usp_GetVariableValuesBetweenDatesFromTable" />
+    <FunctionImportMapping FunctionImportName="usp_InsertBookDisplays" FunctionName="RealTimePowerModel.Store.usp_InsertBookDisplays" />
+    <FunctionImportMapping FunctionImportName="usp_InsertFilterTimeRange" FunctionName="RealTimePowerModel.Store.usp_InsertFilterTimeRange" />
+    <FunctionImportMapping FunctionImportName="usp_InsertFilterValueRange" FunctionName="RealTimePowerModel.Store.usp_InsertFilterValueRange" />
+    <FunctionImportMapping FunctionImportName="usp_InsertMessageLog" FunctionName="RealTimePowerModel.Store.usp_InsertMessageLog" />
+    <FunctionImportMapping FunctionImportName="usp_InsertModelInputAndCoeff" FunctionName="RealTimePowerModel.Store.usp_InsertModelInputAndCoeff" />
+    <FunctionImportMapping FunctionImportName="usp_InsertModelTemplate" FunctionName="RealTimePowerModel.Store.usp_InsertModelTemplate" />
+    <FunctionImportMapping FunctionImportName="usp_InsertMultipleObjectCategoryList" FunctionName="RealTimePowerModel.Store.usp_InsertMultipleObjectCategoryList" />
+    <FunctionImportMapping FunctionImportName="usp_InsertNewPlantObjectVariable" FunctionName="RealTimePowerModel.Store.usp_InsertNewPlantObjectVariable" />
+    <FunctionImportMapping FunctionImportName="usp_InsertNewUser" FunctionName="RealTimePowerModel.Store.usp_InsertNewUser" />
+    <FunctionImportMapping FunctionImportName="usp_InsertNewVariable" FunctionName="RealTimePowerModel.Store.usp_InsertNewVariable" />
+    <FunctionImportMapping FunctionImportName="usp_InsertObjectCategoryList" FunctionName="RealTimePowerModel.Store.usp_InsertObjectCategoryList" />
+    <FunctionImportMapping FunctionImportName="usp_MasterVariableInsert" FunctionName="RealTimePowerModel.Store.usp_MasterVariableInsert" />
+    <FunctionImportMapping FunctionImportName="usp_MasterVariableUpdate" FunctionName="RealTimePowerModel.Store.usp_MasterVariableUpdate" />
+    <FunctionImportMapping FunctionImportName="usp_PlantModifyVriableCheckBox" FunctionName="RealTimePowerModel.Store.usp_PlantModifyVriableCheckBox" />
+    <FunctionImportMapping FunctionImportName="usp_RenameBook" FunctionName="RealTimePowerModel.Store.usp_RenameBook" />
+    <FunctionImportMapping FunctionImportName="usp_RenameChart" FunctionName="RealTimePowerModel.Store.usp_RenameChart" />
+    <FunctionImportMapping FunctionImportName="usp_RenameDisplay" FunctionName="RealTimePowerModel.Store.usp_RenameDisplay" />
+    <FunctionImportMapping FunctionImportName="usp_RenameFilter" FunctionName="RealTimePowerModel.Store.usp_RenameFilter" />
+    <FunctionImportMapping FunctionImportName="usp_RenameHealthCheck" FunctionName="RealTimePowerModel.Store.usp_RenameHealthCheck" />
+    <FunctionImportMapping FunctionImportName="usp_RenameLayoutPanel" FunctionName="RealTimePowerModel.Store.usp_RenameLayoutPanel" />
+    <FunctionImportMapping FunctionImportName="usp_RenameModel" FunctionName="RealTimePowerModel.Store.usp_RenameModel" />
+    <FunctionImportMapping FunctionImportName="usp_RenameModelTemplate" FunctionName="RealTimePowerModel.Store.usp_RenameModelTemplate" />
+    <FunctionImportMapping FunctionImportName="usp_RenameVariableTable" FunctionName="RealTimePowerModel.Store.usp_RenameVariableTable" />
+    <FunctionImportMapping FunctionImportName="usp_SaveMultipleModels" FunctionName="RealTimePowerModel.Store.usp_SaveMultipleModels" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateCategory" FunctionName="RealTimePowerModel.Store.usp_UpdateCategory" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateChartProperties" FunctionName="RealTimePowerModel.Store.usp_UpdateChartProperties" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateChartProperties2" FunctionName="RealTimePowerModel.Store.usp_UpdateChartProperties2" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateDisplay" FunctionName="RealTimePowerModel.Store.usp_UpdateDisplay" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateDisplayObjects" FunctionName="RealTimePowerModel.Store.usp_UpdateDisplayObjects" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateDisplayWithObject" FunctionName="RealTimePowerModel.Store.usp_UpdateDisplayWithObject" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateDisplayWithSwappedObjects" FunctionName="RealTimePowerModel.Store.usp_UpdateDisplayWithSwappedObjects" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateFilterProperties" FunctionName="RealTimePowerModel.Store.usp_UpdateFilterProperties" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateGridVariables" FunctionName="RealTimePowerModel.Store.usp_UpdateGridVariables" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateHealthCheckCompare" FunctionName="RealTimePowerModel.Store.usp_UpdateHealthCheckCompare" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateHealthCheckProperties" FunctionName="RealTimePowerModel.Store.usp_UpdateHealthCheckProperties" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateHealthCheckVisible" FunctionName="RealTimePowerModel.Store.usp_UpdateHealthCheckVisible" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateLayoutPanel" FunctionName="RealTimePowerModel.Store.usp_UpdateLayoutPanel" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateLayoutPanelObjects" FunctionName="RealTimePowerModel.Store.usp_UpdateLayoutPanelObjects" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateModelFilter" FunctionName="RealTimePowerModel.Store.usp_UpdateModelFilter" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateModelProperties" FunctionName="RealTimePowerModel.Store.usp_UpdateModelProperties" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateModelTemplateProperties" FunctionName="RealTimePowerModel.Store.usp_UpdateModelTemplateProperties" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateModifyVariableDatagrid" FunctionName="RealTimePowerModel.Store.usp_UpdateModifyVariableDatagrid" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateModifyVariableDatagrid_edit" FunctionName="RealTimePowerModel.Store.usp_UpdateModifyVariableDatagrid_edit" />
+    <FunctionImportMapping FunctionImportName="usp_UpdatePanelSettings" FunctionName="RealTimePowerModel.Store.usp_UpdatePanelSettings" />
+    <FunctionImportMapping FunctionImportName="usp_UpdatePlantObjectVariable" FunctionName="RealTimePowerModel.Store.usp_UpdatePlantObjectVariable" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateRelativeFilter" FunctionName="RealTimePowerModel.Store.usp_UpdateRelativeFilter" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateUser" FunctionName="RealTimePowerModel.Store.usp_UpdateUser" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateUserLastLogin" FunctionName="RealTimePowerModel.Store.usp_UpdateUserLastLogin" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateUserVersion" FunctionName="RealTimePowerModel.Store.usp_UpdateUserVersion" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateVariable" FunctionName="RealTimePowerModel.Store.usp_UpdateVariable" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateVariablePoint" FunctionName="RealTimePowerModel.Store.usp_UpdateVariablePoint" />
+    <FunctionImportMapping FunctionImportName="usp_UpdateVariablePointValues" FunctionName="RealTimePowerModel.Store.usp_UpdateVariablePointValues" />
+    <FunctionImportMapping FunctionImportName="usp_VariableMasterInsert" FunctionName="RealTimePowerModel.Store.usp_VariableMasterInsert" />
+    <FunctionImportMapping FunctionImportName="usp_VariableMasterUpdate" FunctionName="RealTimePowerModel.Store.usp_VariableMasterUpdate" />
+    <FunctionImportMapping FunctionImportName="usp_VariableTypeBulkInsert" FunctionName="RealTimePowerModel.Store.usp_VariableTypeBulkInsert" />
+    <FunctionImportMapping FunctionImportName="usp_VariableTypeBulkUpdate" FunctionName="RealTimePowerModel.Store.usp_VariableTypeBulkUpdate" />
+    <FunctionImportMapping FunctionImportName="usp_VariableTypeInsert" FunctionName="RealTimePowerModel.Store.usp_VariableTypeInsert" />
+    <FunctionImportMapping FunctionImportName="usp_VariableTypeUpdate" FunctionName="RealTimePowerModel.Store.usp_VariableTypeUpdate" />
+  </EntityContainerMapping>
+</Mapping>

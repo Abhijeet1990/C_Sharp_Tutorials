@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\GenericTutorial\GenericTutorial\bin\Debug\GenericTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\GenericTutorial\GenericTutorial\bin\Debug\GenericTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\GenericTutorial\GenericTutorial\bin\Debug\GenericTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\GenericTutorial\GenericTutorial\obj\Debug\GenericTutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\GenericTutorial\GenericTutorial\obj\Debug\GenericTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\GenericTutorial\GenericTutorial\obj\Debug\GenericTutorial.pdb

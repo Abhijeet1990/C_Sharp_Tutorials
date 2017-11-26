@@ -1,0 +1,7 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\obj\Release\ServiceTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\obj\Release\ServiceTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\obj\Release\ServiceTutorial.ProjectInstaller.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\obj\Release\ServiceTutorial.csproj.GenerateResource.Cache

@@ -1,0 +1,11 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\bin\Debug\TestDynamicUC.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\bin\Debug\TestDynamicUC.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\bin\Debug\TestDynamicUC.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.DynamicUC.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestDynamicUC\TestDynamicUC\obj\Debug\TestDynamicUC.LookUpTableForm.resources

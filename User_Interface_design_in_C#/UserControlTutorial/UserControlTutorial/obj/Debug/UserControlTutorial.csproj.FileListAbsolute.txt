@@ -1,0 +1,10 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\bin\Debug\UserControlTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\bin\Debug\UserControlTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\bin\Debug\UserControlTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\obj\Debug\UserControlTutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\obj\Debug\UserControlTutorial.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\obj\Debug\UserControlTutorial.UserControl_One.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\obj\Debug\UserControlTutorial.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\obj\Debug\UserControlTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\obj\Debug\UserControlTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\UserControlTutorial\UserControlTutorial\obj\Debug\UserControlTutorial.Form1.resources

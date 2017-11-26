@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TreeUserControlModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Block">
+    <Key>
+      <PropertyRef Name="BlockID" />
+    </Key>
+    <Property Name="BlockID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SiteID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Child">
+    <Key>
+      <PropertyRef Name="ChildID" />
+    </Key>
+    <Property Name="ChildID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BlockID" Type="Int32" />
+    <Property Name="SiteID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Site">
+    <Key>
+      <PropertyRef Name="SiteID" />
+    </Key>
+    <Property Name="SiteID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ABC" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Blocks" EntityType="Self.Block" />
+    <EntitySet Name="Children" EntityType="Self.Child" />
+    <EntitySet Name="Sites" EntityType="Self.Site" />
+  </EntityContainer>
+</Schema>

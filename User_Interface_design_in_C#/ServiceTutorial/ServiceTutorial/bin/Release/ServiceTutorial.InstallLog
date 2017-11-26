@@ -1,0 +1,26 @@
+﻿Installing assembly 'C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.InstallLog
+   assemblypath = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe
+Installing service Testing Windows Service...
+Service Testing Windows Service has been successfully installed.
+Creating EventLog source Testing Windows Service in log Application...
+Committing assembly 'C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.InstallLog
+   assemblypath = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe
+Installing assembly 'C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.InstallLog
+   assemblypath = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe
+Installing service Testing Windows Service...
+Creating EventLog source Testing Windows Service in log Application...
+Rolling back assembly 'C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.InstallLog
+   assemblypath = C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Release\ServiceTutorial.exe
+Restoring event log to previous state for source Testing Windows Service.

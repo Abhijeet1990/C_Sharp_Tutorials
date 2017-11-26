@@ -1,0 +1,9 @@
+ID	FirstName	LastName	Gender	Salary
+1	Abhijeet	Kale	Male	2300
+2	Bhabana	Chepat	Female	4500
+3	Dikalo	daffffstyutu	Female	79060
+4	fsdfdsf	fsdfsdfdsc	Female	10508
+6	cewc	cwec	Female	16114
+7	scasqwdd	cwe	Female	432590
+9	ytjtyj	jytj	Male	24523
+10	yjt	yjty	Female	27326

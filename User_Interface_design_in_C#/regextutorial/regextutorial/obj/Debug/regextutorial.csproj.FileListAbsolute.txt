@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\regextutorial\regextutorial\bin\Debug\regextutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\regextutorial\regextutorial\bin\Debug\regextutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\regextutorial\regextutorial\bin\Debug\regextutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\regextutorial\regextutorial\obj\Debug\regextutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\regextutorial\regextutorial\obj\Debug\regextutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\regextutorial\regextutorial\obj\Debug\regextutorial.pdb

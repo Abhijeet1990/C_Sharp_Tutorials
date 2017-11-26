@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if ($('#location-map')) {
+                $('#location-map area').each(function () {
+                    var id = $(this).attr('id');
+                    $(this).mouseover(function () {
+                        document.getElementById($('#image' + id)).style.borderColor = "#00FF00";
+
+                    });
+
+                    $(this).mouseout(function () {
+                        var id = $(this).attr('id');
+                        document.getElementById($('#image' + id)).style.borderColor = "#FFFFFF";
+                    });
+
+                });
+            }
+        });
+    </script>
+    <style>
+        .hotspot {
+            position: absolute;
+            border: 3px solid yellow;
+        }
+
+            .hotspot + * {
+                pointer-events: none;
+                opacity: 0;
+            }
+
+            .hotspot:hover + * {
+                opacity: 1.0;
+            }
+
+        .wash {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        .imageStyle{
+            border:groove;
+            border-color:cornflowerblue;
+            border-width:medium;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>7FA AirSonic Twin – Unit 1</h1>
+    <div style="position: relative; height: 188px; width: 300px;">
+        <table style="width:100%;">
+            <tr>
+                <td><img id="image1" src="Images/image1.jpg" class="imageStyle"></td>
+                <td><img id="image2" src="Images/image2.jpg" class="imageStyle"></td>
+                <td><img id="image3" src="Images/image3.jpg" class="imageStyle"></td>
+                <td><img id="image4" src="Images/image4.jpg" class="imageStyle"></td>
+                <td><img id="image5" src="Images/image5.jpg" class="imageStyle"></td>
+                <td><img id="image6" src="Images/image6.jpg" class="imageStyle"></td>
+                <td><img id="image7" src="Images/image7.jpg" class="imageStyle"></td>
+                <td><img id="image8" src="Images/image8.jpg" class="imageStyle"></td>
+                <td><img id="image9" src="Images/image9.jpg" class="imageStyle"></td>
+                <td><img id="image10" src="Images/image10.jpg" class="imageStyle"></td>
+            </tr>
+        </table>
+        <img src="Images/GasTurbine.jpg" width="1000" height="500" usemap="#location-map">
+
+        <div class="hotspot" style="top: 50px; left: 50px; height: 30px; width: 30px;"></div>
+        <div>
+            <div class="wash"></div>
+            <div style="position: absolute; top: 0; left: 0;">A</div>
+        </div>
+
+        <div class="hotspot" style="top: 100px; left: 120px; height: 30px; width: 30px;"></div>
+        <div>
+            <div class="wash"></div>
+            <div style="position: absolute; top: 0; left: 0;">B</div>
+        </div>
+    </div>
+
+    <map name="location-map" id="location-map">
+        <area shape="rect" coords="0,0,100,500" href="#" id="r1" />
+        <area shape="rect" coords="100,0,200,500" href="#" id="r2" />
+        <area shape="rect" coords="200,0,300,500" href="#" id="r3" />
+        <area shape="rect" coords="300,0,400,500" href="#" id="r4" />
+        <area shape="rect" coords="400,0,500,500" href="#" id="r5" />
+        <area shape="rect" coords="500,0,600,500" href="#" id="r6" />
+        <area shape="rect" coords="600,0,700,500" href="#" id="r7" />
+        <area shape="rect" coords="700,0,800,500" href="#" id="r8" />
+        <area shape="rect" coords="800,0,900,500" href="#" id="r9" />
+        <area shape="rect" coords="900,0,1000,500" href="#" id="r10" />
+  </map>
+</body>
+</html>

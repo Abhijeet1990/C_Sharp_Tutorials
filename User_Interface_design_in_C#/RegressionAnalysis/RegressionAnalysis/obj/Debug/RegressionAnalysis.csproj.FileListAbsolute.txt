@@ -1,0 +1,8 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\bin\Debug\RegressionAnalysis.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\bin\Debug\RegressionAnalysis.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\bin\Debug\RegressionAnalysis.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\bin\Debug\MathNet.Numerics.dll
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\bin\Debug\MathNet.Numerics.xml
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\obj\Debug\RegressionAnalysis.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\obj\Debug\RegressionAnalysis.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\RegressionAnalysis\RegressionAnalysis\obj\Debug\RegressionAnalysis.pdb

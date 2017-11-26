@@ -1,0 +1,1027 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>EWSoftware.ImageMaps.Windows.Forms</name>
+  </assembly>
+  <members>
+    <member name="T:EWSoftware.ImageMaps.IImageArea">
+      <summary>
+            This is the common interface for both the Windows Forms and the web server control image area types
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageArea.AccessKey">
+      <summary>
+            This is used to get or set the access key (a shortcut key or mnemonic) for the image area
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageArea.Coordinates">
+      <summary>
+            This is used to get or set the coordinate values in string form
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.IImageArea.DrawFocusFrame(System.Drawing.Graphics,System.Drawing.Point)">
+      <summary>
+            This is used to get the shape to draw a focus frame around itself
+            </summary>
+      <param name="g">The graphics object to use for drawing.</param>
+      <param name="offset">A point used to offset the image area coordinates (i.e. if the image is
+            scrolled).</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageArea.Enabled">
+      <summary>
+            This is used to get or set the enabled state of the image area
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.IImageArea.ImageAreaChanged">
+      <summary>
+            This event is raised when an image area property changes that affects its visual presentation in the
+            image map control such as its position or enabled state.
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageArea.Shape">
+      <summary>
+            This read-only property is used to get the shape type
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageArea.TabIndex">
+      <summary>
+            This is used to get or set the tab index of the image area
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageArea.Tag">
+      <summary>
+            This is used to get or set an object that contains additional user-defined data for the image area
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageArea.ToolTip">
+      <summary>
+            This is used to get or set the tool tip for the image area
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.IImageMap">
+      <summary>
+            This interface defines events, properties, and methods common to both the Windows Forms and the web
+            server control image map classes.
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageMap.Areas">
+      <summary>
+            This returns the collection of areas defined for the image map
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.IImageMap.Click">
+      <summary>
+            This event is raised when a hot spot on the image map is clicked
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageMap.ImageMapHeight">
+      <summary>
+            Gets or sets the height of the image in the image map control in pixels
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageMap.ImageMapWidth">
+      <summary>
+            Gets or sets the width of the image in the image map control in pixels
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.IImageMap.ToolTip">
+      <summary>
+            Gets or sets the tool tip text displayed for all undefined areas of the image
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.ImageAreaCollection">
+      <summary>
+            A type-safe collection of <see cref="T:EWSoftware.ImageMaps.IImageArea" /> objects
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.#ctor(EWSoftware.ImageMaps.IImageMap)">
+      <summary>
+            Construct an empty collection associated with the specified <see cref="T:EWSoftware.ImageMaps.IImageMap" /> control
+            </summary>
+      <param name="map">The image map control that owns the collection</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.#ctor(EWSoftware.ImageMaps.IImageMap,System.Collections.Generic.IEnumerable{EWSoftware.ImageMaps.IImageArea})">
+      <summary>
+            Construct a collection from an enumerable list of <see cref="T:EWSoftware.ImageMaps.IImageArea" /> objects
+            </summary>
+      <param name="map">The image map control that owns the collection</param>
+      <param name="areas">An enumerable list of <see cref="T:EWSoftware.ImageMaps.IImageArea" /> objects to add</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.AddRange(System.Collections.Generic.IEnumerable{EWSoftware.ImageMaps.IImageArea})">
+      <summary>
+            Add a range of <see cref="T:EWSoftware.ImageMaps.IImageArea" /> objects from an enumerable list
+            </summary>
+      <param name="areas">An enumerable list of <see cref="T:EWSoftware.ImageMaps.IImageArea" /> objects to add</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.ClearItems">
+      <summary>
+            This is overridden to notify the image map that all of the image areas have been removed
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.ImageAreaCollection.ImageAreaChanged">
+      <summary>
+            This event is raised when an image area property changes that affects its visual presentation in the
+            image map control such as its position or enabled state.
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.ImageAreaCollection.ImageMapControl">
+      <summary>
+            This property is used to get the <see cref="T:EWSoftware.ImageMaps.IImageMap" /> control that uses this collection.  Its
+            primary use is by the <c>ImageAreaCoordinateEditor</c> designer class so that it can get the image
+            information it needs at design time.
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.InsertItem(System.Int32,EWSoftware.ImageMaps.IImageArea)">
+      <summary>
+            This is overridden to notify the image map that a new image area has been added to the collection
+            </summary>
+      <param name="index">The position at which the object is inserted</param>
+      <param name="item">The item inserted</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.RemoveItem(System.Int32)">
+      <summary>
+            This is overridden to notify the image map that an image area has been removed from the collection
+            </summary>
+      <param name="index">The position at which the object is removed</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageAreaCollection.SetItem(System.Int32,EWSoftware.ImageMaps.IImageArea)">
+      <summary>
+            This is overridden to notify the image map that a new image area has replaced another in the
+            collection.
+            </summary>
+      <param name="index">The position at which the object is stored</param>
+      <param name="item">The item that is stored</param>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.ImageAreaShape">
+      <summary>
+            This enumerated type defines the various image area shapes
+            </summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.ImageAreaShape.Rectangle">
+      <summary>A rectangle (web and Windows Forms)</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.ImageAreaShape.Circle">
+      <summary>A circle (web and Windows Forms)</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.ImageAreaShape.Polygon">
+      <summary>A polygon (web and Windows Forms)</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.ImageAreaShape.Ellipse">
+      <summary>An ellipse (Windows Forms only)</summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.ImageMapClickEventArgs">
+      <summary>
+            This is a custom event arguments class for the <see cref="E:EWSoftware.ImageMaps.IImageMap.Click" /> event
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.ImageMapClickEventArgs.#ctor(System.Int32,System.Int32,System.Int32)">
+      <summary>
+            Constructor
+            </summary>
+      <param name="areaIndex">The index of the clicked area</param>
+      <param name="xCoordinate">The X coordinate of the click</param>
+      <param name="yCoordinate">The Y coordinate of the click</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.ImageMapClickEventArgs.AreaIndex">
+      <summary>
+            This read-only property is used to get the zero-based index of the area that was clicked
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.ImageMapClickEventArgs.XCoordinate">
+      <summary>
+            This read-only property is used to get the X coordinate of the click
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.ImageMapClickEventArgs.YCoordinate">
+      <summary>
+            This read-only property is used to get the Y coordinate of the click
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.PointCollection">
+      <summary>
+            A type-safe collection of <see cref="T:System.Drawing.Point" /> objects.
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.PointCollection.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.PointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Drawing.Point})">
+      <summary>
+            Construct a collection from an enumerable list of <see cref="T:System.Drawing.Point" /> objects
+            </summary>
+      <param name="points">An enumerable list of <see cref="T:System.Drawing.Point" /> objects to add</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.PointCollection.AddRange(System.Collections.Generic.IEnumerable{System.Drawing.Point})">
+      <summary>
+            Add a range of <see cref="T:System.Drawing.Point" /> objects from an enumerable list
+            </summary>
+      <param name="points">An enumerable list of <see cref="T:System.Drawing.Point" /> objects to add</param>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.AreaClickAction">
+      <summary>
+            This enumerated type defines the action to take when an area is clicked in the Windows Forms
+            <see cref="T:EWSoftware.ImageMaps.Windows.Forms.ImageMap" /> control.
+            </summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.AreaClickAction.FireEvent">
+      <summary>Fire the image map <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Click" /> event and the image area
+            <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Click" /> event.</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.AreaClickAction.None">
+      <summary>Displays a <see cref="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.ToolTip" /> if one is specified but performs no
+            action.</summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs">
+      <summary>
+            This is a custom event arguments class for the
+            <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.DrawImage" />
+            event.
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs.#ctor(System.Drawing.Graphics,EWSoftware.ImageMaps.Windows.Forms.DrawState,System.Drawing.Point,System.Boolean)">
+      <summary>Constructor</summary>
+      <param name="graphics">The graphics context</param>
+      <param name="state">The drawing state of the item</param>
+      <param name="offset">The image offset if scrolled</param>
+      <param name="drawFocus">A flag indicating whether or not to draw the focus rectangle on return</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs.DrawFocus">
+      <summary>
+            This property is used to get or set whether the image map should draw the default focus frame around
+            the active image area.
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs.DrawState">
+      <summary>
+            This property is used to get or set the state of the item to draw
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs.Graphics">
+      <summary>
+            This read-only property is used to get the graphics context for drawing
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs.ImageOffset">
+      <summary>
+            This read-only property is used to get the image offset
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.DrawState">
+      <summary>
+            This enumerated type defines the drawing states for the image map and the image areas when their
+            <c>OwnerDraw</c> property is set to true.
+            </summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.DrawState.Normal">
+      <summary>The item currently has no special state</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.DrawState.Disabled">
+      <summary>The item is disabled</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.DrawState.Focus">
+      <summary>The item has the focus</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.DrawState.HotLight">
+      <summary>The item is being hot-tracked (highlighted as the mouse pointer passes over it)</summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase">
+      <summary>
+            This is the abstract base class for the image area types of the Windows Forms <see cref="T:EWSoftware.ImageMaps.Windows.Forms.ImageMap" />
+            control.
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.#ctor(System.String)">
+      <summary>
+            This version of the constructor takes a tool tip
+            </summary>
+      <param name="toolTip">The tool tip to associate with the image area</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.AccessKey">
+      <summary>
+            This is used to get or set the access key (a shortcut key or mnemonic) for the image area
+            </summary>
+      <exception cref="T:System.ArgumentOutOfRangeException">The specified access key is not a single character
+            string.</exception>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Action">
+      <summary>
+            This defines the action to take when the area is clicked
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Click">
+      <summary>
+            This event is raised when the image area is clicked
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Coordinates">
+      <summary>
+            This must be overridden to provide the image area coordinates
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.DoubleClick">
+      <summary>
+            This event is raised when the image area is double-clicked
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.DrawFocusFrame(System.Drawing.Graphics,System.Drawing.Point)">
+      <summary>
+            This must be overridden to get the shape to draw a focus frame around itself
+            </summary>
+      <param name="g">The graphics object to use for drawing.</param>
+      <param name="offset">A point used to offset the image area coordinates (i.e. if the image is
+            scrolled).</param>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.DrawImage">
+      <summary>
+            This event is raised when owner draw mode is enabled and the image area needs to be drawn
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Enabled">
+      <summary>
+            This is used to enable or disable the area
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Enter">
+      <summary>
+            This event is raised when the image area gains the focus
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Equals(System.Object)">
+      <summary>
+            This is overridden to allow proper comparison of image area objects.
+            </summary>
+      <param name="obj">The object to which this instance is compared</param>
+      <returns>Returns true if the object equals this instance, false if it does not</returns>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.GetHashCode">
+      <summary>
+            Get a hash code for the image area object
+            </summary>
+      <returns>Returns the hash code for the image area's string form</returns>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.ImageAreaChanged">
+      <summary>
+            This event is raised when an image area property changes that affects its visual presentation in the
+            image map control such as its position or enabled state.
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Leave">
+      <summary>
+            This event is raised when the image area loses the focus
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseDown">
+      <summary>
+            This event is raised when a mouse button is pressed while the mouse is inside the image area
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseEnter">
+      <summary>
+            This event is raised when the mouse enters the image area
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseHover">
+      <summary>
+            This event is raised when the mouse remains stationary inside the image area for an amount of time
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseLeave">
+      <summary>
+            This event is raised when the mouse leaves the image area
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseMove">
+      <summary>
+            This event is raised when the mouse moves in the image area
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseUp">
+      <summary>
+            This event is raised when a mouse button is released while the mouse is inside the image area
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnClick(EWSoftware.ImageMaps.ImageMapClickEventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Click" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnDoubleClick(EWSoftware.ImageMaps.ImageMapClickEventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.DoubleClick" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnDrawImage(EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.DrawImage" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnEnter(System.EventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Enter" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnImageAreaChanged(System.EventArgs)">
+      <summary>
+            This raises the ImageAreaChanged event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnLeave(System.EventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Leave" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseDown" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnMouseEnter(System.EventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseEnter" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnMouseHover(System.EventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseHover" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnMouseLeave(System.EventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseLeave" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseMove" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+      <summary>
+            This raises the image area <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseUp" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.OwnerDraw">
+      <summary>
+            This is used to turn owner draw mode on and off
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.RaiseEvent(EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent,System.Object)">
+      <summary>
+            This is used to fire an event on the image area
+            </summary>
+      <param name="areaEvent">The event to fire</param>
+      <param name="args">The event arguments</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Shape">
+      <summary>
+            This must be overridden to provide the image area shape
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.TabIndex">
+      <summary>
+            This is used to get or set the tab index of the area
+            </summary>
+      <exception cref="T:System.ArgumentOutOfRangeException">This is thrown if the tab index is less than zero</exception>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Tag">
+      <summary>
+            This is used to get or set an object that contains additional user-defined data for the image area
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.ToolTip">
+      <summary>
+            This is used to get or set the tool tip to display when the mouse hovers over the area
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.ToString">
+      <summary>
+            Convert the image area instance to its string description
+            </summary>
+      <returns>Returns the description of the image area.</returns>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle">
+      <summary>
+            This is the circle image area class
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.#ctor(System.Drawing.Point,System.Int32)">
+      <summary>
+            Constructor.  This version takes the center point and radius.
+            </summary>
+      <param name="centerPoint">The center point</param>
+      <param name="radius">The radius of the circle</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.#ctor(System.Drawing.Point,System.Int32,System.String)">
+      <summary>
+            Constructor.  This version takes the center point, radius, and a tool tip.
+            </summary>
+      <param name="centerPoint">The center point</param>
+      <param name="radius">The radius of the circle</param>
+      <param name="toolTip">The tool tip to show when the mouse hovers over the area</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.CenterPoint">
+      <summary>
+            This is used to get or set the circle's center point
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.Coordinates">
+      <summary>
+            This is overridden to get or set the coordinate values in string form
+            </summary>
+      <exception cref="T:System.ArgumentException">This is thrown if the number of coordinates given is not exactly
+            equal to three or if non-numeric values are found.</exception>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.DrawFocusFrame(System.Drawing.Graphics,System.Drawing.Point)">
+      <summary>
+            This is overridden to get the shape to draw a focus frame around itself
+            </summary>
+      <param name="g">The graphics object to use for drawing</param>
+      <param name="offset">A point used to offset the image area coordinates (i.e. if the image is
+            scrolled).</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.Radius">
+      <summary>
+            This is used to get or set the circle's radius
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaCircle.Shape">
+      <summary>
+            This is overridden to provide the shape type
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse">
+      <summary>
+            This is the ellipse image area class
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse.#ctor(System.Drawing.Rectangle)">
+      <summary>
+            Constructor.  This version takes the ellipse coordinates.
+            </summary>
+      <param name="rect">The ellipse coordinates</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse.#ctor(System.Drawing.Rectangle,System.String)">
+      <summary>
+            Constructor.  This version takes the ellipse coordinates and a tool tip.
+            </summary>
+      <param name="rect">The ellipse coordinates</param>
+      <param name="toolTip">The tool tip to show when the mouse hovers over the area</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse.Coordinates">
+      <summary>
+            This is overridden to get or set the coordinate values in string form
+            </summary>
+      <exception cref="T:System.ArgumentException">This is thrown if the number of coordinates given is not exactly
+            equal to four or if non-numeric values are found.</exception>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse.DrawFocusFrame(System.Drawing.Graphics,System.Drawing.Point)">
+      <summary>
+            This is overridden to get the shape to draw a focus frame around itself
+            </summary>
+      <param name="g">The graphics object to use for drawing</param>
+      <param name="offset">A point used to offset the image area coordinates (i.e. if the image is
+            scrolled).</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse.Ellipse">
+      <summary>
+            This is used to get or set the ellipse's area
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEllipse.Shape">
+      <summary>
+            This is overridden to provide the shape type.
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent">
+      <summary>
+            This enumerated type defines the events that can be raised by an image area
+            </summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.Click">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Click" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.DoubleClick">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.DoubleClick" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.MouseDown">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseDown" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.MouseUp">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseUp" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.MouseEnter">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseEnter" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.MouseLeave">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseLeave" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.MouseHover">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseHover" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.MouseMove">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.MouseMove" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.Enter">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Enter" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.Leave">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.Leave" /> event</summary>
+    </member>
+    <member name="F:EWSoftware.ImageMaps.Windows.Forms.ImageAreaEvent.DrawImage">
+      <summary>Fire the <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageAreaBase.DrawImage" /> event</summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon">
+      <summary>
+            This is the polygon image area class
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon.#ctor(System.String)">
+      <summary>
+            Constructor.  This version takes a tool tip.
+            </summary>
+      <param name="toolTip">The tool tip to show when the mouse hovers over the area</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon.BoundingRectangle">
+      <summary>
+            This read-only property can be used to get the bounding rectangle that contains all points in the
+            polygon.
+            </summary>
+      <returns>A <see cref="T:System.Drawing.Rectangle" /> containing the coordinates of the area containing the entire
+            polygon.</returns>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon.Coordinates">
+      <summary>
+            This is overridden to get or set the coordinate values in string form
+            </summary>
+      <exception cref="T:System.ArgumentException">This is thrown if the number of coordinates given is not exactly
+            a multiple of two, there are less than three pairs of coordinates, or if non-numeric values are
+            found.</exception>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon.DrawFocusFrame(System.Drawing.Graphics,System.Drawing.Point)">
+      <summary>
+            This is overridden to get the shape to draw a focus frame around itself
+            </summary>
+      <param name="g">The graphics object to use for drawing</param>
+      <param name="offset">A point used to offset the image area coordinates (i.e. if the image is
+            scrolled).</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon.Points">
+      <summary>
+            This read-only property is used to get the polygon point collection
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaPolygon.Shape">
+      <summary>
+            This is overridden to provide the shape type
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle">
+      <summary>
+            This is the rectangle image area class
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle.#ctor(System.Drawing.Rectangle)">
+      <summary>
+            Constructor.  This version takes the rectangle coordinates.
+            </summary>
+      <param name="rect">The rectangle coordinates</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle.#ctor(System.Drawing.Rectangle,System.String)">
+      <summary>
+            Constructor.  This version takes the rectangle coordinates and a tool tip.
+            </summary>
+      <param name="rect">The rectangle coordinates</param>
+      <param name="toolTip">The tool tip to show when the mouse
+            hovers over the area</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle.Coordinates">
+      <summary>
+            This is overridden to get or set the coordinate values in string form
+            </summary>
+      <exception cref="T:System.ArgumentException">This is thrown if the number of coordinates given is not exactly
+            equal to four or if non-numeric values are found.</exception>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle.DrawFocusFrame(System.Drawing.Graphics,System.Drawing.Point)">
+      <summary>
+            This is overridden to get the shape to draw a focus frame around itself
+            </summary>
+      <param name="g">The graphics object to use for drawing</param>
+      <param name="offset">A point used to offset the image area coordinates (i.e. if the image is
+            scrolled).</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle.Rectangle">
+      <summary>
+            This is used to get or set the rectangle's area
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageAreaRectangle.Shape">
+      <summary>
+            This is overridden to provide the shape type
+            </summary>
+    </member>
+    <member name="T:EWSoftware.ImageMaps.Windows.Forms.ImageMap">
+      <summary>
+            This is a derived <see cref="T:System.Windows.Forms.UserControl" /> class that can be used to display an
+            image map (an image with clickable hot spots).
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.#ctor">
+      <summary>
+            Default constructor
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Areas">
+      <summary>
+            This returns the collection of areas defined for the image map
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.CenterImage">
+      <summary>
+            This property is used to get or set whether or not the control will center the image in the client
+            area.
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Click">
+      <summary>
+            This event is raised when a hot spot on the image map is clicked
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Cursor">
+      <summary>
+            This is used to get or set the cursor shown when the mouse is not over a defined image area
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Dispose(System.Boolean)">
+      <summary>
+            Clean up any resources being used.
+            </summary>
+      <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.DoubleClick">
+      <summary>
+            This event is raised when a hot spot on the image map is double-clicked
+            </summary>
+    </member>
+    <member name="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.DrawImage">
+      <summary>
+            This event is raised when owner draw mode is enabled and the image map needs to be drawn
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Focus(EWSoftware.ImageMaps.IImageArea,System.Boolean)">
+      <summary>
+            This method can be used to set the focus to a specific image area
+            </summary>
+      <param name="area">The image area to which focus is given</param>
+      <param name="setFocus">Specify true to make the image map the focused control, false to leave the
+            focus alone.</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Focus(System.Int32,System.Boolean)">
+      <summary>
+            This method can be used to set the focus to a specific image area index
+            </summary>
+      <param name="area">The index of the image area to which focus is given</param>
+      <param name="setFocus">Specify true to make the image map the focused control, false to leave the
+            focus alone.</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.FocusedArea">
+      <summary>
+            This property is used to get or set the index of the area that has the focus
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Image">
+      <summary>
+            This is used to get or set the image to display in the image map control
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ImageAreaCursor">
+      <summary>
+            This property is used to get or set the cursor shown when the mouse is over a defined image area
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ImageMapHeight">
+      <summary>
+            Gets or sets the height of the image in the image map control in pixels
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ImageMapWidth">
+      <summary>
+            Gets or sets the width of the image in the image map control in pixels
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.MouseArea">
+      <summary>
+            This read-only property is used to get the index of the area that the mouse is over
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnClick(EWSoftware.ImageMaps.ImageMapClickEventArgs)">
+      <summary>
+            This raises the image map <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.Click" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnClick(System.EventArgs)">
+      <summary>
+            This is overridden to raise the image map click event when a defined image area is clicked
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnDoubleClick(EWSoftware.ImageMaps.ImageMapClickEventArgs)">
+      <summary>
+            This raises the image map <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.DoubleClick" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnDoubleClick(System.EventArgs)">
+      <summary>
+            This is overridden to raise the image map double-click event when a defined image area is
+            double-clicked.
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnDrawImage(EWSoftware.ImageMaps.Windows.Forms.DrawImageEventArgs)">
+      <summary>
+            This raises the image map <see cref="E:EWSoftware.ImageMaps.Windows.Forms.ImageMap.DrawImage" /> event
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnEnabledChanged(System.EventArgs)">
+      <summary>
+            This is overridden to enable or disable animation when the control's enabled state changes
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnGotFocus(System.EventArgs)">
+      <summary>
+            This is overridden to repaint the control and select the appropriate image area as the active one
+            when the control gains focus.
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnLostFocus(System.EventArgs)">
+      <summary>
+            This is overridden to repaint the control when it loses focus
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+      <summary>
+            This is overridden to raise the event in the image area under the mouse if there is one
+            </summary>
+      <param name="e">The event arguments.</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnMouseHover(System.EventArgs)">
+      <summary>
+            This is overridden to raise the event in the image area under the mouse if there is one
+            </summary>
+      <param name="e">The event arguments.</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+      <summary>
+            This is overridden to adjust the display as the mouse moves in and out of defined areas on the image
+            map and to fire the appropriate image area mouse events.
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+      <summary>
+            This is overridden to raise the event in the image area under the mouse if there is one
+            </summary>
+      <param name="e">The event arguments.</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnPaint(System.Windows.Forms.PaintEventArgs)">
+      <summary>
+            This is overridden to display the image map
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnParentChanged(System.EventArgs)">
+      <summary>
+            This is overridden to enable or disable animation when the control's parent changes
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnSizeChanged(System.EventArgs)">
+      <summary>
+            This is overridden to invalidate the display when resized
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnStyleChanged(System.EventArgs)">
+      <summary>
+            This is overridden to adjust the control layout when the control style changes
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OnVisibleChanged(System.EventArgs)">
+      <summary>
+            This is overridden to enable or disable animation when the control's visible state changes
+            </summary>
+      <param name="e">The event arguments</param>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.OwnerDraw">
+      <summary>
+            This is used to turn owner draw mode on and off
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ProcessDialogChar(System.Char)">
+      <summary>
+            This is overridden to fire the image map click event if an image area has the focus and the Space bar
+            or Enter key is pressed.
+            </summary>
+      <param name="charCode">The character code</param>
+      <returns>True if handled, false if not</returns>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ProcessDialogKey(System.Windows.Forms.Keys)">
+      <summary>
+            This is overridden to handle arrow keys in the same manner as a Tab key press
+            </summary>
+      <param name="keyData">The key to process</param>
+      <returns>True if the key was processed, false if not</returns>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ProcessMnemonic(System.Char)">
+      <summary>
+            This is overridden to handle processing of image area access keys
+            </summary>
+      <param name="charCode">The character code</param>
+      <returns>True if handled, false if not</returns>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ProcessTabKey(System.Boolean)">
+      <summary>
+            This is overridden to handle tabbing through the image areas
+            </summary>
+      <param name="forward">True if tabbing forward through the areas or false if tabbing backwards through
+            them.</param>
+      <returns>True if the next image area is selected or false if there is not one to go to (i.e. the
+            start or end of the image areas is reached).</returns>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.RefreshAreaInformation">
+      <summary>
+            This method is used to notify the image map that its image area collection has been modified in some
+            way and that it should refresh its internal area markers.
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.SizeToImage">
+      <summary>
+            This property is used to get or set whether or not the control will resize itself to show the entire
+            image if possible if the image is larger than its current size or shrink its size to fit the image if
+            the image is smaller than its current size.
+            </summary>
+    </member>
+    <member name="P:EWSoftware.ImageMaps.Windows.Forms.ImageMap.ToolTip">
+      <summary>
+            This is used to get or set the tool tip text displayed for all undefined areas of the image
+            </summary>
+    </member>
+    <member name="M:EWSoftware.ImageMaps.Windows.Forms.ImageMap.WndProc(System.Windows.Forms.Message@)">
+      <summary>
+            This is overridden to invalidate the client area so that the control is redrawn correctly when
+            scrolled.
+            </summary>
+      <param name="m">The message</param>
+    </member>
+  </members>
+</doc>

@@ -1,0 +1,9 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\bin\Debug\SettingTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\bin\Debug\SettingTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\bin\Debug\SettingTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\obj\Debug\SettingTutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\obj\Debug\SettingTutorial.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\obj\Debug\SettingTutorial.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\obj\Debug\SettingTutorial.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\obj\Debug\SettingTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\SettingTutorial\SettingTutorial\obj\Debug\SettingTutorial.pdb

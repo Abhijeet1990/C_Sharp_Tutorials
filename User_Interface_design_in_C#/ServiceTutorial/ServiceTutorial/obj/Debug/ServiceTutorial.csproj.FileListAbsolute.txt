@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Debug\ServiceTutorial.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Debug\ServiceTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\bin\Debug\ServiceTutorial.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\obj\Debug\ServiceTutorial.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\obj\Debug\ServiceTutorial.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\ServiceTutorial\ServiceTutorial\obj\Debug\ServiceTutorial.pdb

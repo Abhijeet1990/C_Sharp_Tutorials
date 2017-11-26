@@ -1,0 +1,6 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\testRE\testRE\bin\Debug\testRE.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\testRE\testRE\bin\Debug\testRE.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\testRE\testRE\bin\Debug\testRE.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\testRE\testRE\obj\Debug\testRE.csprojResolveAssemblyReference.cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\testRE\testRE\obj\Debug\testRE.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\testRE\testRE\obj\Debug\testRE.pdb

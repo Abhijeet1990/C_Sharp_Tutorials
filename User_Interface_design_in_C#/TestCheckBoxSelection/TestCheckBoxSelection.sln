@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCheckBoxSelection", "TestCheckBoxSelection\TestCheckBoxSelection.csproj", "{27AD1C14-DEDE-4805-8D46-80C887D8AFC9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27AD1C14-DEDE-4805-8D46-80C887D8AFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27AD1C14-DEDE-4805-8D46-80C887D8AFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27AD1C14-DEDE-4805-8D46-80C887D8AFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27AD1C14-DEDE-4805-8D46-80C887D8AFC9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

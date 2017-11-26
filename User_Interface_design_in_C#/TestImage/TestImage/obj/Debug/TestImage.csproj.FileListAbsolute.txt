@@ -1,0 +1,8 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\bin\Debug\TestImage.exe.config
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\bin\Debug\TestImage.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\bin\Debug\TestImage.pdb
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\obj\Debug\TestImage.Form1.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\obj\Debug\TestImage.Properties.Resources.resources
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\obj\Debug\TestImage.csproj.GenerateResource.Cache
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\obj\Debug\TestImage.exe
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImage\TestImage\obj\Debug\TestImage.pdb

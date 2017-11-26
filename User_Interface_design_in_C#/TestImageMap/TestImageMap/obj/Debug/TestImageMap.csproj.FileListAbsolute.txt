@@ -1,0 +1,11 @@
+c:\users\abhijeet\documents\visual studio 2015\Projects\TestImageMap\TestImageMap\bin\Debug\TestImageMap.exe.config
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\obj\Debug\TestImageMap.csprojResolveAssemblyReference.cache
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\obj\Debug\TestImageMap.Properties.Resources.resources
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\obj\Debug\TestImageMap.csproj.GenerateResource.Cache
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\bin\Debug\TestImageMap.exe
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\bin\Debug\TestImageMap.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\bin\Debug\EWSoftware.ImageMaps.Windows.Forms.dll
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\bin\Debug\EWSoftware.ImageMaps.Windows.Forms.xml
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\obj\Debug\TestImageMap.exe
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\obj\Debug\TestImageMap.pdb
+C:\Users\Abhijeet\Documents\Visual Studio 2015\Projects\TestImageMap\TestImageMap\obj\Debug\TestImageMap.Form1.resources
